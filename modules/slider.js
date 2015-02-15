@@ -141,7 +141,7 @@ define(function (require, exports, module) {
         var timer = "";
 
         function setTimer() {
-            timer = setInterval("changePicTimer()", 4000);
+            timer = setInterval(changePicTimer, 4000);
         }
 
         setTimer();
