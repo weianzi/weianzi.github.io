@@ -23,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.733334" vertical-offset="800" max-vertical-offset="1771">
-              <caret line="54" column="29" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.45321992" vertical-offset="455" max-vertical-offset="1702">
+              <caret line="36" column="78" selection-start-line="36" selection-start-column="78" selection-end-line="36" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -53,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2607143" vertical-offset="3001" max-vertical-offset="5911">
-              <caret line="140" column="30" selection-start-line="140" selection-start-column="30" selection-end-line="140" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2104" max-vertical-offset="5911">
+              <caret line="110" column="7" selection-start-line="110" selection-start-column="1" selection-end-line="110" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -108,8 +108,8 @@
       <list>
         <option value="$PROJECT_DIR$/modules/index.js" />
         <option value="$PROJECT_DIR$/modules/slider.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -340,18 +340,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.733334" vertical-offset="800" max-vertical-offset="1771">
-          <caret line="54" column="29" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2104" max-vertical-offset="5911">
+          <caret line="110" column="7" selection-start-line="110" selection-start-column="1" selection-end-line="110" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2607143" vertical-offset="3001" max-vertical-offset="5911">
-          <caret line="140" column="30" selection-start-line="140" selection-start-column="30" selection-end-line="140" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.45321992" vertical-offset="455" max-vertical-offset="1702">
+          <caret line="36" column="78" selection-start-line="36" selection-start-column="78" selection-end-line="36" selection-end-column="78" />
           <folding />
         </state>
       </provider>
