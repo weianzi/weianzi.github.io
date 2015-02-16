@@ -77,13 +77,25 @@ body {
 	color: #333;
 	background: #eee;
 }
+.lazyload {
+	background: url(../images/loading.gif) 50% 50% no-repeat;
+}
+.btn {
+	padding: 10px 0;
+	text-align: center;
+	border-radius: 4px;
+	font-size: 1.2em;
+	color: #fff;
+	background: #5fcad9;
+	cursor: pointer;
+}
 /**/
 .views {
 	position: relative;
 	width: 100%;
 	height: 100%;
 	max-width: 640px;
-	padding-bottom:80px;
+	padding-bottom: 80px;
 	z-index: 5000;
 	-webkit-overflow-scrolling: touch;
 }
@@ -452,7 +464,7 @@ body {
 }
 /*个人设置*/
 .set-list {
-	padding-bottom:10px;
+	padding-bottom: 10px;
 	background: #5fcad9;
 }
 .set-list li {
@@ -479,11 +491,6 @@ body {
 	display: block;
 	width: 70%;
 	margin: 10px auto;
-	padding: 10px 0;
-	text-align: center;
-	border-radius: 4px;
-	font-size: 1.2em;
-	color: #5fcad9;
 	background: #fff;
 }
 /*找律师*/
@@ -523,7 +530,7 @@ body {
 }
 .search-list .select dd li {
 	padding: 2px 10px;
-	font-size: .6em;
+	font-size: .8em;
 }
 .search-list .select dd li:hover {
 	background: #eee;
@@ -608,9 +615,9 @@ body {
 	background-size: 65px 160px;
 }
 /*comment评论*/
-.comment { 
+.comment {
 }
-.comment .head .btn {
+.comment .head .text-btn {
 	position: absolute;
 	right: 16px;
 	top: 0;
@@ -634,7 +641,7 @@ body {
 	position: relative;
 	margin-left: 22%;
 	background: #fff;
-	border-bottom:1px solid #bcbcbc;
+	border-bottom: 1px solid #bcbcbc;
 }
 .comment dd h3 {
 	padding: 6px 0 0 6px;
@@ -648,19 +655,18 @@ body {
 .comment dd .time {
 	height: 26px;
 	line-height: 26px;
-	padding-left:10px;
+	padding-left: 10px;
 	font-size: .8em;
 	color: #d0d0d0;
 	background: #f9f9f9;
 }
-.comment dd .time i{
-	display:inline-block;
-		width: 16px;
+.comment dd .time i {
+	display: inline-block;
+	width: 16px;
 	height: 16px;
 	background: url(../images/icon.png) 0 -96px no-repeat;
 	background-size: 65px 160px;
-	}
-
+}
 .comment dd s {
 	position: absolute;
 	top: 10px;
@@ -669,11 +675,13 @@ body {
 	height: 0;
 	overflow: hidden;
 	border-width: 8px;
-	border-style: dashed solid dashed dashed ;
+	border-style: dashed solid dashed dashed;
 	border-color: transparent #fff transparent transparent;
 }
-.comment dd s.bg {	top: 11px;border-color: transparent #bcbcbc transparent transparent;}
-
+.comment dd s.bg {
+	top: 11px;
+	border-color: transparent #bcbcbc transparent transparent;
+}
 .comment-submit section {
 	width: 86%;
 	margin: 20px auto;
@@ -689,9 +697,111 @@ body {
 .comment-submit section a {
 	display: block;
 	margin: 10px auto;
-	padding: 10px 0;
-	text-align: center;
-	font-size: 1.2em;
-	background: #5fcad9;
+}
+/*登录注册*/
+.login-reg-con {
+	padding: 24px 0 8px;
+	background: #fff;
+}
+.login-reg-con ul {
+	width: 88%;
+	margin: 0 auto;
+}
+.login-reg-con li {
+	position: relative;
+	height: 46px;
+	margin-bottom: 10px;
+	border: 1px solid #c5c8cc;
 	border-radius: 4px;
+}
+.login-reg-con li input {
+	position: absolute;
+	top: 10px;
+	left: 60px;
+	width: 80%;
+	height: 24px;
+	line-height: 24px;
+	color: #757575;
+	font-size: 1.2em;
+	border: 0;
+	background: none;
+}
+.login-reg-con li > i {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 46px;
+	height: 46px;
+	border-radius: 4px 0 0 4px;
+}
+.login-reg-con li:hover {
+	border: 1px solid #5fcad9;
+}
+.login-reg-con li > i.name {
+	background: #f0f2f5 url(../images/reg/icon05.png) 50% 50% no-repeat;
+	background-size: 25px 25px;
+}
+.login-reg-con li > i.pw {
+	background: #f0f2f5 url(../images/reg/icon02.png) 50% 50% no-repeat;
+	background-size: 25px 25px;
+}
+.login-reg-con li:hover > i.name {
+	background: #f0f2f5 url(../images/reg/icon05-hover.png) 50% 50% no-repeat;
+	background-size: 25px 25px;
+}
+.login-reg-con li:hover > i.pw {
+	background: #f0f2f5 url(../images/reg/icon02-hover.png) 50% 50% no-repeat;
+	background-size: 25px 25px;
+}
+.login-reg-btn {
+	width: 88%;
+	margin: 20px auto;
+}
+.login-reg-btn2 .btn {
+	display: block;
+	width: 48%;
+	margin-bottom: 10px;
+}
+.login-reg-btn2 .fr.btn {
+	position: relative;
+}
+.login-reg-btn2 .fr.btn:hover > p {
+	display: block;
+}
+.login-reg-btn2 .fr.btn > p {
+	display: none;
+	position: absolute;
+	top: 40px;
+	left: 10%;
+	width: 80%;
+	background: #fff;
+	border: 1px solid #f7f7f7;
+	border-radius: 4px;
+	box-shadow: 0 0 3px 0 #ccc;
+}
+.login-reg-btn2 .fr.btn > p > a {
+	display: block;
+	padding: 2px 0;
+	font-size: .9em
+}
+.login-reg-btn2 .fr.btn > p > a:hover {
+	background: #eee;
+}
+.login-reg-btn2 .fr.btn > p > s {
+	position: absolute;
+	top: -13px;
+	left: 44%;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	border-width: 6px;
+	border-style: dashed solid dashed dashed;
+	border-color: transparent transparent #fff transparent;
+}
+.login-reg .welcome {
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	background: #5fcad9 url(../images/reg/logo.png) 8% 50% no-repeat;
+	background-size: 30px;
 }
