@@ -83,6 +83,7 @@ body {
 	width: 100%;
 	height: 100%;
 	max-width: 640px;
+	padding-bottom:80px;
 	z-index: 5000;
 	-webkit-overflow-scrolling: touch;
 }
@@ -147,7 +148,7 @@ body {
 /*首页大图标*/
 
 .indexLink {
-	padding: 20px 0 100px;
+	padding: 20px 0 0;
 }
 .indexLink li {
 	width: 56%;
@@ -261,7 +262,7 @@ body {
 }
 /*家庭*/
 .family-box {
-	height: 280px;
+	height: 220px;
 }
 .family-box dl {
 	position: relative;
@@ -305,9 +306,6 @@ body {
 	left: -96px;
 }
 /*我*/
-.i-info {
-	padding-bottom: 80px;
-}
 .i-info .head {
 	height: auto;
 	background: url(../images/i/t-bg.png) 50% bottom no-repeat;
@@ -406,13 +404,13 @@ body {
 	border-radius: 50%;
 }
 .lawyer-info .pic s {
-	left: -42px;
+	left: -46px;
 	bottom: 32px;
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
 	background: #00bbd4 url(../images/search/icon01.png) 50% 50% no-repeat;
-	background-size:13px 18px;
+	background-size: 13px 18px;
 }
 .lawyer-info h2 {
 	padding-bottom: 20px;
@@ -420,9 +418,41 @@ body {
 	text-align: center;
 	color: #00bbd4;
 }
+.lawyer-info section {
+	background: #fff;
+}
+.lawyer-info section header {
+	padding: 10px;
+	border-bottom: 1px solid #eee;
+}
+.lawyer-info section header h2 {
+	padding: 0;
+}
+.lawyer-info section header h2 span {
+	margin-right: 4px;
+	font-size: 1.2em;
+}
+.lawyer-info section header .fr {
+	padding-top: 4px;
+	font-size: .8em;
+}
+.lawyer-info section header .fr i {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: url(../images/icon.png) 0 -57px no-repeat;
+	background-size: 65px 160px;
+}
+.lawyer-info section .con {
+	padding: 10px;
+}
+.lawyer-info section .con p {
+	text-indent: 2em;
+	margin-bottom: 4px;
+}
 /*个人设置*/
 .set-list {
-	padding-bottom: 60px;
+	padding-bottom:10px;
 	background: #5fcad9;
 }
 .set-list li {
@@ -457,9 +487,7 @@ body {
 	background: #fff;
 }
 /*找律师*/
-.search-list {
-	padding-bottom: 80px;
-}
+
 .search-list .select {
 	padding: 20px 0 0 4%;
 }
@@ -578,4 +606,92 @@ body {
 .search-list .item .tips span:nth-child(3) i.active {
 	background: url(../images/icon.png) -50px -20px no-repeat;
 	background-size: 65px 160px;
+}
+/*comment评论*/
+.comment { 
+}
+.comment .head .btn {
+	position: absolute;
+	right: 16px;
+	top: 0;
+}
+.comment .item {
+	width: 80%;
+	margin: 10px auto;
+}
+.comment .item dt.pic {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.comment dt.pic img {
+	width: 40px;
+	height: 40px;
+}
+.comment dd {
+	position: relative;
+	margin-left: 22%;
+	background: #fff;
+	border-bottom:1px solid #bcbcbc;
+}
+.comment dd h3 {
+	padding: 6px 0 0 6px;
+	font-weight: 700;
+	font-size: 1.2em;
+}
+.comment dd p {
+	padding: 6px;
+	line-height: 140%;
+}
+.comment dd .time {
+	height: 26px;
+	line-height: 26px;
+	padding-left:10px;
+	font-size: .8em;
+	color: #d0d0d0;
+	background: #f9f9f9;
+}
+.comment dd .time i{
+	display:inline-block;
+		width: 16px;
+	height: 16px;
+	background: url(../images/icon.png) 0 -96px no-repeat;
+	background-size: 65px 160px;
+	}
+
+.comment dd s {
+	position: absolute;
+	top: 10px;
+	left: -16px;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	border-width: 8px;
+	border-style: dashed solid dashed dashed ;
+	border-color: transparent #fff transparent transparent;
+}
+.comment dd s.bg {	top: 11px;border-color: transparent #bcbcbc transparent transparent;}
+
+.comment-submit section {
+	width: 86%;
+	margin: 20px auto;
+}
+.comment-submit section textarea {
+	display: block;
+	width: 98%;
+	height: 100px;
+	padding: 4px 2px;
+	border: 1px solid #5fcad9;
+	border-radius: 4px;
+}
+.comment-submit section a {
+	display: block;
+	margin: 10px auto;
+	padding: 10px 0;
+	text-align: center;
+	font-size: 1.2em;
+	background: #5fcad9;
+	border-radius: 4px;
 }
