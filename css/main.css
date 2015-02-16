@@ -268,7 +268,6 @@ body {
 }
 
 .toolbar a.active:nth-child(4) i {
-
     background: url(../images/toolbar/icon04-selected.png) no-repeat;
     background-size: 30px 30px;
 }
@@ -288,15 +287,11 @@ body {
     font-size: .9em;
     display: inline-block;
     color: #fff;
-    background: #a2a2a2;
+    background: #e51a1b;
     border-radius: 20px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-}
-
-.toolbar a.active:nth-child(3) i span {
-    background: #e51a1b;
 }
 
 .toolbar a span {
