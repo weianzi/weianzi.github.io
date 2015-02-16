@@ -367,7 +367,7 @@ body {
 .i-info .pic span{ display: block; font-size: .9em; color: #999;text-align: center; }
 .i-info .pic s{ position: absolute; left: -6px; bottom:2px; width: 12px; height: 17px; background: url(../images/icon.png) -25px -80px no-repeat; background-size:65px 160px; }
 .i-info .con01{ border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
-.i-info .con01 li{ float: left; width: 33.33%; padding: 10px 0; text-align: center; font-size: .8em; background: #9ddfe8 }
+.i-info .con01 li{ float: left; width: 33%; padding: 10px 0; text-align: center; font-size: .8em; background: #9ddfe8 }
 .i-info .con01 li.active{ border-left: 1px solid #eee;border-right: 1px solid #eee;background: #5fcad9; }
 .i-info .con01 li p{font-size: 1.4em;}
 .i-info .con02{ padding: 20px 0 30px; background: #f4f4f4; }
