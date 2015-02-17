@@ -59,6 +59,9 @@ input, select {
 	height: 0;
 	visibility: hidden
 }
+.hide {
+	display: none;
+}
 .white {
 	color: #fff!important;
 }
@@ -408,6 +411,10 @@ body {
 .lawyer-info .head {
 	background: url(../images/search/t-bg.png) 50% bottom no-repeat;
 }
+.lawyer-info .head .set {
+	background: url(../images/icon.png) -25px 0 no-repeat;
+	background-size: 65px 160px;
+}
 .lawyer-info .pic p {
 	border: 6px solid #a4d3d9;
 	box-shadow: none;
@@ -425,6 +432,11 @@ body {
 	border-radius: 50%;
 	background: #00bbd4 url(../images/search/icon01.png) 50% 50% no-repeat;
 	background-size: 13px 18px;
+}
+.lawyer-info .pic s.good {
+	left: 120px;
+	background: #00bbd4 url(../images/icon.png) -16px -132px no-repeat;
+	background-size: 65px 160px;
 }
 .lawyer-info h2 {
 	padding-bottom: 20px;
@@ -896,7 +908,7 @@ body {
 	padding: 20px 0 0 2%;
 }
 .msn-views .msn-info > .fl .btn {
-	display:block;
+	display: block;
 	margin: 10px auto 0;
 	padding: 2px 0;
 	font-size: .8em;
@@ -924,38 +936,109 @@ body {
 	margin-top: 4px;
 	color: #5fcad9;
 }
-.msn-list > dl {
+.news-list > dl {
 	height: 60px;
 	background: #fff;
 	margin-bottom: 10px;
 }
-.msn-list > dl dt img {
+.news-list > dl dt img {
 	width: 75px;
 	height: 60px;
 }
-.msn-list > dl dd {
+.news-list > dl dd {
 	position: relative;
 	margin-left: 80px;
 	height: 60px;
 }
-.msn-list > dl dd h4 {
+.news-list > dl dd h4 {
 	padding: 4px 0;
 	font-size: 1.1em;
 	font-weight: 700;
 }
-.msn-list > dl dd p {
+.news-list > dl dd p {
 	font-size: .8em;
 }
-.msn-list > dl dd .good {
+.news-list > dl dd .good {
 	position: absolute;
 	right: 4px;
-	bottom:2px;
+	bottom: 2px;
 	font-size: .8em;
 }
-.msn-list > dl dd .good i {
+.news-list > dl dd .good i {
 	display: inline-block;
 	width: 12px;
 	height: 12px;
 	background: url(../images/icon.png) 0 -57px no-repeat;
 	background-size: 65px 160px;
 }
+/*回复详情*/
+.lawyer-info .tab li {
+	width: 50%;
+	padding-bottom: 8px;
+	text-align: center;
+}
+.lawyer-info .tab li.selected {
+	background: #fff;
+}
+.lawyer-info .tab li a {
+	display: block;
+}
+.lawyer-info .tab li img {
+	height: 22px;
+}
+.lawyer-info .tab li p {
+	font-size: .8em;
+	line-height: 1.2;
+}
+.lawyer-info .tab-con {
+	padding: 20px;
+}
+.lawyer-info .tab-con h3 {
+	font-weight: 700;
+}
+.lawyer-info .tab-con p {
+	margin: 10px auto;
+}
+/*回复列表*/
+.msn-list {
+	height: 100%;
+	background: #5fcad9;
+}
+.msn-list .tab {
+	width: 15%;
+	padding-top: 20px;
+}
+.msn-list .tab > div {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	border-radius: 4px;
+	background: #fff;
+	margin: auto;
+	color: #5fcad9;
+	margin-bottom: 50px;
+}
+.msn-list .tab > div > s {
+	display: none;
+	position: absolute;
+	top: 6px;
+	left: 24px;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	border-width: 4px;
+	border-style: dashed dashed dashed solid;
+	border-color: transparent transparent transparent #fff;
+}
+.msn-list .tab > div.selected > s {
+	display: block
+}
+.msn-list .tab-con {
+	min-height:200px;
+	width: 75%;
+	padding:5%;
+	background: #eee;
+}
+.msn-list .tab-con > p{ margin-bottom:10px;}
