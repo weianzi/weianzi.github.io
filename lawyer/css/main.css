@@ -340,13 +340,16 @@ body {
 .i-info .pic p {
 	width: 100px;
 	height: 100px;
-	border: 5px solid #5fcad9;
+	border: 6px solid #98dde7;
 	border-radius: 50%;
-	overflow: hidden
+	overflow: hidden;
+	box-shadow:0 0 70px 0 #fff;
 }
 .i-info .pic p img {
 	display: block;
-	width: 100px;
+	width: 96px;
+	border: 2px solid #fff;
+	border-radius: 50%;
 }
 .i-info .pic h2 {
 	padding: 10px 0 4px;
@@ -402,13 +405,12 @@ body {
 	margin: 0 auto;
 }
 /*律师信息*/
-.lawyer-info {
-}
 .lawyer-info .head {
 	background: url(../images/search/t-bg.png) 50% bottom no-repeat;
 }
 .lawyer-info .pic p {
 	border: 6px solid #a4d3d9;
+	box-shadow:none;
 }
 .lawyer-info .pic p img {
 	width: 96px;
@@ -504,7 +506,7 @@ body {
 	margin-right: 3%;
 	z-index: 90;
 }
-.search-list .select dl:hover dd {
+.search-list .select dl:hover dd,.search-list .select dl.hover dd {
 	display: block
 }
 .search-list .select dt {
@@ -699,6 +701,7 @@ body {
 	margin: 10px auto;
 }
 /*登录注册*/
+.login-reg{ padding-bottom:0;}
 .login-reg-con {
 	padding: 24px 0 8px;
 	background: #fff;
@@ -714,7 +717,7 @@ body {
 	border: 1px solid #c5c8cc;
 	border-radius: 4px;
 }
-.login-reg-con li input {
+.login-reg-con li input, .login-reg-con li select {
 	position: absolute;
 	top: 10px;
 	left: 60px;
@@ -734,25 +737,120 @@ body {
 	height: 46px;
 	border-radius: 4px 0 0 4px;
 }
-.login-reg-con li:hover {
+.login-reg-con li:hover, .login-reg-con li.hover {
 	border: 1px solid #5fcad9;
 }
 .login-reg-con li > i.name {
-	background: #f0f2f5 url(../images/reg/icon05.png) 50% 50% no-repeat;
+	background: #f0f2f5 url(../images/reg/icon01.png) 50% 50% no-repeat;
 	background-size: 25px 25px;
 }
 .login-reg-con li > i.pw {
 	background: #f0f2f5 url(../images/reg/icon02.png) 50% 50% no-repeat;
 	background-size: 25px 25px;
 }
+
+.login-reg-con li > i.id {
+	background: #f0f2f5 url(../images/reg/icon03.png) 50% 50% no-repeat;
+	background-size: 25px 25px;
+}
+
+.login-reg-con li > i.ico04 {
+	background: #f0f2f5 url(../images/reg/icon04.png) 50% 50% no-repeat;
+	background-size: 25px 25px;
+}
+
+
+.login-reg-con li > i.ico05 {
+	background: #f0f2f5 url(../images/reg/icon05.png) 50% 50% no-repeat;
+	background-size: 25px 25px;
+}
+
+.login-reg-con li > i.ico06 {
+	background: #f0f2f5 url(../images/reg/icon06.png) 50% 50% no-repeat;
+	background-size: 25px 25px;
+}
+
+.login-reg-con li > i.ico07 {
+	background: #f0f2f5 url(../images/reg/icon07.png) 50% 50% no-repeat;
+	background-size: 25px 25px;
+}
+
+.login-reg-con li > i.ico08 {
+	background: #f0f2f5 url(../images/reg/icon08.png) 50% 50% no-repeat;
+	background-size: 25px 25px;
+}
+
+.login-reg-con li > i.ico09 {
+	background: #f0f2f5 url(../images/reg/icon09.png) 50% 50% no-repeat;
+	background-size: 25px 25px;
+}
+
+.login-reg-con li > i.email {
+	background: #f0f2f5 url(../images/reg/icon10.png) 50% 50% no-repeat;
+	background-size: 25px 25px;
+}
+
+.login-reg-con li > i.tel {
+	background: #f0f2f5 url(../images/reg/icon11.png) 50% 50% no-repeat;
+	background-size: 25px 25px;
+}
+
 .login-reg-con li:hover > i.name {
-	background: #f0f2f5 url(../images/reg/icon05-hover.png) 50% 50% no-repeat;
+	background: #f0f2f5 url(../images/reg/icon01-hover.png) 50% 50% no-repeat;
 	background-size: 25px 25px;
 }
 .login-reg-con li:hover > i.pw {
 	background: #f0f2f5 url(../images/reg/icon02-hover.png) 50% 50% no-repeat;
 	background-size: 25px 25px;
 }
+
+.login-reg-con li:hover > i.id {
+	background: #f0f2f5 url(../images/reg/icon03-hover.png) 50% 50% no-repeat;
+	background-size: 25px 25px;
+}
+
+.login-reg-con li:hover > i.ico04 {
+	background: #f0f2f5 url(../images/reg/icon04-hover.png) 50% 50% no-repeat;
+	background-size: 25px 25px;
+}
+
+
+.login-reg-con li:hover > i.ico05 {
+	background: #f0f2f5 url(../images/reg/icon05-hover.png) 50% 50% no-repeat;
+	background-size: 25px 25px;
+}
+
+.login-reg-con li:hover > i.ico06 {
+	background: #f0f2f5 url(../images/reg/icon06-hover.png) 50% 50% no-repeat;
+	background-size: 25px 25px;
+}
+
+.login-reg-con li:hover > i.ico07 {
+	background: #f0f2f5 url(../images/reg/icon07-hover.png) 50% 50% no-repeat;
+	background-size: 25px 25px;
+}
+
+.login-reg-con li:hover > i.ico08 {
+	background: #f0f2f5 url(../images/reg/icon08-hover.png) 50% 50% no-repeat;
+	background-size: 25px 25px;
+}
+
+.login-reg-con li:hover > i.ico09 {
+	background: #f0f2f5 url(../images/reg/icon09-hover.png) 50% 50% no-repeat;
+	background-size: 25px 25px;
+}
+
+.login-reg-con li:hover > i.email {
+	background: #f0f2f5 url(../images/reg/icon10-hover.png) 50% 50% no-repeat;
+	background-size: 25px 25px;
+}
+
+.login-reg-con li:hover > i.tel {
+	background: #f0f2f5 url(../images/reg/icon11-hover.png) 50% 50% no-repeat;
+	background-size: 25px 25px;
+}
+
+
 .login-reg-btn {
 	width: 50%;
 	margin: 20px auto;
@@ -771,7 +869,7 @@ body {
 .login-reg-btn2 .fr.btn {
 	position: relative;
 }
-.login-reg-btn2 .fr.btn:hover > p {
+.login-reg-btn2 .fr.btn:hover > p, .login-reg-btn2 .fr.btn.hover > p {
 	display: block;
 }
 .login-reg-btn2 .fr.btn > p {
@@ -805,9 +903,14 @@ body {
 	border-color: transparent transparent #fff transparent;
 }
 .login-reg .welcome {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
 	height: 60px;
 	line-height: 60px;
 	text-align: center;
 	background: #5fcad9 url(../images/reg/logo.png) 8% 50% no-repeat;
 	background-size: 30px;
+	z-index:999;
 }

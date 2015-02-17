@@ -2,12 +2,18 @@
 <html>
 <head lang="zh">
 <meta charset="UTF-8">
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 <meta http-equiv="pragma" content="no-cache"/>
 <meta http-equiv="cache-control" content="no-cache"/>
 <meta http-equiv="expires" content="0"/>
 <title>登录</title>
 <link href="css/main.css" rel="stylesheet"/>
+<script src="libs/sea.js"></script>
+<script src="modules/config.js"></script>
+<script>
+	// 加载入口模块
+	seajs.use("./modules/public.js");
+</script>
 </head>
 <body>
 <div class="views login-reg">
@@ -25,7 +31,7 @@
     </ul>
   </section>
   <section class="login-reg-btn login-reg-btn2 clearfix"> <a class="fl btn white" href="i.html">登录</a>
-    <div class="fr btn white">注册 
+    <div class="fr btn myLinks white">注册 
       <p><s></s><a href="reg01.html">大众</a> <a href="reg02.html">律师</a> <a href="#">取消</a></p>
     </div>
     <a class="fl" href="forgotpwd.html">？忘记密码</a> </section>

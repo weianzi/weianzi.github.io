@@ -2,12 +2,18 @@
 <html>
 <head lang="zh">
 <meta charset="UTF-8">
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 <meta http-equiv="pragma" content="no-cache"/>
 <meta http-equiv="cache-control" content="no-cache"/>
 <meta http-equiv="expires" content="0"/>
 <title>律师注册</title>
 <link href="css/main.css" rel="stylesheet"/>
+<script src="libs/sea.js"></script>
+<script src="modules/config.js"></script>
+<script>
+	// 加载入口模块
+	seajs.use("./modules/public.js");
+</script>
 </head>
 <body>
 <div class="views login-reg">
@@ -16,43 +22,57 @@
   </header>
   <section class="login-reg-con">
     <ul>
-      <li><i class="name"></i>
+      <li class="myLinks"><i class="name"></i>
         <input type="text" name="loginname" placeholder="邮箱/手机号" >
       </li>
-      <li><i class="pw"></i>
+      <li class="myLinks"><i class="pw"></i>
         <input name="loginpwd" placeholder="输入密码" type="password">
       </li>
-      <li><i class="pw"></i>
+      <li class="myLinks"><i class="pw"></i>
         <input name="loginpwd" placeholder="确认密码" type="password">
       </li>
-      
-      <li><i class="pw id"></i>
+      <li class="myLinks"><i class="id"></i>
         <input type="text" name="" placeholder="律师证号" >
       </li>
-      
-      <li><i class="pw"></i>
-        <input type="text" name="" placeholder="律师证号" >
+      <li class="myLinks"><i class="ico04"></i>
+        <input type="text" name="" placeholder="所属律所" >
       </li>
-      
-      <li><i class="pw"></i>
-        <input type="text" name="" placeholder="律师证号" >
+      <li class="myLinks"><i class="ico05"></i>
+        <input type="text" name="" placeholder="真实姓名" >
       </li>
-      
-      <li><i class="pw"></i>
-        <input type="text" name="" placeholder="律师证号" >
+      <li class="myLinks"><i class="ico06"></i>
+        <select>
+          <option>所属省</option>
+          <option>广东省</option>
+          <option>山东省</option>
+        </select>
       </li>
-      
-      <li><i class="pw"></i>
-        <input type="text" name="" placeholder="律师证号" >
+      <li class="myLinks"><i class="ico07"></i>
+        <select>
+          <option>所属市</option>
+          <option>所属市</option>
+          <option>所属市</option>
+        </select>
       </li>
-      
-      <li><i class="pw"></i>
-        <input type="text" name="" placeholder="律师证号" >
+      <li class="myLinks"><i class="ico08"></i>
+        <select>
+          <option>所属区</option>
+          <option>所属区</option>
+          <option>所属区</option>
+        </select>
+      </li>
+      <li class="myLinks"><i class="ico09"></i>
+        <input type="text" name="" placeholder="详细地址" >
+      </li>
+      <li class="myLinks"><i class="email"></i>
+        <input type="email" name="" placeholder="常用邮箱" >
+      </li>
+      <li class="myLinks"><i class="tel"></i>
+        <input type="text" name="" placeholder="常用电话" >
       </li>
     </ul>
   </section>
-  <section class="login-reg-btn clearfix"> 
-  <a class="fl btn white" href="index.html">下一步</a></section>
+  <section class="login-reg-btn clearfix"> <a class="fl btn white" href="index.html">下一步</a></section>
 </div>
 </body>
 </html>
