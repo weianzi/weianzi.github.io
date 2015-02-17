@@ -343,7 +343,7 @@ body {
 	border: 6px solid #98dde7;
 	border-radius: 50%;
 	overflow: hidden;
-	box-shadow:0 0 70px 0 #fff;
+	box-shadow: 0 0 70px 0 #fff;
 }
 .i-info .pic p img {
 	display: block;
@@ -410,7 +410,7 @@ body {
 }
 .lawyer-info .pic p {
 	border: 6px solid #a4d3d9;
-	box-shadow:none;
+	box-shadow: none;
 }
 .lawyer-info .pic p img {
 	width: 96px;
@@ -500,42 +500,29 @@ body {
 .search-list .select {
 	padding: 20px 0 0 4%;
 }
-.search-list .select dl {
+.search-list .select > div {
 	position: relative;
 	width: 30%;
 	margin-right: 3%;
-	z-index: 90;
 }
-.search-list .select dl:hover dd,.search-list .select dl.hover dd {
-	display: block
-}
-.search-list .select dt {
+.search-list .select > div select {
+	width: 100%;
 	height: 24px;
 	line-height: 24px;
+	border: 0;
 	border-bottom: 1px solid #00b2cb;
-	text-align: center;
+	background: none;
 }
-.search-list .select dt i {
+.search-list .select > div i {
+	position: absolute;
+	right: -8px;
+	top: 0;
 	display: block;
 	width: 15px;
 	height: 8px;
 	margin: 8px 10px 0 0;
 	background: url(../images/icon.png) 0 -40px no-repeat;
 	background-size: 65px 160px;
-}
-.search-list .select dd {
-	position: absolute;
-	width: 100%;
-	display: none;
-	padding: 2px 0;
-	background: #fff;
-}
-.search-list .select dd li {
-	padding: 2px 10px;
-	font-size: .8em;
-}
-.search-list .select dd li:hover {
-	background: #eee;
 }
 /**/
 .search-list h2 {
@@ -701,7 +688,9 @@ body {
 	margin: 10px auto;
 }
 /*登录注册*/
-.login-reg{ padding-bottom:0;}
+.login-reg {
+	padding-bottom: 0;
+}
 .login-reg-con {
 	padding: 24px 0 8px;
 	background: #fff;
@@ -748,53 +737,42 @@ body {
 	background: #f0f2f5 url(../images/reg/icon02.png) 50% 50% no-repeat;
 	background-size: 25px 25px;
 }
-
 .login-reg-con li > i.id {
 	background: #f0f2f5 url(../images/reg/icon03.png) 50% 50% no-repeat;
 	background-size: 25px 25px;
 }
-
 .login-reg-con li > i.ico04 {
 	background: #f0f2f5 url(../images/reg/icon04.png) 50% 50% no-repeat;
 	background-size: 25px 25px;
 }
-
-
 .login-reg-con li > i.ico05 {
 	background: #f0f2f5 url(../images/reg/icon05.png) 50% 50% no-repeat;
 	background-size: 25px 25px;
 }
-
 .login-reg-con li > i.ico06 {
 	background: #f0f2f5 url(../images/reg/icon06.png) 50% 50% no-repeat;
 	background-size: 25px 25px;
 }
-
 .login-reg-con li > i.ico07 {
 	background: #f0f2f5 url(../images/reg/icon07.png) 50% 50% no-repeat;
 	background-size: 25px 25px;
 }
-
 .login-reg-con li > i.ico08 {
 	background: #f0f2f5 url(../images/reg/icon08.png) 50% 50% no-repeat;
 	background-size: 25px 25px;
 }
-
 .login-reg-con li > i.ico09 {
 	background: #f0f2f5 url(../images/reg/icon09.png) 50% 50% no-repeat;
 	background-size: 25px 25px;
 }
-
 .login-reg-con li > i.email {
 	background: #f0f2f5 url(../images/reg/icon10.png) 50% 50% no-repeat;
 	background-size: 25px 25px;
 }
-
 .login-reg-con li > i.tel {
 	background: #f0f2f5 url(../images/reg/icon11.png) 50% 50% no-repeat;
 	background-size: 25px 25px;
 }
-
 .login-reg-con li:hover > i.name {
 	background: #f0f2f5 url(../images/reg/icon01-hover.png) 50% 50% no-repeat;
 	background-size: 25px 25px;
@@ -803,61 +781,49 @@ body {
 	background: #f0f2f5 url(../images/reg/icon02-hover.png) 50% 50% no-repeat;
 	background-size: 25px 25px;
 }
-
 .login-reg-con li:hover > i.id {
 	background: #f0f2f5 url(../images/reg/icon03-hover.png) 50% 50% no-repeat;
 	background-size: 25px 25px;
 }
-
 .login-reg-con li:hover > i.ico04 {
 	background: #f0f2f5 url(../images/reg/icon04-hover.png) 50% 50% no-repeat;
 	background-size: 25px 25px;
 }
-
-
 .login-reg-con li:hover > i.ico05 {
 	background: #f0f2f5 url(../images/reg/icon05-hover.png) 50% 50% no-repeat;
 	background-size: 25px 25px;
 }
-
 .login-reg-con li:hover > i.ico06 {
 	background: #f0f2f5 url(../images/reg/icon06-hover.png) 50% 50% no-repeat;
 	background-size: 25px 25px;
 }
-
 .login-reg-con li:hover > i.ico07 {
 	background: #f0f2f5 url(../images/reg/icon07-hover.png) 50% 50% no-repeat;
 	background-size: 25px 25px;
 }
-
 .login-reg-con li:hover > i.ico08 {
 	background: #f0f2f5 url(../images/reg/icon08-hover.png) 50% 50% no-repeat;
 	background-size: 25px 25px;
 }
-
 .login-reg-con li:hover > i.ico09 {
 	background: #f0f2f5 url(../images/reg/icon09-hover.png) 50% 50% no-repeat;
 	background-size: 25px 25px;
 }
-
 .login-reg-con li:hover > i.email {
 	background: #f0f2f5 url(../images/reg/icon10-hover.png) 50% 50% no-repeat;
 	background-size: 25px 25px;
 }
-
 .login-reg-con li:hover > i.tel {
 	background: #f0f2f5 url(../images/reg/icon11-hover.png) 50% 50% no-repeat;
 	background-size: 25px 25px;
 }
-
-
 .login-reg-btn {
 	width: 50%;
 	margin: 20px auto;
 }
 .login-reg-btn .btn {
 	display: block;
-	width:100%;
+	width: 100%;
 	margin-bottom: 10px;
 }
 .login-reg-btn2 {
@@ -912,5 +878,82 @@ body {
 	text-align: center;
 	background: #5fcad9 url(../images/reg/logo.png) 8% 50% no-repeat;
 	background-size: 30px;
-	z-index:999;
+	z-index: 999;
+}
+/*消息*/
+.msn-views section {
+	width: 94%;
+	margin: 6px auto;
+}
+.msn-views .msn-info {
+	margin-bottom: 16px;
+	border-radius: 4px;
+	background: #f6f8fa;
+	box-shadow: 0 1px 0 0 #e3e4e8;
+}
+.msn-views .msn-info > .fl {
+	width: 36%;
+	padding: 20px 0 0 2%;
+}
+.msn-views .msn-info > .fl .btn {
+	margin: 10px auto 0;
+	padding: 2px 0;
+	font-size: .8em;
+}
+.msn-views .msn-info .pic {
+	margin: 0 auto;
+	width: 90px;
+	height: 90px;
+	border: 1px solid #d6d7dd;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.msn-views .msn-info > .fr {
+	width: 52%;
+	height: 130px;
+	padding: 4%;
+	background: #fff;
+}
+.msn-views .msn-info > .fr h4 {
+	font-weight: 700;
+	margin-bottom: 4px;
+}
+.msn-views .msn-info > .fr a {
+	display: block;
+	margin-top: 4px;
+	color: #5fcad9;
+}
+.msn-list > dl {
+	height: 60px;
+	background: #fff;
+	margin-bottom: 10px;
+}
+.msn-list > dl dt img {
+	width: 75px;
+	height: 60px;
+}
+.msn-list > dl dd {
+	position: relative;
+	margin-left: 80px;
+}
+.msn-list > dl dd h4 {
+	padding: 4px 0;
+	font-size: 1.1em;
+	font-weight: 700;
+}
+.msn-list > dl dd p {
+	font-size: .8em;
+}
+.msn-list > dl dd .good {
+	position: absolute;
+	right: 4px;
+	bottom: -4px;
+	font-size: .8em;
+}
+.msn-list > dl dd .good i {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: url(../images/icon.png) 0 -57px no-repeat;
+	background-size: 65px 160px;
 }
