@@ -1042,3 +1042,11 @@ body {
 	background: #eee;
 }
 .msn-list .tab-con > p{ margin-bottom:10px;}
+
+/*新闻动态*/
+.news-show{ padding:1%; }
+.news-show > h2{ margin:10px auto;font-size:1.2em; font-weight:700; text-align:center; }
+.news-show > .aside-info{ color:#999; text-align:center; }
+.news-show > .img{ display:block; margin:10px auto; text-align:center; }
+.news-show > p{ margin-bottom:10px; line-height:1.5; }
+.news-show > p strong{font-weight:700;}
