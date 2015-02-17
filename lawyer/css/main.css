@@ -896,6 +896,7 @@ body {
 	padding: 20px 0 0 2%;
 }
 .msn-views .msn-info > .fl .btn {
+	display:block;
 	margin: 10px auto 0;
 	padding: 2px 0;
 	font-size: .8em;
@@ -935,6 +936,7 @@ body {
 .msn-list > dl dd {
 	position: relative;
 	margin-left: 80px;
+	height: 60px;
 }
 .msn-list > dl dd h4 {
 	padding: 4px 0;
@@ -947,7 +949,7 @@ body {
 .msn-list > dl dd .good {
 	position: absolute;
 	right: 4px;
-	bottom: -4px;
+	bottom:2px;
 	font-size: .8em;
 }
 .msn-list > dl dd .good i {
