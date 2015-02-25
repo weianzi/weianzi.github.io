@@ -2,6 +2,7 @@
 seajs.config({
     alias: {
         "zepto": "zepto.min.js",
-        "lazyload":"lazyload.js"
+        "lazyload":"lazyload.js",
+        "Chart": "Chart.min.js"
     }
 });
