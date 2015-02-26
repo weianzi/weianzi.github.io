@@ -352,7 +352,7 @@ body {
 .i-info .pic p {
 	width: 100px;
 	height: 100px;
-	border: 6px solid #98dde7;
+	border: 6px solid #92d1dc;
 	border-radius: 50%;
 	overflow: hidden;
 	box-shadow: 0 0 70px 0 #fff;
@@ -393,7 +393,7 @@ body {
 	padding: 10px 0;
 	text-align: center;
 	font-size: .8em;
-	background: #4cc9da
+	background: #9ddfe8
 }
 .i-info .con01 li.active {
 	border-left: 1px solid #eee;
@@ -425,7 +425,7 @@ body {
 	background-size: 65px 160px;
 }
 .lawyer-info .pic p {
-	border: 6px solid #2aafbf;
+	border: 6px solid #6ac1cc;
 	box-shadow: none;
 }
 .lawyer-info .pic p img {
@@ -495,15 +495,15 @@ body {
 .set-list li {
 	height: 50px;
 	line-height: 50px;
-	border-bottom: 1px solid #5ec8d6;
+	border-bottom: 1px solid #00afc8;
 	padding-left: 10%;
-	background: #4cc9da;
+	background: #00a0b6;
 }
 .set-list li:hover {
 	opacity: .9;
 }
 .set-list li:nth-child(2n) {
-	background: #00b2cb;
+	background: #00a8bf;
 }
 .set-list li a {
 	display: block;
