@@ -3,22 +3,29 @@
  */
 
 	$("#container").highcharts({
+        colors: ["#f6ef29", "#aaeeee", "#e6944c", "#c7e64c", "#00b2cb", "#e64c65"],
 		chart: {
+            backgroundColor:'#eeeeee',
 			type: 'pie'
 		},
 		title: {
+            style:{
+                color:'#00b2cb',
+                fontFamily:'microsoft yahei'
+            },
 			text: '咨询类型分析图表'
-		},
-		subtitle: {
-			text: ''
 		},
 		plotOptions: {
 			pie: {
-				innerSize: 100,
-				depth: 40
+				innerSize: 140,
+				depth: 10
 			}
 		},
 		series: [{
+            dataLabels: {
+                color: '#00b2cb',
+                fontFamily:'microsoft yahei',
+            },
 			name: '占比',
 			data: [
 				['其他事务 20%', 20],
