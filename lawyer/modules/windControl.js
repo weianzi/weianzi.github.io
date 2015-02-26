@@ -1,47 +1,33 @@
 /**
  * Created on 2015-02-15.
  */
-// 所有模块都通过 define 来定义
-define(function (require, exports, module) {
 
-    require("./public.js");
+	$("#container").highcharts({
+		chart: {
+			type: 'pie'
+		},
+		title: {
+			text: '咨询类型分析图表'
+		},
+		subtitle: {
+			text: ''
+		},
+		plotOptions: {
+			pie: {
+				innerSize: 100,
+				depth: 40
+			}
+		},
+		series: [{
+			name: '占比',
+			data: [
+				['其他事务 20%', 20],
+				['劳动人际 30%', 30],
+				['继承事务 21%', 21],
+				['资产管理 11%', 11],
+				['中文中文中文 40%', 40],
+				['婚姻继承 60%', 60]
+			]
+		}]
+	});
 
-    //环形图表
-    require("Chart");
-    var doughnutData = [
-        {
-            value: 300,
-            color: "#F7464A",
-            highlight: "#FF5A5E",
-            label: "Red"
-        },
-        {
-            value: 50,
-            color: "#46BFBD",
-            highlight: "#5AD3D1",
-            label: "Green"
-        },
-        {
-            value: 100,
-            color: "#FDB45C",
-            highlight: "#FFC870",
-            label: "Yellow"
-        },
-        {
-            value: 40,
-            color: "#949FB1",
-            highlight: "#A8B3C5",
-            label: "Grey"
-        },
-        {
-            value: 120,
-            color: "#4D5360",
-            highlight: "#616774",
-            label: "Dark Grey"
-        }
-
-    ];
-    var ctx = $("#chart-area").get(0).getContext("2d");
-    window.myDoughnut = new Chart(ctx).Doughnut(doughnutData, {responsive: true});
-
-});

@@ -6,27 +6,21 @@
     <meta http-equiv="pragma" content="no-cache"/>
     <meta http-equiv="cache-control" content="no-cache"/>
     <meta http-equiv="expires" content="0"/>
-    <title>风控中心 － 家庭律师</title>
+    <title>风控中心</title>
     <link href="css/main.css" rel="stylesheet"/>
-    <script src="libs/sea.js"></script>
-    <script src="modules/config.js"></script>
-    <script>
-        seajs.use("./modules/windControl.js");
-    </script>
-
+	<script src="libs/zepto.js"></script>
+    <script src="libs/highcharts.js"></script>
 </head>
 <body>
 <div class="views">
     <header class="head clearfix">
-        <a class="back white" href="index.html"><span></span></a>
+        <a class="back white" href="family.html"><span></span></a>
 
-        <h1>家庭律师</h1>
+        <h1>风控中心</h1>
     </header>
 
     <section class="family-box">
-        <div id="canvas-holder">
-            <canvas id="chart-area" width="500" height="500"/>
-        </div>
+        <div id="container" style="max-width:640px;height:200px"></div>
     </section>
 
     <nav class="toolbar">
@@ -36,6 +30,7 @@
         <a href="family.html" class="active"><i></i><span>家庭律师</span></a>
         <a href="i.html"><i></i><span>我</span></a>
     </nav>
-</div>
+</div>    <script src="modules/windControl.js"></script>
+
 </body>
 </html>

@@ -1,6 +1,4 @@
-define(function (require, exports, module) {
-
-    var lazyload = (function ($) {
+    (function ($) {
         $.fn.picLazyLoad = function (settings) {
             var $this = $(this), _winScrollTop = 0, _winHeight = $(window).height();
             settings = $.extend({threshold: 0, placeholder: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC'}, settings || {});
@@ -36,7 +34,3 @@ define(function (require, exports, module) {
             }
         }
     })(Zepto);
-
-    module.exports = lazyload;
-
-});
