@@ -1,4 +1,3 @@
-
 $(function () {
 
     slider();
@@ -106,9 +105,8 @@ function slider() {
         var b = Math.abs(parseInt(a));
         var seq = parseInt(b / img_w) % pic_num + 1;
 
-        $(".touchBox .picTab li").width($slider.find(".item img").width() / 3);
-
-        $(".touchBox .picTab li").removeClass("active").eq(seq - 1).addClass("active");
+        $(".touchBox .picTab li").width($slider.find(".item img").width() / 3)
+            .removeClass("active").eq(seq - 1).addClass("active");
 
         //$("#picNo").text(seq + "/" + pic_num);
     }

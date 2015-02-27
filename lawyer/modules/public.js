@@ -1,9 +1,6 @@
 $(function () {
 
-    //懒加载
-    $(".lazyload").picLazyLoad();
-
-    //苹果CSS无hover
+    //苹果手机 CSS无hover
     fnHover($(".myLinks"));
     function fnHover(myLinks) {
         for (var i = 0; i < myLinks.length; i++) {
