@@ -1,6 +1,4 @@
-/**
- * Created on 2015-02-15.
- */
+
 $(function () {
 
     slider();
