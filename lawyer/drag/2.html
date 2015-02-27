@@ -1,101 +1,140 @@
 <!DOCTYPE html>
 <html>
-    <head>
+<head>
     <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <meta http-equiv="expires" content="0"/>
     <title>无标题文档</title>
-    <style type="text/css">
-@charset "utf-8";
-/* CSS Document */
-body, h6, h5, h4, h3, h2, h1 {
-	margin: 0;
-	padding: 0;
-	font-family: "Arial, Helvetica, sans-serif";
-	line-height: 1.2;
-	font-size: 1em;
-}
-.clearfix{ clear:both; }
-.clearfix:after{ content:""; height:0; font:0/.1; overflow:hidden; }
-.con {
-	float: left;
-	position:relative;
-	border: 1px solid #009933;
-	width: 220px;
-	height: 300px;
-	margin:20px; 
-	background: #fff;
-}
-.mark {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 220px;
-	height: 300px;
-}
-</style>
+    <style>
+        body, h6, h5, h4, h3, h2, h1 {
+            margin: 0;
+            padding: 0;
+            font-family: "Arial, Helvetica, sans-serif";
+            line-height: 1.2;
+            font-size: 1em;
+        }
+
+        body {
+            display: block;
+            min-width: 320px;
+            max-width: 640px;
+            min-height: 100%;
+            margin: 0 auto;
+            line-height: 1;
+            -webkit-text-size-adjust: none;
+            font: 13px/1.231 "microsoft yahei";
+            color: #333;
+            background: #eee;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        .clearfix:after {
+            content: "";
+            height: 0;
+            font: 1px/.1;
+            overflow: hidden;
+        }
+
+        .con {
+            float: left;
+            position: relative;
+            border: 1px solid #009933;
+            width: 28%;
+            height: 200px;
+            margin: 10px 10px 0 0;
+            background: #fff;
+        }
+
+        .mark {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .con img {
+            width: 100%;
+        }
+    </style>
     <script src="scripts/zepto.min.js"></script>
     <script>
-		$(function(){
-	
-			drag();
-			
-		});
-			
-		function drag() {
-			
-			var moveX, moveY, startX, startY,i=0;
-			$(document).on("touchstart", ".mark", function (event) {
-				
-				i++;
-				var touchPros = event.touches[0];
-				startX = touchPros.pageX - event.target.parentNode.offsetLeft;
-				startY = touchPros.pageY - event.target.parentNode.offsetTop;
-				$(this).parent(".con").css({"position": "absolute"});
-				return false;
-				
-			}).on("touchmove", ".mark", function (event) {
-	
-				var touchPros = event.touches[0];
-				moveX = touchPros.pageX - startX;
-				moveY = touchPros.pageY - startY;
-				$(this).parent(".con").css({"left": moveX, "top": moveY, "z-index": i });
-				
-			}).on("touchend",".mark", function(event){
-				
-				$(this).parent(".con").removeAttr("style");
-			
-			});
-			
-		}
+        $(function () {
+
+            drag();
+
+        });
+
+        function drag() {
+
+            var moveX, moveY, startX, startY, i = 0;
+            $(document).on("touchstart", ".mark", function (event) {
+
+                i++;
+                var touchPros = event.touches[0];
+                startX = touchPros.pageX - event.target.parentNode.offsetLeft;
+                startY = touchPros.pageY - event.target.parentNode.offsetTop;
+                $(this).parent(".con").css({"position": "absolute"});
+                return false;
+
+            }).on("touchmove", ".mark", function (event) {
+
+                var touchPros = event.touches[0];
+                moveX = touchPros.pageX - startX;
+                moveY = touchPros.pageY - startY;
+                $(this).parent(".con").css({"left": moveX, "top": moveY, "z-index": i });
+
+            }).on("touchend", ".mark", function (event) {
+
+                $(this).parent(".con").removeAttr("style");
+
+            });
+
+        }
 
     </script>
-    </head>
+</head>
 
-    <body>
-    <div class="clearfix">
-      <div class="con">
+<body>
+<div class="clearfix">
+    <div class="con">
         <div class="mark"></div>
         <img src="http://img01.chatu.com/group1/M00/00/BF/CgoBAVRkgJmyXIrEAABGkQX5o-Q795.jpg"/>
+
         <h3 class="black"> 111111111年最受欢迎的</h3>
         <h4 class="gray"> 武夷星.乌龙茶1号</h4>
-        <i class="red">¥<span class="pl">31.00</span></i> 的大红袍 </div>
-      <div class="con">
+        <i class="red">¥<span class="pl">31.00</span></i> 的大红袍
+    </div>
+    <div class="con">
         <div class="mark"></div>
         <img src="http://img01.chatu.com/group1/M00/00/B8/CgoBAVRjEJuACxBKAAB8HMG0iO4280.jpg"/>
+
         <h3 class="black"> 2222222年最受欢迎的大红袍</h3>
         <h4 class="gray"> 乌红袍专属1号</h4>
-        <i class="red">¥<span class="pl">31.00</span></i> 年最受欢迎的大红袍 </div>
-      <div class="con">
+        <i class="red">¥<span class="pl">31.00</span></i> 年最受欢迎的大红袍
+    </div>
+    <div class="con">
         <div class="mark"></div>
         <img src="http://img01.chatop.com/group1/M00/00/64/CgoBAVRTYX7SeV2-AAB3CMva3cs180.jpg"/>
+
         <h3 class="black"> 333333333年最受欢迎的</h3>
         <h4 class="gray"> 武夷星.乌龙茶.大红袍专属1号</h4>
-        <i class="red">¥<span class="pl">31.00</span></i> 的大红袍 </div>
-      <div class="con">
+        <i class="red">¥<span class="pl">31.00</span></i> 的大红袍
+    </div>
+    <div class="con">
         <div class="mark"></div>
         <img src="http://img01.chatu.com/group1/M00/00/64/CgoBAVRTYXmhXCZ1AABXpuj8yqU784.jpg"/>
+
         <h3 class="black"> 44444444年最受欢迎的大红袍</h3>
         <h4 class="gray"> 武夷星1号</h4>
-        <i class="red">¥<span class="pl">31.00</span></i> 年最受欢迎的大红袍 </div>
+        <i class="red">¥<span class="pl">31.00</span></i> 年最受欢迎的大红袍
     </div>
+</div>
 </body>
 </html>

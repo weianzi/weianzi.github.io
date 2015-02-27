@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html xmlns:ng="http://angularjs.org">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="edge" />
-<title>无标题文档</title>
-<link rel="stylesheet" href="http://chatu.com/css/management/bootstrap.min.css">
-<link rel="stylesheet" href="http://chatu.com/css/management/base.css">
-<style type="text/css"></style>
-<script src="scripts/jquery-1.11.1.min.js"></script>
-<script src="scripts/jquery.dragsort-0.5.1.min.js"></script>
-<script>
-$(function(){
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <meta http-equiv="expires" content="0"/>
+    <title>无标题文档</title>
+    <link rel="stylesheet" href="http://chatu.com/css/management/bootstrap.min.css">
+    <link rel="stylesheet" href="http://chatu.com/css/management/base.css">
+    <style type="text/css"></style>
+    <script src="scripts/jquery-1.11.1.min.js"></script>
+    <script src="scripts/jquery.dragsort-0.5.1.min.js"></script>
+    <script>
+        $(function () {
 
-	$(".item-label").find("ul").dragsort({
-		dragSelector: "div",
-		dragBetween: true,
-		dragEnd: saveOrder,
-		placeHolderTemplate: "<li class='placeHolder'><div></div></li>"
-	});
+            $(".item-label").find("ul").dragsort({
+                dragSelector: "div",
+                dragBetween: true,
+                dragEnd: saveOrder,
+                placeHolderTemplate: "<li class='placeHolder'><div></div></li>"
+            });
 
-	function saveOrder() {
-		var data = $("#item-now li").map(function() {
-		return $(this).children().children("span").html();
-		}).get();
-		$("input[name=list1SortOrder]").val(data.join("|"));
-	}
-	
+            function saveOrder() {
+                var data = $("#item-now li").map(function () {
+                    return $(this).children().children("span").html();
+                }).get();
+                $("input[name=list1SortOrder]").val(data.join("|"));
+            }
 
-});
-</script>
+
+        });
+    </script>
 </head>
 
 <body>
@@ -37,76 +41,76 @@ $(function(){
 </label>
 
 <div class="item-label">
-  <div id="item-now">
-    <h3 class="gray">当前已选择的标签</h3>
-    <ul class="clearfix">
-      <li class="s04">
-        <div><i></i><span>冲泡</span></div>
-      </li>
-      <li class="s02">
-        <div><i></i><span>叶底</span></div>
-      </li>
-      <li class="s01">
-        <div><i></i><span>品鉴</span></div>
-      </li>
-      <li class="s06">
-        <div><i></i><span>场合</span></div>
-      </li>
-      <li class="s08">
-        <div><i></i><span>功效</span></div>
-      </li>
-      <li class="s12">
-        <div><i></i><span>品牌</span></div>
-      </li>
-      <li class="s10">
-        <div><i></i><span>时节</span></div>
-      </li>
-      <li class="s07">
-        <div><i></i><span>人群</span></div>
-      </li>
-    </ul>
-  </div>
-  <div id="item-ready">
-    <h3 class="gray">暂未选择的标签</h3>
-    <ul class="clearfix">
-      <li class="s05">
-        <div><i></i><span>包装</span></div>
-      </li>
-      <li class="s03">
-        <div><i></i><span>耐泡</span></div>
-      </li>
-      <li class="s09">
-        <div><i></i><span>历史</span></div>
-      </li>
-      <li class="s11">
-        <div><i></i><span>产地</span></div>
-      </li>
-      <li class="s13">
-        <div><i></i><span>储藏</span></div>
-      </li>
-      <li class="s14">
-        <div><i></i><span>等级</span></div>
-      </li>
-      <li class="s15">
-        <div><i></i><span>珍稀</span></div>
-      </li>
-      <li class="s16">
-        <div><i></i><span>工艺</span></div>
-      </li>
-      <li class="s17">
-        <div><i></i><span>推荐</span></div>
-      </li>
-      <li class="s18">
-        <div><i></i><span>茶气</span></div>
-      </li>
-      <li class="s00">
-        <div><i></i><span>广告图</span></div>
-      </li>
-      <li class="s01">
-        <div><i></i><span>综合参数</span></div>
-      </li>
-    </ul>
-  </div>
+    <div id="item-now">
+        <h3 class="gray">当前已选择的标签</h3>
+        <ul class="clearfix">
+            <li class="s04">
+                <div><i></i><span>冲泡</span></div>
+            </li>
+            <li class="s02">
+                <div><i></i><span>叶底</span></div>
+            </li>
+            <li class="s01">
+                <div><i></i><span>品鉴</span></div>
+            </li>
+            <li class="s06">
+                <div><i></i><span>场合</span></div>
+            </li>
+            <li class="s08">
+                <div><i></i><span>功效</span></div>
+            </li>
+            <li class="s12">
+                <div><i></i><span>品牌</span></div>
+            </li>
+            <li class="s10">
+                <div><i></i><span>时节</span></div>
+            </li>
+            <li class="s07">
+                <div><i></i><span>人群</span></div>
+            </li>
+        </ul>
+    </div>
+    <div id="item-ready">
+        <h3 class="gray">暂未选择的标签</h3>
+        <ul class="clearfix">
+            <li class="s05">
+                <div><i></i><span>包装</span></div>
+            </li>
+            <li class="s03">
+                <div><i></i><span>耐泡</span></div>
+            </li>
+            <li class="s09">
+                <div><i></i><span>历史</span></div>
+            </li>
+            <li class="s11">
+                <div><i></i><span>产地</span></div>
+            </li>
+            <li class="s13">
+                <div><i></i><span>储藏</span></div>
+            </li>
+            <li class="s14">
+                <div><i></i><span>等级</span></div>
+            </li>
+            <li class="s15">
+                <div><i></i><span>珍稀</span></div>
+            </li>
+            <li class="s16">
+                <div><i></i><span>工艺</span></div>
+            </li>
+            <li class="s17">
+                <div><i></i><span>推荐</span></div>
+            </li>
+            <li class="s18">
+                <div><i></i><span>茶气</span></div>
+            </li>
+            <li class="s00">
+                <div><i></i><span>广告图</span></div>
+            </li>
+            <li class="s01">
+                <div><i></i><span>综合参数</span></div>
+            </li>
+        </ul>
+    </div>
 </div>
 </body>
 </html>
