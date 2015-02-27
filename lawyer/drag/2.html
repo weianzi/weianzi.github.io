@@ -49,6 +49,7 @@
             height: 200px;
             margin: 10px 10px 0 0;
             background: #fff;
+            overflow: hidden;
         }
 
         .mark {
@@ -80,7 +81,7 @@
                 var touchPros = event.touches[0];
                 startX = touchPros.pageX - event.target.parentNode.offsetLeft;
                 startY = touchPros.pageY - event.target.parentNode.offsetTop;
-                $(this).parent(".con").css({"position": "absolute"});
+                //$(this).parent(".con").css({"position": "absolute"});
                 return false;
 
             }).on("touchmove", ".mark", function (event) {
@@ -88,11 +89,11 @@
                 var touchPros = event.touches[0];
                 moveX = touchPros.pageX - startX;
                 moveY = touchPros.pageY - startY;
-                $(this).parent(".con").css({"left": moveX, "top": moveY, "z-index": i });
+                $(this).parent(".con").css({"position": "absolute", "left": moveX, "top": moveY, "z-index": i });
 
-            }).on("touchend", ".mark", function (event) {
+            }).on("touchend", document, function (event) {
 
-                $(this).parent(".con").removeAttr("style");
+                $(".con").removeAttr("style");
 
             });
 
