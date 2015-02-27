@@ -38,10 +38,6 @@
             visibility: hidden
         }
 
-        .item-box {
-            height: 500px;
-        }
-
         .con {
             float: left;
             position: relative;
@@ -53,7 +49,7 @@
             overflow: hidden;
         }
 
-        .con .mark {
+        .mark {
             position: absolute;
             left: 0;
             top: 0;
@@ -65,21 +61,8 @@
             width: 90%;
         }
 
-        #shopCartBox {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 90%;
-            background: #fff;
-            padding: 10% 5%
-        }
-
-        #shopCart {
-            min-height: 120px;
-            width: 90%;
-            padding: 0 5% 8%;
-            background: #00a8bf;
-        }
+        #shopCartBox{ position: fixed; bottom: 0;left:0; width: 90%; background: #fff; padding: 5% }
+        #shopCart{min-height: 120px; width: 100%; background:#00a8bf; }
     </style>
     <script src="scripts/zepto.min.js"></script>
     <script>
@@ -99,9 +82,10 @@
                 var touchPros = event.touches[0];
                 startX = touchPros.pageX - event.target.parentNode.offsetLeft;
                 startY = touchPros.pageY - event.target.parentNode.offsetTop;
+                //$(this).parent(".con").css({"position": "absolute"});
                 return false;
 
-            }).on("touchmove", function (event) {
+            }).on("touchmove",function (event) {
 
                 var touchPros = event.touches[0];
                 moveX = touchPros.pageX - startX;
@@ -110,71 +94,44 @@
 
             }).on("touchend", function (event) {
 
-                var $this = $(this), $shopCart = $("#shopCart");
-
-                if (impact($this, $shopCart)) {
-
-                    $shopCart.append($this.parent(".con"));
-
-                } else{
-
-                    $(".item-box").append($this.parent(".con"));
-                }
-
-                $this.parent(".con").removeAttr("style");
+                $(".mark").off("touchstart", function(){});
+                $(".mark").off("touchmove", function(){});
+                $(this).parent(".con").removeAttr("style");
 
             });
 
         }
 
-        function impact(obj01, obj02) { //碰撞检测
-
-            var T1 = obj01.offset().top, B1 = obj01.offset().top + obj01.height(), L1 = obj01.offset().left, R1 = obj01.offset().left + obj01.width();
-            var T2 = obj02.offset().top, B2 = obj02.offset().top + obj02.height(), L2 = obj02.offset().left, R2 = obj02.offset().left + obj02.width();
-
-            if (B1 < T2 || T1 > B2 || R1 < L2 || L1 > R2) {
-                return false;
-            } else {
-                return true;
-            }
-        }
-
-
     </script>
 </head>
 
 <body>
-<div class="item-box clearfix">
+<div class="clearfix" style="height: 400px">
     <div class="con">
         <div class="mark"></div>
         <img src="http://img01.chatu.com/group1/M00/00/BF/CgoBAVRkgJmyXIrEAABGkQX5o-Q795.jpg"/>
-
         <h3 class="black"> 111111111</h3>
     </div>
     <div class="con">
         <div class="mark"></div>
         <img src="http://img01.chatu.com/group1/M00/00/B8/CgoBAVRjEJuACxBKAAB8HMG0iO4280.jpg"/>
-
         <h3 class="black"> 2222222年</h3>
     </div>
     <div class="con">
         <div class="mark"></div>
         <img src="http://img01.chatop.com/group1/M00/00/64/CgoBAVRTYX7SeV2-AAB3CMva3cs180.jpg"/>
-
         <h3 class="black"> 333333333的</h3>
     </div>
     <div class="con">
         <div class="mark"></div>
         <img src="http://img01.chatu.com/group1/M00/00/64/CgoBAVRTYXmhXCZ1AABXpuj8yqU784.jpg"/>
-
         <h3 class="black"> 444444大红袍</h3>
     </div>
 </div>
 
 
 <div id="shopCartBox">
-    <div id="shopCart" class="clearfix"></div>
+    <div id="shopCart"></div>
 </div>
-
 </body>
 </html>
