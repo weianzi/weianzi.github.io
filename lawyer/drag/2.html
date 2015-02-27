@@ -75,7 +75,7 @@
         function drag() {
 
             var moveX, moveY, startX, startY, i = 0;
-            $(document).on("touchstart", ".mark", function (event) {
+            $(".mark").on("touchstart", function (event) {
 
                 i++;
                 var touchPros = event.touches[0];
@@ -84,14 +84,16 @@
                 //$(this).parent(".con").css({"position": "absolute"});
                 return false;
 
-            }).on("touchmove", ".mark", function (event) {
+            }).on("touchmove",function (event) {
 
                 var touchPros = event.touches[0];
                 moveX = touchPros.pageX - startX;
                 moveY = touchPros.pageY - startY;
                 $(this).parent(".con").css({"position": "absolute", "left": moveX, "top": moveY, "z-index": i });
 
-            }).on("touchend", document, function (event) {
+            });
+
+            $(document).on("touchend", function (event) {
 
                 $(".con").removeAttr("style");
 
