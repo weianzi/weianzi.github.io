@@ -30,15 +30,12 @@
             background: #eee;
         }
 
-        .clearfix {
-            clear: both;
-        }
-
         .clearfix:after {
-            content: "";
+            content: ".";
+            display: block;
+            clear: both;
             height: 0;
-            font: 1px/.1;
-            overflow: hidden;
+            visibility: hidden
         }
 
         .con {
@@ -46,7 +43,7 @@
             position: relative;
             border: 1px solid #009933;
             width: 28%;
-            height: 200px;
+            height: 120px;
             margin: 10px 10px 0 0;
             background: #fff;
             overflow: hidden;
@@ -61,8 +58,11 @@
         }
 
         .con img {
-            width: 100%;
+            width: 90%;
         }
+
+        #shopCartBox{ position: fixed; bottom: 0;left:0; width: 90%; background: #fff; padding: 5% }
+        #shopCart{min-height: 120px; width: 100%; background:#00a8bf; }
     </style>
     <script src="scripts/zepto.min.js"></script>
     <script>
@@ -75,6 +75,7 @@
         function drag() {
 
             var moveX, moveY, startX, startY, i = 0;
+
             $(".mark").on("touchstart", function (event) {
 
                 i++;
@@ -91,11 +92,10 @@
                 moveY = touchPros.pageY - startY;
                 $(this).parent(".con").css({"position": "absolute", "left": moveX, "top": moveY, "z-index": i });
 
-            });
+            }).on("touchend", function (event) {
 
-            $(document).on("touchend", function (event) {
-
-                $(".con").removeAttr("style");
+                $(this).parent(".con")
+                $(this).parent(".con").removeAttr("style");
 
             });
 
@@ -105,39 +105,32 @@
 </head>
 
 <body>
-<div class="clearfix">
+<div class="clearfix" style="height: 400px">
     <div class="con">
         <div class="mark"></div>
         <img src="http://img01.chatu.com/group1/M00/00/BF/CgoBAVRkgJmyXIrEAABGkQX5o-Q795.jpg"/>
-
         <h3 class="black"> 111111111年最受欢迎的</h3>
-        <h4 class="gray"> 武夷星.乌龙茶1号</h4>
-        <i class="red">¥<span class="pl">31.00</span></i> 的大红袍
     </div>
     <div class="con">
         <div class="mark"></div>
         <img src="http://img01.chatu.com/group1/M00/00/B8/CgoBAVRjEJuACxBKAAB8HMG0iO4280.jpg"/>
-
         <h3 class="black"> 2222222年最受欢迎的大红袍</h3>
-        <h4 class="gray"> 乌红袍专属1号</h4>
-        <i class="red">¥<span class="pl">31.00</span></i> 年最受欢迎的大红袍
     </div>
     <div class="con">
         <div class="mark"></div>
         <img src="http://img01.chatop.com/group1/M00/00/64/CgoBAVRTYX7SeV2-AAB3CMva3cs180.jpg"/>
-
         <h3 class="black"> 333333333年最受欢迎的</h3>
-        <h4 class="gray"> 武夷星.乌龙茶.大红袍专属1号</h4>
-        <i class="red">¥<span class="pl">31.00</span></i> 的大红袍
     </div>
     <div class="con">
         <div class="mark"></div>
         <img src="http://img01.chatu.com/group1/M00/00/64/CgoBAVRTYXmhXCZ1AABXpuj8yqU784.jpg"/>
-
         <h3 class="black"> 44444444年最受欢迎的大红袍</h3>
-        <h4 class="gray"> 武夷星1号</h4>
-        <i class="red">¥<span class="pl">31.00</span></i> 年最受欢迎的大红袍
     </div>
+</div>
+
+
+<div id="shopCartBox">
+    <div id="shopCart"></div>
 </div>
 </body>
 </html>
