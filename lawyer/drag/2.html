@@ -94,7 +94,8 @@
 
             }).on("touchend", function (event) {
 
-                $(this).parent(".con")
+                $(".mark").off("touchstart", function(){});
+                $(".mark").off("touchmove", function(){});
                 $(this).parent(".con").removeAttr("style");
 
             });
