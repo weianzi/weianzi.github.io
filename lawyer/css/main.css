@@ -255,15 +255,15 @@ body {
 .toolbar a:nth-child(3) i span {
 	position: absolute;
 	left: 100%;
-	margin-left: -10px;
 	top: -2px;
-	line-height: 1.334;
-	padding: 1px 5px;
+	margin-left: -10px;
+	width:14px;
+	height:14px;
+	line-height: .9;
 	font-size: .9em;
-	display: inline-block;
 	color: #fff;
 	background: #e51a1b;
-	border-radius: 20px;
+	border-radius: 50%;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -507,6 +507,7 @@ body {
 }
 .set-list li a {
 	display: block;
+	font-size:1.1em;
 }
 .set-list li img {
 	vertical-align: middle;
