@@ -26,6 +26,7 @@ $(function () {
         });
     });
 
+	//问答 切换
     $(".msn-list .tab > div").each(function (index) {
         $(this).click(function () {
             $(this).addClass("selected").siblings().removeClass("selected");

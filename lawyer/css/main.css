@@ -497,31 +497,35 @@ body {
 	margin-bottom: 4px;
 	font-size: 1.2em;
 }
-
 .lawyer-info .form li {
 	border-bottom: 1px solid #ddd;
-	padding: 6px 0 2px;
+	padding: 6px 2% 2px 0;
 }
-.lawyer-info .form li .fl:nth-child(1) {
-	padding-right: 20px;
+.lawyer-info .form li .fl {
+	width: 20%;
 	color: #a2a2a2
+}
+.lawyer-info .form li .fr {
+	width: 76%;
 }
 .lawyer-info .form li input, .lawyer-info .form li textarea {
 	width: 100%;
-	height: 48px;
-	line-height: 24px;
+	height: 40px;
+	line-height: 20px;
 	color: #a2a2a2;
 	font-size: 1em;
 	border: 0;
 	background: none;
 }
-.lawyer-info .form li input{ height:24px;}
-
-.lawyer-info .form .btn{
+.lawyer-info .form li input {
+	height: 24px;
+	line-height: 24px;
+}
+.lawyer-info .form .btn {
 	display: block;
 	width: 60%;
-	margin:20px auto;}
-
+	margin: 20px auto;
+}
 /*个人设置*/
 .set-list {
 	padding-bottom: 10px;
@@ -665,8 +669,6 @@ body {
 	background-size: 65px 160px;
 }
 /*comment评论*/
-.comment {
-}
 .comment .head .text-btn {
 	position: absolute;
 	right: 16px;
@@ -1042,16 +1044,35 @@ body {
 .lawyer-info .tab-con {
 	padding: 20px;
 }
-.lawyer-info .tab-con h3 {
+.lawyer-info .tab-con:nth-child(2) h3 {
 	font-weight: 700;
 }
-.lawyer-info .tab-con p {
+.lawyer-info .tab-con:nth-child(2) p {
 	margin: 10px auto;
 }
+.lawyer-info .tab-con .comment .item {
+	width: 100%;
+}
+
+.lawyer-info .tab-con .comment .item dt.pic,
+.lawyer-info .tab-con .comment .item dt.pic img{
+	width:60px; height:60px; margin:0 auto;}
+
+.lawyer-info .tab-con .comment dd {
+	min-height:78px;
+	border-bottom: 1px solid #f2f2f2;
+}
+
+.lawyer-info .tab-con .comment dd span{ position:absolute;
+right:4px; top: 8px; color:#ddd;}
+
 /*回复列表*/
 .msn-list {
 	height: 100%;
 	background: #00b2cb;
+}
+.msn-list .comment .item {
+	width: 100%;
 }
 .msn-list .tab {
 	width: 15%;
