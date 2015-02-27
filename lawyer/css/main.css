@@ -257,8 +257,8 @@ body {
 	left: 100%;
 	top: -2px;
 	margin-left: -10px;
-	width:14px;
-	height:14px;
+	width: 14px;
+	height: 14px;
 	line-height: .9;
 	font-size: .9em;
 	color: #fff;
@@ -325,9 +325,21 @@ body {
 	color: #333;
 }
 /*风控中心*/
-.family-box #container {
+.wind-control {
+	background: #fff;
+}
+.wind-control #container {
 	max-width: 640px;
 	height: 250px;
+	padding-top: 10px;
+	background: #eee;
+}
+.wind-control .list {
+	padding: 0 4%;
+}
+.wind-control .list li {
+	border-bottom: 1px solid #ddd;
+	padding: 10px 0 4px;
 }
 /*我*/
 .i-info .head {
@@ -340,7 +352,7 @@ body {
 	right: 20px;
 	width: 15px;
 	height: 13px;
-	background: url(../images/icon.png) -50px 0 no-repeat;
+	background: url(../images/icon.png) -25px 0 no-repeat;
 	background-size: 65px 160px;
 }
 .i-info .pic {
@@ -462,14 +474,14 @@ body {
 }
 .lawyer-info section header h2 {
 	padding: 0;
+	font-size: 1.2em;
 }
 .lawyer-info section header h2 span {
 	margin-right: 4px;
-	font-size: 1.2em;
 }
 .lawyer-info section header .fr {
 	padding-top: 4px;
-	font-size: .8em;
+	font-size: 1em;
 }
 .lawyer-info section header .fr i {
 	display: inline-block;
@@ -480,13 +492,36 @@ body {
 }
 .lawyer-info section .con {
 	padding: 10px;
-	font-size: 1.2em;
 }
 .lawyer-info section .con p {
-	text-indent: 2em;
 	margin-bottom: 4px;
 	font-size: 1.2em;
 }
+
+.lawyer-info .form li {
+	border-bottom: 1px solid #ddd;
+	padding: 6px 0 2px;
+}
+.lawyer-info .form li .fl:nth-child(1) {
+	padding-right: 20px;
+	color: #a2a2a2
+}
+.lawyer-info .form li input, .lawyer-info .form li textarea {
+	width: 100%;
+	height: 48px;
+	line-height: 24px;
+	color: #a2a2a2;
+	font-size: 1em;
+	border: 0;
+	background: none;
+}
+.lawyer-info .form li input{ height:24px;}
+
+.lawyer-info .form .btn{
+	display: block;
+	width: 60%;
+	margin:20px auto;}
+
 /*个人设置*/
 .set-list {
 	padding-bottom: 10px;
@@ -507,7 +542,7 @@ body {
 }
 .set-list li a {
 	display: block;
-	font-size:1.1em;
+	font-size: 1.1em;
 }
 .set-list li img {
 	vertical-align: middle;
@@ -1064,7 +1099,7 @@ body {
 }
 .news-show > h2 {
 	margin: 10px auto;
-	font-size: 1.3em;
+	font-size: 1.4em;
 	font-weight: 700;
 	text-align: center;
 }
@@ -1080,7 +1115,7 @@ body {
 .news-show > p {
 	margin-bottom: 10px;
 	line-height: 1.5;
-	font-size: 1.1em
+	font-size: 1.2em
 }
 .news-show > p strong {
 	font-weight: 700;

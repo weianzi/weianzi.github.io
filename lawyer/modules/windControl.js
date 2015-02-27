@@ -8,7 +8,7 @@
             backgroundColor:'#eeeeee',
 			type: 'pie'
 		},
-		title: {
+        title: {
             style:{
                 color:'#00b2cb',
                 fontFamily:'microsoft yahei'

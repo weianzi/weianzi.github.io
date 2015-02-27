@@ -1,71 +1,86 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>无标题文档</title>
-<style type="text/css">
-@charset "utf-8";
-/* CSS Document */
-body, h6, h5, h4, h3, h2, h1 {
-	margin: 0;
-	padding: 0;
-	font-family: "Arial, Helvetica, sans-serif";
-	line-height: 23px;
-	font-size: 12px;
-}
-.con {
-	border: 1px solid #009933;
-	width: 220px;
-	height: 300px;
-	position: absolute;
-	left: 30px;
-	top: 40px;
-	background:#fff;
-}
-.mark {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 220px;
-	height: 300px;
-}
-</style>
-<script src="lawyer/libs/zepto.min.js"></script>
-<script>
+    <meta charset="utf-8"/>
+    <title>无标题文档</title>
+    <style type="text/css">
+        @charset "utf-8";
+        /* CSS Document */
+        body, h6, h5, h4, h3, h2, h1 {
+            margin: 0;
+            padding: 0;
+            font-family: "Arial, Helvetica, sans-serif";
+            line-height: 1.2;
+            font-size: 1em;
+        }
 
-Drag();
-function Drag(){
-  var moveX,moveY,startX,startY;
-  $(document).on("touchstart",".mark",function(event){
-      var touchPros = event.touches[0];
-      startX = touchPros.pageX - event.target.parentNode.offsetLeft;
-      startY = touchPros.pageY - event.target.parentNode.offsetTop;
-    return false;
-  }).on("touchmove",".mark",function(event){
-      var touchPros = event.touches[0];
-      moveX = touchPros.pageX - startX;
-      moveY = touchPros.pageY - startY;
-      $(this).parent('.con').css('left',moveX).css('top',moveY);
-  });
-}
+        .con {
+            border: 1px solid #009933;
+            width: 220px;
+            height: 300px;
+            position: absolute;
+            left: 30px;
+            top: 40px;
+            background: #fff;
+        }
 
-</script>
+        .mark {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 220px;
+            height: 300px;
+        }
+    </style>
+    <script src="lawyer/libs/zepto.min.js"></script>
+    <script>
+		$(function(){
+	
+			drag();
+			
+		});
+			
+		function drag() {
+			
+			var moveX, moveY, startX, startY,i=0;
+			$(document).on("touchstart", ".mark", function (event) {
+				
+				i++;
+				var touchPros = event.touches[0];
+				startX = touchPros.pageX - event.target.parentNode.offsetLeft;
+				startY = touchPros.pageY - event.target.parentNode.offsetTop;
+				return false;
+				
+			}).on("touchmove", ".mark", function (event) {
+	
+				var touchPros = event.touches[0];
+				moveX = touchPros.pageX - startX;
+				moveY = touchPros.pageY - startY;
+				$(this).parent(".con").css({"left": moveX, "top": moveY, "z-index": i });
+				
+			});
+			
+		}
+
+    </script>
 </head>
 
 <body>
 <div class="con">
-  <div class="mark"></div>
-  <img src="http://img01.chatop.com/group1/M00/00/64/CgoBAVRTYX7SeV2-AAB3CMva3cs180.jpg" />
-  <h3 class="black"> 2014年最受欢迎的大红袍</h3>
-  <h4 class="gray"> 武夷星.乌龙茶.大红袍专属1号</h4>
-  <i class="red">¥<span class="pl">31.00</span></i> 2014年最受欢迎的大红袍 </div>
-  
-  
+    <div class="mark"></div>
+    <img src="http://img01.chatop.com/group1/M00/00/64/CgoBAVRTYX7SeV2-AAB3CMva3cs180.jpg"/>
+    <h3 class="black"> 2014年最受欢迎的</h3>
+    <h4 class="gray"> 武夷星.乌龙茶.大红袍专属1号</h4>
+    <i class="red">¥<span class="pl">31.00</span></i> 的大红袍
+</div>
+
+
 <div class="con" style="left:100px;top:400px;">
-  <div class="mark"></div>
-  <img src="http://img01.chatop.com/group1/M00/00/64/CgoBAVRTYX7SeV2-AAB3CMva3cs180.jpg" />
-  <h3 class="black"> 2014年最受欢迎的大红袍</h3>
-  <h4 class="gray"> 武夷星.乌龙茶.大红袍专属1号</h4>
-  <i class="red">¥<span class="pl">31.00</span></i> 2014年最受欢迎的大红袍 </div>
+    <div class="mark"></div>
+    <img src="http://img01.chatop.com/group1/M00/00/64/CgoBAVRTYX7SeV2-AAB3CMva3cs180.jpg"/>
+    <h3 class="black"> 2014年最受欢迎的大红袍</h3>
+    <h4 class="gray"> 武夷星.乌红袍专属1号</h4>
+    <i class="red">¥<span class="pl">31.00</span></i> 年最受欢迎的大红袍
+</div>
 </body>
 </html>
