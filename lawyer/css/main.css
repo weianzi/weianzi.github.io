@@ -601,6 +601,7 @@ body {
 /*公共切换*/
 .form-list {
     padding: 10px;
+     background: #fff;
 }
 
 .form-list li {
@@ -610,6 +611,7 @@ body {
 
 .form-list li .fl {
     width: 25%;
+    line-height: 1.7;
     text-align: right;
     color: #a2a2a2
 }
@@ -619,7 +621,7 @@ body {
 }
 
 .form-list li input,.form-list li select, .form-list li textarea {
-    width: 100%;
+    width: 80%;
     height: 40px;
     line-height: 20px;
     color: #a2a2a2;
@@ -665,11 +667,7 @@ body {
     background: #00b2cb;
 }
 
-/*上门服务*/
-.room-server {
-    padding-bottom: 40px;
-    background: #fff;
-}
+.h2-title{ margin: 20px 10px 10px; }
 
 /*个人设置*/
 .set-list {
