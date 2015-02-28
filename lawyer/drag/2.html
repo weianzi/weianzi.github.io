@@ -92,39 +92,41 @@
 
             var moveX, moveY, startX, startY, i = 0;
 
-            $(".item-box .mark").bind("touchstart", function (event) {
+            $(".item-box .con .mark").each(function () {
 
-                i++;
-                var touchPros = event.touches[0];
-                startX = touchPros.pageX - event.target.parentNode.offsetLeft;
-                startY = touchPros.pageY - event.target.parentNode.offsetTop;
-                return false;
+                $(this).bind("touchstart", function (event) {
 
-            }).bind("touchmove", function (event) {
+                    i++;
+                    var touchPros = event.touches[0];
+                    startX = touchPros.pageX - event.target.parentNode.offsetLeft;
+                    startY = touchPros.pageY - event.target.parentNode.offsetTop;
+                    return false;
 
-                var touchPros = event.touches[0];
-                moveX = touchPros.pageX - startX;
-                moveY = touchPros.pageY - startY;
-                $(this).parent(".con").css({"position": "absolute", "left": moveX, "top": moveY, "z-index": i });
+                }).bind("touchmove", function (event) {
 
-            }).bind("touchend", function (event) {
-				
-                var $this = $(this), $shopCart = $("#shopCart");
+                    var touchPros = event.touches[0];
+                    moveX = touchPros.pageX - startX;
+                    moveY = touchPros.pageY - startY;
+                    $(this).parent(".item-box .con").css({"position": "absolute", "left": moveX, "top": moveY, "z-index": i });
 
-				
-                if (impact($this, $shopCart)) {
-                    $shopCart.append($this.parent(".con"));
-                } else{
-                    $(".item-box").append($this.parent(".con"));
-                }
+                }).bind("touchend", function (event) {
 
-                $this.parent(".con").removeAttr("style");
-				
-				$this.unbind("touchstart");
-				$this.unbind("touchmove");
+                    var $this = $(this), $shopCart = $("#shopCart");
 
+
+                    if (impact($this, $shopCart)) {
+                        $shopCart.append($this.parent(".con"));
+                    } else {
+                        $(".item-box").append($this.parent(".con"));
+                    }
+
+                    $this.parent(".con").removeAttr("style");
+
+                    $this.unbind("touchstart");
+                    $this.unbind("touchmove");
+
+                });
             });
-
         }
 
         function impact(obj01, obj02) { //碰撞检测
