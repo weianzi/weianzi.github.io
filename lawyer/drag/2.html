@@ -121,8 +121,17 @@
 
                     $this.parent(".con").removeAttr("style");
 
-                    //$this.unbind("touchstart");
-                    //$this.unbind("touchmove");
+                }).bind("touchcancel", function (event) {
+
+                    var $this = $(this), $shopCart = $("#shopCart");
+
+                    if (impact($this, $shopCart)) {
+                        $shopCart.append($this.parent(".con"));
+                    } else {
+                        $(".item-box").append($this.parent(".con"));
+                    }
+
+                    $this.parent(".con").removeAttr("style");
 
                 });
             });
