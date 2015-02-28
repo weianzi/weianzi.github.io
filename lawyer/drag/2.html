@@ -92,27 +92,26 @@
 
             var moveX, moveY, startX, startY, i = 0;
 
-            $(".item-box .con .mark").each(function () {
+            $(".con .mark").each(function () {
 
                 $(this).bind("touchstart", function (event) {
 
                     i++;
-                    var touchPros = event.touches[0];
+                    var touchPros = event.changedTouches[0];
                     startX = touchPros.pageX - event.target.parentNode.offsetLeft;
                     startY = touchPros.pageY - event.target.parentNode.offsetTop;
                     return false;
 
                 }).bind("touchmove", function (event) {
 
-                    var touchPros = event.touches[0];
+                    var touchPros = event.changedTouches[0];
                     moveX = touchPros.pageX - startX;
                     moveY = touchPros.pageY - startY;
-                    $(this).parent(".item-box .con").css({"position": "absolute", "left": moveX, "top": moveY, "z-index": i });
+                    $(this).parent(".con").css({"position": "absolute", "left": moveX, "top": moveY, "z-index": i });
 
                 }).bind("touchend", function (event) {
 
                     var $this = $(this), $shopCart = $("#shopCart");
-
 
                     if (impact($this, $shopCart)) {
                         $shopCart.append($this.parent(".con"));
@@ -122,8 +121,8 @@
 
                     $this.parent(".con").removeAttr("style");
 
-                    $this.unbind("touchstart");
-                    $this.unbind("touchmove");
+                    //$this.unbind("touchstart");
+                    //$this.unbind("touchmove");
 
                 });
             });

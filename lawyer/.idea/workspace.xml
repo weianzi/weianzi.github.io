@@ -23,21 +23,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="2.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="2.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/drag/2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1980" max-vertical-offset="4324">
-              <caret line="106" column="12" selection-start-line="106" selection-start-column="12" selection-end-line="106" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.6101695" vertical-offset="2325" max-vertical-offset="4301">
+              <caret line="123" column="30" selection-start-line="123" selection-start-column="30" selection-end-line="123" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="4.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="4.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/drag/4.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41666666" vertical-offset="2392" max-vertical-offset="4508">
-              <caret line="119" column="70" selection-start-line="119" selection-start-column="58" selection-end-line="119" selection-end-column="70" />
+            <state vertical-scroll-proportion="-10.733334" vertical-offset="2415" max-vertical-offset="4439">
+              <caret line="119" column="46" selection-start-line="119" selection-start-column="32" selection-end-line="119" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -87,8 +87,8 @@
         <option value="$PROJECT_DIR$/drag/scripts/jquery.dragsort-0.5.1.min.js" />
         <option value="$PROJECT_DIR$/drag/1.html" />
         <option value="$PROJECT_DIR$/drag/3.html" />
-        <option value="$PROJECT_DIR$/drag/2.html" />
         <option value="$PROJECT_DIR$/drag/4.html" />
+        <option value="$PROJECT_DIR$/drag/2.html" />
       </list>
     </option>
   </component>
@@ -679,18 +679,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/drag/2.html">
+    <entry file="file://$PROJECT_DIR$/drag/4.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1980" max-vertical-offset="4324">
-          <caret line="106" column="12" selection-start-line="106" selection-start-column="12" selection-end-line="106" selection-end-column="12" />
+        <state vertical-scroll-proportion="-10.733334" vertical-offset="2415" max-vertical-offset="4439">
+          <caret line="119" column="46" selection-start-line="119" selection-start-column="32" selection-end-line="119" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/drag/4.html">
+    <entry file="file://$PROJECT_DIR$/drag/2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41666666" vertical-offset="2392" max-vertical-offset="4508">
-          <caret line="119" column="70" selection-start-line="119" selection-start-column="58" selection-end-line="119" selection-end-column="70" />
+        <state vertical-scroll-proportion="0.6101695" vertical-offset="2325" max-vertical-offset="4301">
+          <caret line="123" column="30" selection-start-line="123" selection-start-column="30" selection-end-line="123" selection-end-column="30" />
           <folding />
         </state>
       </provider>
