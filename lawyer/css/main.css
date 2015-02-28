@@ -85,6 +85,10 @@ input, select {
     color: #333 !important;
 }
 
+.grey {
+    color: #a2a2a2 !important;
+}
+
 .red {
     color: #f00 !important;
 }
@@ -598,10 +602,11 @@ body {
     margin-bottom: 4px;
     font-size: 1.2em;
 }
+
 /*公共切换*/
 .form-list {
     padding: 10px;
-     background: #fff;
+    background: #fff;
 }
 
 .form-list li {
@@ -620,7 +625,7 @@ body {
     width: 70%;
 }
 
-.form-list li input,.form-list li select, .form-list li textarea {
+.form-list li input, .form-list li select, .form-list li textarea {
     width: 80%;
     height: 40px;
     line-height: 20px;
@@ -630,7 +635,7 @@ body {
     background: none;
 }
 
-.form-list li input ,.form-list li select{
+.form-list li input, .form-list li select {
     height: 24px;
     line-height: 24px;
 }
@@ -667,7 +672,12 @@ body {
     background: #00b2cb;
 }
 
-.h2-title{ margin: 20px 10px 10px; }
+.h2-title {
+    margin: 20px 10px 10px;
+    line-height: 20px;
+    color: #00bbd4;
+    font-size: 1.2em;
+}
 
 /*个人设置*/
 .set-list {
@@ -1418,4 +1428,38 @@ body {
 
 .news-show > p strong {
     font-weight: 700;
+}
+
+/*快速咨询*/
+.quick-consulting {
+}
+
+.quick-consulting .item {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.quick-consulting .item:hover {
+    background: #f7f7f7;
+}
+
+.quick-consulting .item > .fl {
+    width: 80%;
+}
+
+.quick-consulting .item > .fl p {
+    margin-bottom: 4px;
+}
+
+.quick-consulting .item > .fl > span {
+    font-size: .8em
+}
+
+.quick-consulting .item > .fl > div {
+    font-size: .8em
+}
+
+.quick-consulting .item > .fr {
+    width: 20%;
+    text-align: right;
 }
