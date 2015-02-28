@@ -1,4 +1,4 @@
-
+$(function(){
 $("#container").highcharts({
     colors: ["#f6ef29", "#aaeeee", "#e6944c", "#c7e64c", "#00b2cb", "#e64c65"],
     chart: {
@@ -37,3 +37,4 @@ $("#container").highcharts({
     ]
 });
 
+});
