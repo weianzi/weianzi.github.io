@@ -119,10 +119,10 @@
 
             for (var i = 0; i < aCon.length; i++) aCon[i].ontouchstart = function (ev) {
                 //var This =this;
-                alert(1);
+                //alert(1);
                 var touchs = ev.changedTouches[0];
-                startX = this.offsetLeft + "px";
-                startY = this.offsetTop + "px";
+                startX = touchs.pageX - this.offsetLeft + "px";
+                startY = touchs.pageY - this.offsetTop + "px";
 
 
                 this.ontouchmove = function (ev) {
@@ -156,7 +156,7 @@
 </head>
 
 <body>
-<div id="box"></div>
+<!--<div id="box"></div>-->
 <div class="item-box clearfix">
     <div class="con">
 
