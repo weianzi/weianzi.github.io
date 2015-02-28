@@ -109,21 +109,9 @@
                     moveY = touchPros.pageY - startY;
                     $(this).parent(".con").css({"position": "absolute", "left": moveX, "top": moveY, "z-index": i });
 
-                }).bind("touchend", function (event) {
+                }).bind("touchend touchcancel", function (event) {
 
-                    var $this = $(this), $shopCart = $("#shopCart");
-
-                    if (impact($this, $shopCart)) {
-                        $shopCart.append($this.parent(".con"));
-                    } else {
-                        $(".item-box").append($this.parent(".con"));
-                    }
-
-                    $this.parent(".con").removeAttr("style");
-
-                }).bind("touchcancel", function (event) {
-
-                    var $this = $(this), $shopCart = $("#shopCart");
+                    var $this = $(this), $shopCart = $("#shopCartBox");
 
                     if (impact($this, $shopCart)) {
                         $shopCart.append($this.parent(".con"));
