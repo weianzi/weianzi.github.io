@@ -316,13 +316,12 @@ body {
     left: 100%;
     top: -2px;
     margin-left: -10px;
-    width: 14px;
-    height: 14px;
-    line-height: .9;
-    font-size: .9em;
+    line-height: 1.4;
+    padding: 1px 5px;
+    font-size: 10px;
     color: #fff;
     background: #e51a1b;
-    border-radius: 50%;
+    border-radius: 20px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
