@@ -7,7 +7,7 @@
     <meta http-equiv="pragma" content="no-cache"/>
     <meta http-equiv="cache-control" content="no-cache"/>
     <meta http-equiv="expires" content="0"/>
-    <title>无标题文档</title>
+    <title>拖放</title>
     <style>
         body, h6, h5, h4, h3, h2, h1 {
             margin: 0;
@@ -43,6 +43,17 @@
         }
 
         .con {
+            float: left;
+            position: relative;
+            border: 1px solid #009933;
+            width: 28%;
+            height: 120px;
+            margin: 10px 10px 0 0;
+            background: #fff;
+            overflow: hidden;
+        }
+
+        .con1 {
             float: left;
             position: relative;
             border: 1px solid #009933;
@@ -111,17 +122,22 @@
 
                 }).bind("touchend touchcancel", function (event) {
 					
-					alert(111);
+					
 
                     var $this = $(this), $shopCart = $("#shopCart");
 
                     if (impact($this, $shopCart)) {
-                        $shopCart.append($this.parent(".con"));
+						alert(111);
+                        //$shopCart.append($this.parent(".con"));
+						$shopCart.append("<p>111111</p>");
                     } else {
-                        $(".item-box").append($this.parent(".con"));
+						alert(222);
+                        //$(".item-box").append($this.parent(".con"));
+						(".item-box").append("<p>2222</p>");
+						
                     }
 
-                    $this.parent(".con").removeAttr("style");
+                    $this.parent(".con").removeAttr("style").addClass(".con");
 
                 });
             });
