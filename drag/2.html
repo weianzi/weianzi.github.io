@@ -110,6 +110,8 @@
                     $(this).parent(".con").css({"position": "absolute", "left": moveX, "top": moveY, "z-index": i });
 
                 }).bind("touchend touchcancel", function (event) {
+					
+					alert(111);
 
                     var $this = $(this), $shopCart = $("#shopCart");
 

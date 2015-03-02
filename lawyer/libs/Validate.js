@@ -30,7 +30,8 @@ var validateRegExp = {
     rar:"(.*)\\.(rar|zip|7zip|tgz)$", //压缩文件
     tel:"^[0-9\-()（）]{7,18}$", //电话号码的函数(包括验证国内区号,国际区号,分机号)
     url:"^http[s]?:\\/\\/([\\w-]+\\.)+[\\w-]+([\\w-./?%&=]*)?$", //url
-    username:"^[A-Za-z0-9_\\-\\u4e00-\\u9fa5]+$", //用户名
+    //username:"^[A-Za-z0-9_\\-\\u4e00-\\u9fa5]+$", //用户名
+    username:"(^\\w+((-\\w+)|(\\.\\w+))*\\@[A-Za-z0-9]+((\\.|-)[A-Za-z0-9]+)*\\.[A-Za-z0-9]+$)|(^0?(13|15|17|18|14)[0-9]{9}$)",
     deptname:"^[A-Za-z0-9_()（）\\-\\u4e00-\\u9fa5]+$", //单位名
     zipcode:"^\\d{6}$", //邮编
     realname:"^[A-Za-z\\u4e00-\\u9fa5]+$", // 真实姓名
@@ -272,14 +273,12 @@ var validateRules = {
 //验证文本
 var validatePrompt = {
     username:{
-        onFocus:"4-20位字符",
+        onFocus:"请输入邮箱或手机号码",
         succeed:"",
-        isNull:"请输入用户名",
+        isNull:"请输入邮箱或手机号码",
         error:{
-            beUsed:"该用户名已被使用，如果您是&quot;{1}&quot;，请<a href='#'>登录</a>",
-            badLength:"用户名长度只能在4-20位字符之间",
-            badFormat:"4-20位字符",
-            fullNumberName:"用户名不能全为数字"
+            beUsed:"该用户名已被使用，如果您是&quot;{1}&quot;，请<a href='login.html'>登录</a>",
+            badFormat: "请确认输入的是邮箱或手机号码"
         }
     },
     pwd:{
@@ -348,42 +347,9 @@ var namestate = false, emailstate = false, authcodestate = false;
 //回调函数
 var validateFunction = {
     username:function (option) {
-
         var format = validateRules.isUid(option.value);
-        var length = validateRules.betweenLength(option.value.replace(/[^\x00-\xff]/g, "**"), 4, 20);
-        if (!length && format) {
-            validateSettings.error.run(option, option.prompts.error.badLength);
-        }
-        else if (!length && !format) {
+        if (!format) {
             validateSettings.error.run(option, option.prompts.error.badFormat);
-        }
-        else if (length && !format) {
-            validateSettings.error.run(option, option.prompts.error.badFormat);
-        } else if (validateRules.fullNumberName(option.value)) {
-            validateSettings.error.run(option, option.prompts.error.fullNumberName);
-        } else {
-            if (!namestate || nameold != option.value) {
-                if (nameold != option.value) {
-                    nameold = option.value;
-                    option.errorEle.html("<span>检验中……</span>");
-//                    $.getJSON("###" + escape(option.value) + "&r=" + Math.random(), function (date) {
-//                        if (date.success == 0) {
-//                            validateSettings.succeed.run(option);
-//                            namestate = true;
-//                        } else {
-//                            validateSettings.error.run(option, option.prompts.error.beUsed.replace("{1}", option.value));
-//                            namestate = false;
-//                        }
-//                    })
-                }
-                else {
-                    validateSettings.error.run(option, option.prompts.error.beUsed.replace("{1}", option.value));
-                    namestate = false;
-                }
-            }
-            else {
-                validateSettings.succeed.run(option);
-            }
         }
     },
     pwd:function (option) {
