@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+    <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -9,88 +9,81 @@
     <meta http-equiv="expires" content="0"/>
     <title>拖放</title>
     <style>
-        body, h6, h5, h4, h3, h2, h1 {
-            margin: 0;
-            padding: 0;
-            font-family: "Arial, Helvetica, sans-serif";
-            line-height: 1.2;
-            font-size: 1em;
-        }
-
-        body {
-            display: block;
-            min-width: 320px;
-            max-width: 640px;
-            min-height: 100%;
-            margin: 0 auto;
-            line-height: 1;
-            -webkit-text-size-adjust: none;
-            font: 13px/1.231 "microsoft yahei";
-            color: #333;
-            background: #eee;
-        }
-
-        .clearfix:after {
-            content: ".";
-            display: block;
-            clear: both;
-            height: 0;
-            visibility: hidden
-        }
-
-        .item-box {
-            height: 500px;
-        }
-
-        .con {
-            float: left;
-            position: relative;
-            border: 1px solid #009933;
-            width: 28%;
-            height: 120px;
-            margin: 10px 10px 0 0;
-            background: #fff;
-            overflow: hidden;
-        }
-
-        .con1 {
-            float: left;
-            position: relative;
-            border: 1px solid #009933;
-            width: 28%;
-            height: 120px;
-            margin: 10px 10px 0 0;
-            background: #fff;
-            overflow: hidden;
-        }
-
-        .con .mark {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        .con img {
-            width: 90%;
-        }
-
-        #shopCartBox {
-            position: fixed;
-            bottom: 20%;
-            left: 0;
-            margin-top: 20px;
-            width: 100%;
-            background: #fff;
-        }
-
-        #shopCart {
-            min-height: 120px;
-            width: 100%;
-            background: #00a8bf;
-        }
-    </style>
+body, h6, h5, h4, h3, h2, h1 {
+	margin: 0;
+	padding: 0;
+	font-family: "Arial, Helvetica, sans-serif";
+	line-height: 1.2;
+	font-size: 1em;
+}
+body {
+	display: block;
+	min-width: 320px;
+	max-width: 640px;
+	min-height: 100%;
+	margin: 0 auto;
+	line-height: 1;
+	-webkit-text-size-adjust: none;
+	font: 13px/1.231 "microsoft yahei";
+	color: #333;
+	background: #eee;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden
+}
+.item-box {
+	height: 500px;
+}
+.con {
+	float: left;
+	position: relative;
+	border: 1px solid #009933;
+	width: 28%;
+	height: 120px;
+	margin: 10px 10px 0 0;
+	background: #fff;
+	overflow: hidden;
+}
+.con1 {
+	float: left!important;
+	position: relative!important;
+	left: auto;
+	top: 0;
+	border: 1px solid #009933;
+	width: 28%;
+	height: 120px;
+	margin: 10px 10px 0 0;
+	background: #fff;
+	overflow: hidden;
+}
+.con .mark {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.con img {
+	width: 90%;
+}
+#shopCartBox {
+	position: fixed;
+	bottom: 20%;
+	left: 0;
+	margin-top: 20px;
+	width: 100%;
+	background: #fff;
+}
+#shopCart {
+	min-height: 120px;
+	width: 100%;
+	background: #00a8bf;
+}
+</style>
     <script src="scripts/zepto.min.js"></script>
     <script>
         $(function () {
@@ -120,24 +113,20 @@
                     moveY = touchPros.pageY - startY;
                     $(this).parent(".con").css({"position": "absolute", "left": moveX, "top": moveY, "z-index": i });
 
-                }).bind("touchend touchcancel", function (event) {
-					
-					
+                }).bind("touchend touchcancel", function (event) {				
 
                     var $this = $(this), $shopCart = $("#shopCart");
 
                     if (impact($this, $shopCart)) {
-						alert(111);
                         //$shopCart.append($this.parent(".con"));
 						$shopCart.append("<p>111111</p>");
                     } else {
-						alert(222);
                         //$(".item-box").append($this.parent(".con"));
 						(".item-box").append("<p>2222</p>");
 						
                     }
 
-                    $this.parent(".con").removeAttr("style").addClass("con1");
+                    $this.parent(".con").addClass("con1");
 
                 });
             });
@@ -157,40 +146,33 @@
 
 
     </script>
-</head>
+    </head>
 
-<body>
+    <body>
 <div class="item-box clearfix">
-    <div class="con">
-        <div class="mark"></div>
-        <img src="http://img01.chatu.com/group1/M00/00/BF/CgoBAVRkgJmyXIrEAABGkQX5o-Q795.jpg"/>
-
-        <h3 class="black"> 111111111</h3>
+      <div class="con">
+    <div class="mark"></div>
+    <img src="http://img01.chatu.com/group1/M00/00/BF/CgoBAVRkgJmyXIrEAABGkQX5o-Q795.jpg"/>
+    <h3 class="black"> 111111111</h3>
+  </div>
+      <div class="con">
+    <div class="mark"></div>
+    <img src="http://img01.chatu.com/group1/M00/00/B8/CgoBAVRjEJuACxBKAAB8HMG0iO4280.jpg"/>
+    <h3 class="black"> 2222222年</h3>
+  </div>
+      <div class="con">
+    <div class="mark"></div>
+    <img src="http://img01.chatop.com/group1/M00/00/64/CgoBAVRTYX7SeV2-AAB3CMva3cs180.jpg"/>
+    <h3 class="black"> 333333333的</h3>
+  </div>
+      <div class="con">
+    <div class="mark"></div>
+    <img src="http://img01.chatu.com/group1/M00/00/64/CgoBAVRTYXmhXCZ1AABXpuj8yqU784.jpg"/>
+    <h3 class="black"> 444444大红袍</h3>
+  </div>
     </div>
-    <div class="con">
-        <div class="mark"></div>
-        <img src="http://img01.chatu.com/group1/M00/00/B8/CgoBAVRjEJuACxBKAAB8HMG0iO4280.jpg"/>
-
-        <h3 class="black"> 2222222年</h3>
-    </div>
-    <div class="con">
-        <div class="mark"></div>
-        <img src="http://img01.chatop.com/group1/M00/00/64/CgoBAVRTYX7SeV2-AAB3CMva3cs180.jpg"/>
-
-        <h3 class="black"> 333333333的</h3>
-    </div>
-    <div class="con">
-        <div class="mark"></div>
-        <img src="http://img01.chatu.com/group1/M00/00/64/CgoBAVRTYXmhXCZ1AABXpuj8yqU784.jpg"/>
-
-        <h3 class="black"> 444444大红袍</h3>
-    </div>
-</div>
-
-
 <div id="shopCartBox">
-    <div id="shopCart" class="clearfix">a</div>
-</div>
-
+      <div id="shopCart" class="clearfix">a</div>
+    </div>
 </body>
 </html>
