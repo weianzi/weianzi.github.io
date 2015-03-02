@@ -111,19 +111,18 @@ body {
                     var touchPros = event.changedTouches[0];
                     moveX = touchPros.pageX - startX;
                     moveY = touchPros.pageY - startY;
-                    $(this).parent(".con").css({"position": "absolute", "left": moveX, "top": moveY, "z-index": i });
+                    $(this).parent(".con").removeClass("con1").css({"position": "absolute", "left": moveX, "top": moveY, "z-index": i });
 
-                }).bind("touchend touchcancel", function (event) {				
+                }).bind("touchend touchcancel mouseup", function (event) {				
 
                     var $this = $(this), $shopCart = $("#shopCart");
 
                     if (impact($this, $shopCart)) {
-                        //$shopCart.append($this.parent(".con"));
-						$shopCart.append("<p>111111</p>");
+                        $shopCart.append($this.parent(".con"));
+						//$shopCart.append("<p>111111</p>");
                     } else {
-                        //$(".item-box").append($this.parent(".con"));
-						(".item-box").append("<p>2222</p>");
-						
+                        $(".item-box").append($this.parent(".con"));
+						//(".item-box").append("<p>2222</p>");
                     }
 
                     $this.parent(".con").addClass("con1");
