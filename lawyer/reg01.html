@@ -11,6 +11,8 @@
     <link href="css/main.css" rel="stylesheet"/>
     <script src="libs/zepto.min.js"></script>
     <script src="libs/lazyload.js"></script>
+    <script src="libs/Validate.js"></script>
+    <script src="modules/Validate.form.js"></script>
     <script src="modules/public.js"></script>
 </head>
 <body>
@@ -20,17 +22,30 @@
     </header>
     <section class="login-reg-con">
         <ul>
-            <li class="error-light"><i class="name"></i>
-                <input type="text" name="loginname" placeholder="邮箱/手机号">
+            <li><i class="name"></i>
+                <input type="text" id="username" name="username" placeholder="输入账号">
             </li>
+            <div class="error-tips">
+                <div id="username_succeed"></div>
+                <div id="username_error"></div>
+            </div>
             <li><i class="pw"></i>
-                <input name="loginpwd" placeholder="输入密码" type="password">
+                <input id="pwd" name="pwd" placeholder="输入密码" type="password">
             </li>
+            <div class="error-tips">
+                <div id="pwd_succeed"></div>
+                <div id="pwd_error"></div>
+            </div>
+
             <li><i class="pw"></i>
-                <input name="loginpwd" placeholder="确认密码" type="password">
+                <input id="pwd2" name="pwd2" placeholder="确认密码" type="password">
             </li>
+            <div class="error-tips">
+                <div id="pwd2_succeed"></div>
+                <div id="pwd2_error"></div>
+            </div>
+
         </ul>
-        <div class="error-tips red">请输入正确的邮箱或手机号</div>
     </section>
     <section class="login-reg-btn clearfix">
         <a class="fl btn white" href="index.html">下一步</a></section>

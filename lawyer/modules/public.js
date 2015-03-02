@@ -34,7 +34,7 @@ $(function () {
         });
     });
 
-    //
+    //二级标题 切换
     $(".tab-title li").each(function (index) {
         $(this).tap(function () {
             $(this).addClass("selected").siblings().removeClass("selected");

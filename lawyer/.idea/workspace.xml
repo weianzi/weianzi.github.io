@@ -23,11 +23,63 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38868833" vertical-offset="6991" max-vertical-offset="33787">
-              <caret line="318" column="0" selection-start-line="318" selection-start-column="0" selection-end-line="318" selection-end-column="0" />
+            <state vertical-scroll-proportion="-18.44" vertical-offset="22056" max-vertical-offset="33833">
+              <caret line="979" column="33" selection-start-line="979" selection-start-column="33" selection-end-line="979" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.433333" vertical-offset="0" max-vertical-offset="1426">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="15" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reg01.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/reg01.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4112038" vertical-offset="0" max-vertical-offset="1357">
+              <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Validate.form.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/Validate.form.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="70.72" vertical-offset="6092" max-vertical-offset="6923">
+              <caret line="188" column="15" selection-start-line="188" selection-start-column="15" selection-end-line="188" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Validate.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libs/Validate.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="279.56" vertical-offset="13429" max-vertical-offset="14260">
+              <caret line="280" column="32" selection-start-line="280" selection-start-column="32" selection-end-line="280" selection-end-column="32" />
+              <folding>
+                <marker date="1425279704309" expanded="true" signature="16520:16530" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="public.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/public.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="281" max-vertical-offset="1150">
+              <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -50,7 +102,6 @@
         <option value="$PROJECT_DIR$/libs/highcharts.js" />
         <option value="$USER_HOME$/Desktop/单元测试/t.html" />
         <option value="$PROJECT_DIR$/forgotpwd.html" />
-        <option value="$PROJECT_DIR$/login.html" />
         <option value="$PROJECT_DIR$/reg02.html" />
         <option value="$PROJECT_DIR$/../2.html" />
         <option value="$PROJECT_DIR$/modules/slider.js" />
@@ -70,9 +121,7 @@
         <option value="$PROJECT_DIR$/drag/1.html" />
         <option value="$PROJECT_DIR$/drag/3.html" />
         <option value="$PROJECT_DIR$/drag/4.html" />
-        <option value="$PROJECT_DIR$/reg01.html" />
         <option value="$PROJECT_DIR$/drag/2.html" />
-        <option value="$PROJECT_DIR$/modules/public.js" />
         <option value="$PROJECT_DIR$/modules/windControl.js" />
         <option value="$PROJECT_DIR$/private-lawyer.html" />
         <option value="$PROJECT_DIR$/family-wind-control.html" />
@@ -83,7 +132,12 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/quick-consulting.html" />
         <option value="$PROJECT_DIR$/quick-consulting-reply.html" />
+        <option value="$PROJECT_DIR$/modules/public.js" />
+        <option value="$PROJECT_DIR$/libs/Validate.js" />
         <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/modules/Validate.form.js" />
+        <option value="$PROJECT_DIR$/login.html" />
+        <option value="$PROJECT_DIR$/reg01.html" />
       </list>
     </option>
   </component>
@@ -188,20 +242,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lawyer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lawyer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -280,6 +320,7 @@
       <window_info id="变化" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1512247" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -291,7 +332,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -479,13 +519,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="138" max-vertical-offset="1012">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/info.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8333333" vertical-offset="506" max-vertical-offset="1334">
@@ -493,17 +526,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reg01.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74016684" vertical-offset="115" max-vertical-offset="1012">
-          <caret line="32" column="34" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/comment.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6404358" vertical-offset="345" max-vertical-offset="1518">
           <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -518,6 +545,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.055354994" vertical-offset="0" max-vertical-offset="831">
           <caret line="2" column="6631" selection-start-line="2" selection-start-column="6620" selection-end-line="2" selection-end-column="6631" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -525,6 +553,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2617284" vertical-offset="363" max-vertical-offset="1909">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="34" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -532,6 +561,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.2481482" vertical-offset="645" max-vertical-offset="2254">
           <caret line="72" column="79" selection-start-line="72" selection-start-column="79" selection-end-line="72" selection-end-column="79" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -546,6 +576,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-25.9" vertical-offset="1362" max-vertical-offset="2645">
           <caret line="93" column="106" selection-start-line="93" selection-start-column="106" selection-end-line="93" selection-end-column="106" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -553,6 +584,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6129442" vertical-offset="460" max-vertical-offset="1863">
           <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="45" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -560,6 +592,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.5333333" vertical-offset="179" max-vertical-offset="2461">
           <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -567,6 +600,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.321066" vertical-offset="0" max-vertical-offset="1150">
           <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -574,6 +608,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.47335026" vertical-offset="294" max-vertical-offset="1104">
           <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -581,6 +616,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.56790125" vertical-offset="0" max-vertical-offset="1909">
           <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -588,6 +624,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9506173" vertical-offset="196" max-vertical-offset="1495">
           <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -595,6 +632,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.49753088" vertical-offset="172" max-vertical-offset="1127">
           <caret line="25" column="48" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -602,6 +640,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.133333" vertical-offset="345" max-vertical-offset="2047">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="29" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -609,6 +648,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.29012346" vertical-offset="685" max-vertical-offset="2369">
           <caret line="40" column="66" selection-start-line="40" selection-start-column="66" selection-end-line="40" selection-end-column="66" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -616,20 +656,56 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5740741" vertical-offset="271" max-vertical-offset="1196">
           <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/public.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79642856" vertical-offset="297" max-vertical-offset="1150">
-          <caret line="42" column="7" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="281" max-vertical-offset="1150">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38868833" vertical-offset="6991" max-vertical-offset="33787">
-          <caret line="318" column="0" selection-start-line="318" selection-start-column="0" selection-end-line="318" selection-end-column="0" />
+        <state vertical-scroll-proportion="-18.44" vertical-offset="22056" max-vertical-offset="33833">
+          <caret line="979" column="33" selection-start-line="979" selection-start-column="33" selection-end-line="979" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/Validate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="279.56" vertical-offset="13429" max-vertical-offset="14260">
+          <caret line="280" column="32" selection-start-line="280" selection-start-column="32" selection-end-line="280" selection-end-column="32" />
+          <folding>
+            <marker date="1425279704309" expanded="true" signature="16520:16530" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Validate.form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="70.72" vertical-offset="6092" max-vertical-offset="6923">
+          <caret line="188" column="15" selection-start-line="188" selection-start-column="15" selection-end-line="188" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.433333" vertical-offset="0" max-vertical-offset="1426">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="15" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reg01.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4112038" vertical-offset="0" max-vertical-offset="1357">
+          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
           <folding />
         </state>
       </provider>
