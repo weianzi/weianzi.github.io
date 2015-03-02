@@ -111,7 +111,7 @@
 
                 }).bind("touchend touchcancel", function (event) {
 
-                    var $this = $(this), $shopCart = $("#shopCartBox");
+                    var $this = $(this), $shopCart = $("#shopCart");
 
                     if (impact($this, $shopCart)) {
                         $shopCart.append($this.parent(".con"));
@@ -171,7 +171,7 @@
 
 
 <div id="shopCartBox">
-    <div id="shopCart" class="clearfix"></div>
+    <div id="shopCart" class="clearfix">a</div>
 </div>
 
 </body>
