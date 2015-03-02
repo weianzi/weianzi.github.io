@@ -1,76 +1,110 @@
 <!DOCTYPE html>
 <html>
 <head lang="zh">
-<meta charset="UTF-8">
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
     <meta name="apple-mobile-web-app-capable" content="yes">
-<meta http-equiv="pragma" content="no-cache"/>
-<meta http-equiv="cache-control" content="no-cache"/>
-<meta http-equiv="expires" content="0"/>
-<title>律师注册</title>
-<link href="css/main.css" rel="stylesheet"/>
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <meta http-equiv="expires" content="0"/>
+    <title>律师注册</title>
+    <link href="css/main.css" rel="stylesheet"/>
     <script src="libs/zepto.min.js"></script>
     <script src="libs/lazyload.js"></script>
+    <script src="libs/Validate.js"></script>
+    <script src="modules/Validate.form.js"></script>
     <script src="modules/public.js"></script>
 </head>
 <body>
 <div class="views login-reg">
-  <header class="head clearfix">
-    <h1>律师注册</h1>
-  </header>
-  <section class="login-reg-con">
-    <ul>
-      <li><i class="name"></i>
-        <input type="text" name="loginname" placeholder="邮箱/手机号" >
-      </li>
-      <li><i class="pw"></i>
-        <input name="loginpwd" placeholder="输入密码" type="password">
-      </li>
-      <li><i class="pw"></i>
-        <input name="loginpwd" placeholder="确认密码" type="password">
-      </li>
-      <li><i class="id"></i>
-        <input type="text" name="" placeholder="律师证号" >
-      </li>
-      <li><i class="ico04"></i>
-        <input type="text" name="" placeholder="所属律所" >
-      </li>
-      <li><i class="ico05"></i>
-        <input type="text" name="" placeholder="真实姓名" >
-      </li>
-      <li><i class="ico06"></i>
-        <select>
-          <option>所属省</option>
-          <option>广东省</option>
-          <option>山东省</option>
-        </select>
-      </li>
-      <li><i class="ico07"></i>
-        <select>
-          <option>所属市</option>
-          <option>所属市</option>
-          <option>所属市</option>
-        </select>
-      </li>
-      <li><i class="ico08"></i>
-        <select>
-          <option>所属区</option>
-          <option>所属区</option>
-          <option>所属区</option>
-        </select>
-      </li>
-      <li><i class="ico09"></i>
-        <input type="text" name="" placeholder="详细地址" >
-      </li>
-      <li><i class="email"></i>
-        <input type="email" name="" placeholder="常用邮箱" >
-      </li>
-      <li><i class="tel"></i>
-        <input type="text" name="" placeholder="常用电话" >
-      </li>
-    </ul>
-  </section>
-  <section class="login-reg-btn clearfix"> <a class="fl btn white" href="index.html">下一步</a></section>
+    <header class="head clearfix">
+        <h1>律师注册</h1>
+    </header>
+
+    <form id="formReg02" name="formReg02" action="" method="post">
+
+        <section class="login-reg-con">
+            <ul>
+                <li><i class="name"></i>
+                    <input type="text" id="username" name="username" placeholder="邮箱/手机号">
+                </li>
+                <div class="error-tips">
+                    <div id="username_succeed"></div>
+                    <div id="username_error"></div>
+                </div>
+                <li><i class="pw"></i>
+                    <input id="pwd" name="pwd" placeholder="输入密码" type="password">
+                </li>
+                <div class="error-tips">
+                    <div id="pwd_succeed"></div>
+                    <div id="pwd_error"></div>
+                </div>
+                <li><i class="pw"></i>
+                    <input id="pwd2" name="pwd2" placeholder="确认密码" type="password">
+                </li>
+                <div class="error-tips">
+                    <div id="pwd2_succeed"></div>
+                    <div id="pwd2_error"></div>
+                </div>
+                <li><i class="id"></i>
+                    <input type="text" name="" placeholder="律师证号">
+                </li>
+                <li><i class="ico04"></i>
+                    <input type="text" name="" placeholder="所属律所">
+                </li>
+                <li><i class="ico05"></i>
+                    <input type="text" id="realname" name="realname" placeholder="真实姓名">
+                </li>
+                <div class="error-tips">
+                    <div id="realname_succeed"></div>
+                    <div id="realname_error"></div>
+                </div>
+                <li><i class="ico06"></i>
+                    <select id="companyarea">
+                        <option>所属省</option>
+                        <option>广东省</option>
+                        <option>山东省</option>
+                    </select>
+                </li>
+                <li><i class="ico07"></i>
+                    <select>
+                        <option>所属市</option>
+                        <option>所属市</option>
+                        <option>所属市</option>
+                    </select>
+                </li>
+                <li><i class="ico08"></i>
+                    <select>
+                        <option>所属区</option>
+                        <option>所属区</option>
+                        <option>所属区</option>
+                    </select>
+                </li>
+                <li><i class="ico09"></i>
+                    <input type="text" id="companyaddr" name="companyaddr" placeholder="详细地址">
+                </li>
+                <div class="error-tips">
+                    <div id="companyaddr_succeed"></div>
+                    <div id="companyaddr_error"></div>
+                </div>
+                <li><i class="email"></i>
+                    <input type="email" id="mail" name="mail" placeholder="常用邮箱">
+                </li>
+                <div class="error-tips">
+                    <div id="mail_succeed"></div>
+                    <div id="mail_error"></div>
+                </div>
+                <li><i class="tel"></i>
+                    <input type="text" id="tel" name="tel" placeholder="常用电话">
+                </li>
+                <div class="error-tips">
+                    <div id="tel_succeed"></div>
+                    <div id="tel_error"></div>
+                </div>
+            </ul>
+        </section>
+        <section class="login-reg-btn clearfix"><a class="fl btn white" href="index.html">下一步</a></section>
+    </form>
 </div>
 </body>
 </html>

@@ -21,14 +21,15 @@ var validateRegExp = {
     letter:"^[A-Za-z]+$", //字母
     letter_l:"^[a-z]+$", //小写字母
     letter_u:"^[A-Z]+$", //大写字母
-    mobile:"^0?(13|15|18)[0-9]{9}$", //手机
+    mobile:"^0?(13|15|17|18)[0-9]{9}$", //手机
     notempty:"^\\S+$", //非空
     password:"^.*[A-Za-z0-9\\w_-]+.*$", //密码
     fullNumber:"^[0-9]+$", //数字
     picture:"(.*)\\.(jpg|bmp|gif|ico|pcx|jpeg|tif|png|raw|tga)$", //图片
     qq:"^[1-9]*[1-9][0-9]*$", //QQ号码
     rar:"(.*)\\.(rar|zip|7zip|tgz)$", //压缩文件
-    tel:"^[0-9\-()（）]{7,18}$", //电话号码的函数(包括验证国内区号,国际区号,分机号)
+    //tel:"^[0-9\-()（）]{7,18}$", //电话号码的函数(包括验证国内区号,国际区号,分机号)
+    tel:"(^[0-9\-()（）]{7,18}$)|(^0?(13|15|17|18)[0-9]{9}$)", //电话号码的函数(包括验证国内区号,国际区号,分机号)
     url:"^http[s]?:\\/\\/([\\w-]+\\.)+[\\w-]+([\\w-./?%&=]*)?$", //url
     //username:"^[A-Za-z0-9_\\-\\u4e00-\\u9fa5]+$", //用户名
     username:"(^\\w+((-\\w+)|(\\.\\w+))*\\@[A-Za-z0-9]+((\\.|-)[A-Za-z0-9]+)*\\.[A-Za-z0-9]+$)|(^0?(13|15|17|18|14)[0-9]{9}$)",
@@ -295,13 +296,11 @@ var validatePrompt = {
         }
     },
     mail:{
-        onFocus:"请输入常用的邮箱，将用来找回密码",
+        onFocus:"请输入常用的邮箱",
         succeed:"",
         isNull:"请输入邮箱",
         error:{
-            beUsed:"该邮箱已被使用，请更换邮箱，或<a href='#'>找回密码</a>",
-            badFormat:"邮箱格式不正确",
-            badLength:"邮件地址只能在50个字符以内"
+            badFormat:"邮箱格式不正确"
         }
     },
     authcode:{
@@ -332,6 +331,8 @@ var validateFunction = {
         var format = validateRules.isUid(option.value);
         if (!format) {
             validateSettings.error.run(option, option.prompts.error.badFormat);
+        } else {
+            validateSettings.succeed.run(option);
         }
     },
     pwd:function (option) {
@@ -339,7 +340,6 @@ var validateFunction = {
         var str2 = $("#pwd2").val();
         var format = validateRules.isPwd(option.value);
         var length = validateRules.betweenLength(option.value, 6, 16);
-        $("#pwdstrength").hide();
         if (!length && format) {
             validateSettings.error.run(option, option.prompts.error.badLength);
         }
@@ -380,36 +380,11 @@ var validateFunction = {
     },
     mail:function (option) {
         var format = validateRules.isEmail(option.value);
-        var format2 = validateRules.betweenLength(option.value, 0, 50);
+        //var format2 = validateRules.betweenLength(option.value, 0, 50);
         if (!format) {
             validateSettings.error.run(option, option.prompts.error.badFormat);
         } else {
-            if (!format2) {
-                validateSettings.error.run(option, option.prompts.error.badLength);
-            } else {
-                if (!emailstate || emailold != option.value) {
-                    if (emailold != option.value) {
-                        emailold = option.value;
-                        option.errorEle.html("<span style='color:#999'>检验中……</span>");
-                        $.getJSON("http://#" + escape(option.value) + "&r=" + Math.random(), function (date) {
-                            if (date.success == 0) {
-                                validateSettings.succeed.run(option);
-                                emailstate = true;
-                            } else {
-                                validateSettings.error.run(option, option.prompts.error.beUsed);
-                                emailstate = false;
-                            }
-                        })
-                    }
-                    else {
-                        validateSettings.error.run(option, option.prompts.error.beUsed);
-                        emailstate = false;
-                    }
-                }
-                else {
-                    validateSettings.succeed.run(option);
-                }
-            }
+            validateSettings.succeed.run(option);
         }
     },
     authcode:function (option) {

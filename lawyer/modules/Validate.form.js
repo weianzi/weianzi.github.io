@@ -15,9 +15,9 @@ $.extend(validatePrompt, {
         error: ""
     },
     tel: {
-        onFocus: "请填写联系人常用的电话，以便于我们联系，如：0527-88105500",
+        onFocus: "如：020-88809999或13866666688",
         succeed: "",
-        isNull: "请输入联系人固定电话",
+        isNull: "请输入常用电话",
         error: "电话格式错误，请重新输入"
     },
     mobile: {
@@ -42,7 +42,7 @@ $.extend(validatePrompt, {
         error: ""
     },
     companyaddr: {
-        onFocus: "请详细填写公司经营地址　如：北京市海淀区苏州街20号银丰大厦B座3层",
+        onFocus: "请详细填写公司经营地址",
         succeed: "",
         isNull: "请输入公司地址",
         error: {
