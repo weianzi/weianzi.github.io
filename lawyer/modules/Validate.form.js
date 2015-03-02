@@ -21,7 +21,7 @@ $.extend(validatePrompt, {
         error: "电话格式错误，请重新输入"
     },
     mobile: {
-        onFocus: "非北京、上海、广州三地客户，请在手机号前加“0”",
+        onFocus: "请输入您的手机号码",
         succeed: "",
         isNull: "请输入您的手机号码",
         error: "手机号格式错误，请重新输入"
@@ -48,21 +48,6 @@ $.extend(validatePrompt, {
         error: {
             badLength: "公司地址长度只能在4-50位字符之间",
             badFormat: "公司地址只能由中文、英文、数字及“_”、“-”、()、（）、#组成"
-        }
-    },
-    purpose: {
-        onFocus: "",
-        succeed: "",
-        isNull: "请选择购买类型/用途",
-        error: ""
-    },
-    companysite: {
-        onFocus: "如：http://www.360buy.com",
-        succeed: "",
-        isNull: "请输入公司网址",
-        error: {
-            badLength: "公司网址长度只能在80位字符之内",
-            badFormat: "公司网址格式不正确。应如：http://www.360buy.com"
         }
     }
 });
@@ -146,14 +131,7 @@ $.extend(validateFunction, {
             }
         }
     },
-    /*    purpose:function(option) {
-     var purpose = $("input:checkbox[@name='purposetype']");
-     if (validateFunction.checkGroup(purpose)) {
-     validateSettings.succeed.run(option);
-     } else {
-     validateSettings.error.run(option, option.prompts.isNull);
-     }
-     },*/
+
     companysite: function (option) {
         var length = validateRules.betweenLength(option.value, 0, 80);
         var format = validateRules.isCompanysite(option.value);
@@ -192,25 +170,11 @@ $(function () {
 //密码验证
     $("#pwd").bind("keyup", function () {
         validateFunction.pwdstrength();
-    }).jdValidate(validatePrompt.pwd, validateFunction.pwd)
+    }).jdValidate(validatePrompt.pwd, validateFunction.pwd);
 //二次密码验证
     $("#pwd2").jdValidate(validatePrompt.pwd2, validateFunction.pwd2);
 //邮箱验证
     $("#mail").jdValidate(validatePrompt.mail, validateFunction.mail);
-//推荐人用户名
-    $("#referrer").bind("keydown", function () {
-        $(this).css({"color": "#333333", "font-size": "14px"});
-    }).bind("keyup", function () {
-        if ($(this).val() == "" || $(this).val() == "可不填") {
-            $(this).css({ "color": "#999999", "font-size": "12px" });
-        }
-    }).bind("blur", function () {
-        if ($(this).val() == "" || $(this).val() == "可不填") {
-            $(this).css({"color": "#999999", "font-size": "12px"}).jdValidate(validatePrompt.referrer, validateFunction.referrer, "可不填");
-        }
-    })
-//验证码验证
-    $("#authcode").jdValidate(validatePrompt.authcode, validateFunction.authcode);
 //联系人姓名验证
     $("#realname").jdValidate(validatePrompt.realname, validateFunction.realname);
 //部门验证
@@ -223,74 +187,5 @@ $(function () {
     $("#companyname").jdValidate(validatePrompt.companyname, validateFunction.companyname);
 //公司地址验证
     $("#companyaddr").jdValidate(validatePrompt.companyaddr, validateFunction.companyaddr);
-//公司网址验证
-    $("#companysite").jdValidate(validatePrompt.companysite, validateFunction.companysite);
-//显示密码事件
-    $("#viewpwd").bind("click", function () {
-        if ($(this).attr("checked") == true) {
-            validateFunction.showPassword("text");
-            $("#o-password").addClass("pwdbg");
-        } else {
-            validateFunction.showPassword("password");
-            $("#o-password").removeClass("pwdbg");
-        }
-    });
-//购买类型/用途验证
-    /*$("input:checkbox[@name='purposetype']").bind("click", function() {
-     var value1 = $("#purpose").val();
-     var value2 = $(this).val();
-     if ($(this).attr("checked") == true) {
-     if (value1.indexOf(value2) == -1) {
-     $("#purpose").val(value1 + value2);
-     $("#purpose").attr("sta", 2);
-     $("#purpose_error").html("");
-     $("#purpose_succeed").addClass("succeed");
-     }
-     } else {
-     if (value1.indexOf(value2) != -1) {
-     value1 = value1.replace(value2, "");
-     $("#purpose").val(value1);
-     if ($("#purpose").val() == "") {
-     $("#purpose").attr("sta", 0);
-     $("#purpose_succeed").removeClass("succeed");
-     }
-     }
-     }
-     });*/
-//键盘输入验证码验证
-    $("#authcode").bind('keyup', function (event) {
-        if (event.keyCode == 13) {
-            $("#registsubmit").click();
-        }
-    });
-//确认协议才能提交
-    $("#protocol").click(function () {
-        if ($("#protocol").attr("checked") != true) {
-            $("#registsubmit").attr({ "disabled": "disabled" });
-            $("#registsubmit").addClass("disabled");
-        }
-        else {
-            $("#registsubmit").removeAttr("disabled");
-            $("#registsubmit").removeClass("disabled");
-        }
-    });
-//表单提交验证和服务器请求
-    $("#registsubmit").click(function () {
-        var flag = validateFunction.FORM_validate();
-        if (flag) {
-            $(this).attr({"disabled": "disabled"}).attr({"value": "提交中,请稍等"});
-            $.ajax({
-                type: "POST",
-                url: "#",
-                contentType: "application/x-www-form-urlencoded; charset=utf-8",
-                data: $("#formpersonal").serialize(),
-                success: function (result) {
-                    if (result == 1) {
-                        window.location = "#";
-                    }
-                }
-            });
-        }
-    });
 
 });

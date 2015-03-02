@@ -87,10 +87,7 @@ var validateRegExp = {
                     ele.bind("focus", function () {
                         var str = ele.val();
                         if (str == def) {
-                            ele.val("");
-                        }
-                        if (id == "pwd") {
-                            $("#pwdstrength").hide();
+                            ele.val("def");
                         }
                         validateSettings.onFocus.run({
                             prompts:option,
@@ -102,9 +99,9 @@ var validateRegExp = {
                     })
                         .bind("blur", function () {
                             var str = ele.val();
-                            if (str == "") {
-                                ele.val(def);
-                            }
+//                            if (str == "") {
+//                                ele.val(def);
+//                            }
                             if (validateRules.isNull(str)) {
                                 validateSettings.isNull.run({
                                     prompts:option,
@@ -208,9 +205,6 @@ var validateSettings = {
             if (!validateRules.checkType(option.element)) {
                 option.element.parent().removeClass(validateSettings.INPUT_style1).removeClass(validateSettings.INPUT_style2);
             }
-            if (option.element.attr("id") == "schoolinput" && $("#schoolid").val() == "") {
-                return;
-            }
             option.succeedEle.addClass(validateSettings.succeed.style);
         }
     },
@@ -305,9 +299,9 @@ var validatePrompt = {
         succeed:"",
         isNull:"请输入邮箱",
         error:{
-            beUsed:"该邮箱已被使用，请更换其它邮箱，或使用该邮箱<a href='#'>找回密码</a>",
+            beUsed:"该邮箱已被使用，请更换邮箱，或<a href='#'>找回密码</a>",
             badFormat:"邮箱格式不正确",
-            badLength:"您填写的邮箱过长，邮件地址只能在50个字符以内"
+            badLength:"邮件地址只能在50个字符以内"
         }
     },
     authcode:{
@@ -319,20 +313,8 @@ var validatePrompt = {
     protocol:{
         onFocus:"",
         succeed:"",
-        isNull:"请先阅读并同意《京东商城用户协议》",
+        isNull:"请先阅读并同意《用户协议》",
         error:""
-    },
-    referrer:{
-        onFocus:"如您注册并完成订单，推荐人有机会获得积分",
-        succeed:"",
-        isNull:"",
-        error:""
-    },
-    schoolinput:{
-        onFocus:"您可以用简拼、全拼、中文进行校名模糊查找",
-        succeed:"",
-        isNull:"请填选学校名称",
-        error:"请填选学校名称"
     },
     empty:{
         onFocus:"",
@@ -409,7 +391,7 @@ var validateFunction = {
                     if (emailold != option.value) {
                         emailold = option.value;
                         option.errorEle.html("<span style='color:#999'>检验中……</span>");
-                        $.getJSON("AjaxService.aspx?action=CheckUemail&str=" + escape(option.value) + "&r=" + Math.random(), function (date) {
+                        $.getJSON("http://#" + escape(option.value) + "&r=" + Math.random(), function (date) {
                             if (date.success == 0) {
                                 validateSettings.succeed.run(option);
                                 emailstate = true;
@@ -428,24 +410,6 @@ var validateFunction = {
                     validateSettings.succeed.run(option);
                 }
             }
-        }
-    },
-    referrer:function (option) {
-        var bool = validateRules.isNull(option.value);
-        if (bool) {
-            option.element.val("可不填");
-            return;
-        } else {
-            validateSettings.succeed.run(option);
-        }
-    },
-    schoolinput:function (option) {
-        var bool = validateRules.isNull(option.value);
-        if (bool) {
-            validateSettings.error.run(option, option.prompts.error);
-            return;
-        } else {
-            validateSettings.succeed.run(option);
         }
     },
     authcode:function (option) {
