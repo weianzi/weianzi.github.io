@@ -13,6 +13,7 @@
     <script src="libs/lazyload.js"></script>
     <script src="libs/Validate.js"></script>
     <script src="modules/Validate.form.js"></script>
+    <script src="modules/login.js"></script>
     <script src="modules/public.js"></script>
 </head>
 <body>
@@ -20,7 +21,7 @@
     <header class="head clearfix">
         <h1>登录</h1>
     </header>
-    <form id="formLogin" name="formLogin" action="" method="post">
+    <form id="formLogin" name="formLogin" method="post" onsubmit="return false;">
         <section class="login-reg-con">
             <ul>
                 <li><i class="name"></i>
@@ -44,10 +45,10 @@
 
 
         <section class="login-reg-btn login-reg-btn2 clearfix">
-            <a class="fl btn white" href="javascript:$('#formLogin').submit();">登录</a>
+            <a class="fl btn white" id="btnLogin">登录</a>
 
             <div class="fr btn myLinks white">注册
-                <p><s></s><a href="reg01.html">大众</a> <a href="reg02.html">律师</a> <a href="#">取消</a></p>
+                <p><s></s><a href="reg01.html">大众</a> <a href="reg02.html">律师</a></p>
             </div>
             <a class="fl" href="forgotpwd.html">？忘记密码</a></section>
     </form>

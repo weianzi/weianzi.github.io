@@ -148,9 +148,8 @@ $.extend(validateFunction, {
     },
     FORM_validate: function () {
         $("#username").jdValidate(validatePrompt.username, validateFunction.username, true);
-		        $("#lawyerId").jdValidate(validatePrompt.lawyerId, validateFunction.lawyerId, true);
-
-        $("#pwd").jdValidate(validatePrompt.pwd, validateFunction.pwd, true)
+		$("#lawyerId").jdValidate(validatePrompt.lawyerId, validateFunction.lawyerId, true);
+        $("#pwd").jdValidate(validatePrompt.pwd, validateFunction.pwd, true);
         $("#pwd2").jdValidate(validatePrompt.pwd2, validateFunction.pwd2, true);
         $("#authcode").jdValidate(validatePrompt.authcode, validateFunction.authcode, true);
         $("#realname").jdValidate(validatePrompt.realname, validateFunction.realname, true);

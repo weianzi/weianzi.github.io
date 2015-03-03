@@ -13,6 +13,7 @@
     <script src="libs/lazyload.js"></script>
     <script src="libs/Validate.js"></script>
     <script src="modules/Validate.form.js"></script>
+    <script src="modules/reg01.js"></script>
     <script src="modules/public.js"></script>
 </head>
 <body>
@@ -20,7 +21,7 @@
     <header class="head clearfix">
         <h1>大众注册</h1>
     </header>
-    <form id="formReg01" name="formReg01" action="" method="post">
+    <form id="formReg01" name="formReg01" method="post" onsubmit="return false;">
         <section class="login-reg-con">
             <ul>
                 <li><i class="name"></i>
@@ -49,7 +50,7 @@
             </ul>
         </section>
         <section class="login-reg-btn clearfix">
-            <a class="fl btn white" href="">下一步</a></section>
+            <a class="fl btn white" id="btnReg01">下一步</a></section>
     </form>
 </div>
 </body>

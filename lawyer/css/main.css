@@ -976,8 +976,13 @@ body {
     margin: 10px auto;
 }
 
-.error-tips .focus{ color: #a2a2a2;}
-.error-tips .error{ color: #f00;}
+.error-tips .focus {
+    color: #a2a2a2;
+}
+
+.error-tips .error, .error-tips .null {
+    color: #f00;
+}
 
 .login-reg-con li input, .login-reg-con li select {
     position: absolute;
