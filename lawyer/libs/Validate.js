@@ -17,6 +17,7 @@ var validateRegExp = {
     date:"^\\d{4}(\\-|\\/|\.)\\d{1,2}\\1\\d{1,2}$", //日期
     email:"^\\w+((-\\w+)|(\\.\\w+))*\\@[A-Za-z0-9]+((\\.|-)[A-Za-z0-9]+)*\\.[A-Za-z0-9]+$", //邮件
     idcard:"^[1-9]([0-9]{14}|[0-9]{17})$", //身份证
+	lawyerId:"^\\S+$",
     ip4:"^(25[0-5]|2[0-4]\\d|[0-1]\\d{2}|[1-9]?\\d)\\.(25[0-5]|2[0-4]\\d|[0-1]\\d{2}|[1-9]?\\d)\\.(25[0-5]|2[0-4]\\d|[0-1]\\d{2}|[1-9]?\\d)\\.(25[0-5]|2[0-4]\\d|[0-1]\\d{2}|[1-9]?\\d)$", //ip地址
     letter:"^[A-Za-z]+$", //字母
     letter_l:"^[a-z]+$", //小写字母
@@ -222,6 +223,9 @@ var validateRules = {
     betweenLength:function (str, _min, _max) {
         return (str.length >= _min && str.length <= _max);
     },
+    isLawyerId:function (str) {
+        return new RegExp(validateRegExp.lawyerId).test(str);
+    },
     isUid:function (str) {
         return new RegExp(validateRegExp.username).test(str);
     },
@@ -274,6 +278,14 @@ var validatePrompt = {
         error:{
             beUsed:"该用户名已被使用，如果您是&quot;{1}&quot;，请<a href='login.html'>登录</a>",
             badFormat: "请确认输入的是邮箱或手机号码"
+        }
+    },
+	lawyerId:{
+        onFocus:"请输入律师证号",
+        succeed:"",
+        isNull:"请输入律师证号",
+        error:{
+            badFormat: "请确认输入的是律师证号"
         }
     },
     pwd:{
@@ -335,6 +347,14 @@ var validateFunction = {
             validateSettings.succeed.run(option);
         }
     },
+	lawyerId:function (option) {
+        var format = validateRules.isLawyerId(option.value);
+        if (!format) {
+            validateSettings.error.run(option, option.prompts.error.badFormat);
+        } else {
+            validateSettings.succeed.run(option);
+        }
+    },
     pwd:function (option) {
         var str1 = option.value;
         var str2 = $("#pwd2").val();
@@ -380,11 +400,34 @@ var validateFunction = {
     },
     mail:function (option) {
         var format = validateRules.isEmail(option.value);
-        //var format2 = validateRules.betweenLength(option.value, 0, 50);
+        var format2 = validateRules.betweenLength(option.value, 0, 50);
         if (!format) {
             validateSettings.error.run(option, option.prompts.error.badFormat);
         } else {
-            validateSettings.succeed.run(option);
+            if (!format2) {
+                validateSettings.error.run(option, option.prompts.error.badLength);
+            } else {
+/*                if (!emailstate || emailold != option.value) {
+                    if (emailold != option.value) {
+                        emailold = option.value;
+                        option.errorEle.html("<span style='color:#999'>检验中……</span>");
+                        $.getJSON("#?action=CheckUemail&str=" + escape(option.value) + "&r=" + Math.random(), function (date) {
+                            if (date.success == 0) {
+                                validateSettings.succeed.run(option);
+                                emailstate = true;
+                            } else {
+                                validateSettings.error.run(option, option.prompts.error.beUsed);
+                                emailstate = false;
+                            }
+                        })
+                    }
+                    else {
+                        validateSettings.error.run(option, option.prompts.error.beUsed);
+                        emailstate = false;
+                    }
+                }*/
+                    validateSettings.succeed.run(option);
+            }
         }
     },
     authcode:function (option) {

@@ -9,10 +9,10 @@ $.extend(validatePrompt, {
         }
     },
     department: {
-        onFocus: "",
+        onFocus: "请选择省份",
         succeed: "",
-        isNull: "请选择联系人所在部门",
-        error: ""
+        isNull: "请选择省份",
+        error: "请选择省份"
     },
     tel: {
         onFocus: "如：020-88809999或13866666688",
@@ -27,12 +27,12 @@ $.extend(validatePrompt, {
         error: "手机号格式错误，请重新输入"
     },
     companyname: {
-        onFocus: "请填写工商局注册的全称。4-40位字符，可由中英文、数字及“_”、“-”、()、（）组成",
+        onFocus: "请填写工商局注册的全称",
         succeed: "",
-        isNull: "请输入公司名称",
+        isNull: "请输入所属律所名称",
         error: {
-            badLength: "公司名称长度只能在4-40位字符之间",
-            badFormat: "公司名称只能由中文、英文、数字及“_”、“-”、()、（）组成"
+            badLength: "律所名称长度只能在4-40位字符之间",
+            badFormat: "只能由中文、英文、数字及“_”、“-”、()、（）组成"
         }
     },
     companyarea: {
@@ -148,6 +148,8 @@ $.extend(validateFunction, {
     },
     FORM_validate: function () {
         $("#username").jdValidate(validatePrompt.username, validateFunction.username, true);
+		        $("#lawyerId").jdValidate(validatePrompt.lawyerId, validateFunction.lawyerId, true);
+
         $("#pwd").jdValidate(validatePrompt.pwd, validateFunction.pwd, true)
         $("#pwd2").jdValidate(validatePrompt.pwd2, validateFunction.pwd2, true);
         $("#authcode").jdValidate(validatePrompt.authcode, validateFunction.authcode, true);
@@ -160,13 +162,15 @@ $.extend(validateFunction, {
         $("#companyaddr").jdValidate(validatePrompt.companyaddr, validateFunction.companyaddr, true);
         $("#companysite").jdValidate(validatePrompt.companysite, validateFunction.companysite, true);
         $("#purpose").jdValidate(validatePrompt.purpose, validateFunction.purpose, true);
-        return validateFunction.FORM_submit(["#username", "#pwd", "#pwd2", "#mail", "#realname", "#department", "#tel", "#companyname", "#companyaddr", "#purpose"]);
+        return validateFunction.FORM_submit(["#username", "#lawyerId", "#pwd", "#pwd2", "#mail", "#realname", "#department", "#tel", "#companyname", "#companyaddr", "#purpose"]);
     }
 });
 
 $(function () {
 //用户名验证
     $("#username").jdValidate(validatePrompt.username, validateFunction.username);
+//律师ID
+    $("#lawyerId").jdValidate(validatePrompt.lawyerId, validateFunction.lawyerId);
 //密码验证
     $("#pwd").bind("keyup", function () {
         validateFunction.pwdstrength();
