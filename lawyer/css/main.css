@@ -1437,8 +1437,6 @@ body {
 }
 
 /*快速咨询*/
-.quick-consulting {
-}
 
 .quick-consulting .item {
     padding: 8px 0;
@@ -1468,4 +1466,32 @@ body {
 .quick-consulting .item > .fr {
     width: 20%;
     text-align: right;
+}
+
+.quick-consulting .consulting-con li {
+    padding: 8px 0;
+}
+
+.quick-consulting .comment {
+    background: #fff;
+}
+
+.quick-consulting .comment .item {
+    width: 92%;
+}
+
+.quick-consulting .comment .item dd {
+    margin-left: 16%;
+    border-bottom: 0;
+}
+
+.quick-consulting .comment .item dd > span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #a2a2a2;
+}
+
+.quick-consulting .comment .item:hover {
+    background: none;
 }
