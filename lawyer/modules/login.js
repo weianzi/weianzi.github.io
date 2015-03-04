@@ -20,4 +20,11 @@ $(function () {
         return false;
     });
 
+    $(window).resize(function () {
+        var $wel = $(".login-reg .welcome");
+        if ($(window).height() < 340) $wel.hide();
+        else $wel.show();
+    });
+
+
 });
