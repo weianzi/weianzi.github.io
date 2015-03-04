@@ -517,11 +517,28 @@ body {
     margin: 0 auto;
 }
 
-/*我的咨询*/
-.i-consulting .form-list .item{
+/*我的咨询 我的……*/
+.i-consulting .form-list .item, .i-server .form-list .item{
     padding: 8px 0;
     border-bottom: 1px solid #ddd;
 }
+.i-server .comment .item{ width: 96%}
+.i-server .comment .item dd {
+    margin-left: 16%;
+    border-bottom: 0;
+}
+
+.i-server .comment .item dd > span {
+    position: absolute;
+    right: 0;
+    top: 8px;
+    color: #a2a2a2;
+}
+
+.i-server .comment .item:hover {
+    background: none;
+}
+.i-server .comment dd h3{ padding-top: 0;}
 
 /*律师信息*/
 .lawyer-info .head {
@@ -859,7 +876,7 @@ body {
 
 .comment .item {
     width: 80%;
-    margin: 10px auto;
+    margin: 0 auto 4px;
 }
 
 .comment .item dt.pic {
@@ -1493,10 +1510,12 @@ body {
 .quick-consulting .comment .item dd > span {
     position: absolute;
     right: 0;
-    top: 0;
+    top: 8px;
     color: #a2a2a2;
 }
 
 .quick-consulting .comment .item:hover {
     background: none;
 }
+
+.quick-consulting .comment dd h3{ padding-top: 0;}
