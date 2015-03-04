@@ -11,6 +11,9 @@
     <link href="css/main.css" rel="stylesheet"/>
     <script src="libs/zepto.min.js"></script>
     <script src="libs/lazyload.js"></script>
+    <script src="libs/Validate.js"></script>
+    <script src="modules/Validate.form.js"></script>
+    <script src="modules/forgotpwd.js"></script>
     <script src="modules/public.js"></script>
 </head>
 <body>
@@ -18,15 +21,21 @@
     <header class="head clearfix">
         <h1>找回密码</h1>
     </header>
-    <section class="login-reg-con">
-        <ul>
-            <li><i class="name"></i>
-                <input type="text" name="loginname" placeholder="输入账号">
-            </li>
-        </ul>
-    </section>
-    <section class="login-reg-btn clearfix">
-        <a class="fl btn white" href="index.html">下一步</a></section>
+    <form id="forgotpwd" name="forgotpwd" method="post" onsubmit="return false;">
+        <section class="login-reg-con">
+            <ul>
+                <li><i class="name"></i>
+                    <input type="text" id="username" name="username" placeholder="输入邮箱或手机号">
+                </li>
+                <div class="error-tips">
+                    <div id="username_succeed"></div>
+                    <div id="username_error"></div>
+                </div>
+            </ul>
+        </section>
+        <section class="login-reg-btn clearfix">
+            <a class="fl btn white" id="btnForgotpwd">下一步</a></section>
+    </form>
 </div>
 </body>
 </html>
