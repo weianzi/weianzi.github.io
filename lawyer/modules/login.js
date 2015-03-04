@@ -22,8 +22,8 @@ $(function () {
 
     $(window).resize(function () {
         var $wel = $(".login-reg .welcome");
-        if ($(window).height() < 340) $wel.hide();
-        else $wel.show();
+        console.log($wel.offset().top);
+        if ($wel.offset().top >= 300) $wel.css("opacity","1"); else $wel.css("opacity","0");
     });
 
 
