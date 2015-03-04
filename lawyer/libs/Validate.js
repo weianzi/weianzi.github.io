@@ -300,7 +300,7 @@ var validatePrompt = {
     pwd2:{
         onFocus:"请再次输入密码",
         succeed:"",
-        isNull:"请输入密码",
+        isNull:"请再次输入密码",
         error:{
             badLength:"密码长度只能在6-16位字符之间",
             badFormat2:"两次输入密码不一致",

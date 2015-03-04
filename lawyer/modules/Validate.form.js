@@ -32,22 +32,22 @@ $.extend(validatePrompt, {
         isNull: "请输入所属律所名称",
         error: {
             badLength: "律所名称长度只能在4-40位字符之间",
-            badFormat: "只能由中文、英文、数字及“_”、“-”、()、（）组成"
+            badFormat: "只能由中英文、数字及“_”、“-”、()、（）组成"
         }
     },
     companyarea: {
-        onFocus: "请选择公司所在地",
+        onFocus: "请选择律所所在地",
         succeed: "",
-        isNull: "请选择公司所在地",
+        isNull: "请选择律所所在地",
         error: ""
     },
     companyaddr: {
-        onFocus: "请详细填写公司经营地址",
+        onFocus: "请详细填写律所地址",
         succeed: "",
-        isNull: "请输入公司地址",
+        isNull: "请输入律所地址",
         error: {
-            badLength: "公司地址长度只能在4-50位字符之间",
-            badFormat: "公司地址只能由中文、英文、数字及“_”、“-”、()、（）、#组成"
+            badLength: "律所地址长度只能在4-50位字符之间",
+            badFormat: "只能由中英文、数字及“_”、“-”、()、（）、#组成"
         }
     }
 });

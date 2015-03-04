@@ -517,6 +517,12 @@ body {
     margin: 0 auto;
 }
 
+/*我的咨询*/
+.i-consulting .form-list .item{
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
 /*律师信息*/
 .lawyer-info .head {
     background: url(../images/search/t-bg.png) 50% bottom no-repeat;
