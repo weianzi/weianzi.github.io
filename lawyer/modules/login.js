@@ -20,11 +20,17 @@ $(function () {
         return false;
     });
 
-    $(window).resize(function () {
-        var $wel = $(".login-reg .welcome");
-        console.log($wel.offset().top);
-        if ($wel.offset().top >= 300) $wel.css("opacity","1"); else $wel.css("opacity","0");
-    });
+
+
+    //欢迎条隐藏
+    var $wel = $(".login-reg > .welcome");
+
+       $(document).on("focus","#username, #pwd", function(){
+           $wel.hide();
+       }).on("blur","#username, #pwd", function(){
+           $wel.show();
+       });
+
 
 
 });

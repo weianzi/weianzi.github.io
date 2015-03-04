@@ -86,7 +86,7 @@ body {
 
             $(".con .mark").each(function () {
 
-                $(this).bind("touchstart", function (event) {
+                $(this).on("touchstart", function (event) {
 
                     i++;
                     var touchPros = event.changedTouches[0];
@@ -94,14 +94,14 @@ body {
                     startY = touchPros.pageY - event.target.parentNode.offsetTop;
                     return false;
 
-                }).bind("touchmove", function (event) {
+                }).on("touchmove", function (event) {
 
                     var touchPros = event.changedTouches[0];
                     moveX = touchPros.pageX - startX;
                     moveY = touchPros.pageY - startY;
                     $(this).parent(".con").removeClass("con1").css({"position": "absolute", "left": moveX, "top": moveY, "z-index": i });
 
-                }).bind("touchend touchcancel mouseup", function (event) {				
+                }).on("touchend touchcancel mouseup", function (event) {
 
                     var $this = $(this), $shopCart = $("#shopCart");
 
