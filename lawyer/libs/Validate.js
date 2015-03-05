@@ -316,7 +316,7 @@ var validatePrompt = {
         }
     },
     authcode:{
-        onFocus:"请输入图片中的字符，不区分大小写",
+        onFocus:"请输入你收到的验证码",
         succeed:"",
         isNull:"请输入验证码",
         error:"验证码错误"
