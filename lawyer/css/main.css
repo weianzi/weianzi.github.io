@@ -15,6 +15,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 address, caption, cite, code, dfn, em, strong, th, var {
     font-style: normal
 }
+
 img {
     border: 0;
     vertical-align: bottom
@@ -54,6 +55,11 @@ table {
 
 input, select {
     font-size: 100%
+}
+
+.block {
+    display: block;
+    margin: 10px auto;
 }
 
 .fl {
@@ -126,7 +132,7 @@ body {
     height: 100%;
     max-width: 640px;
     padding-bottom: 80px;
-    z-index: 5000;
+    z-index: 998;
     -webkit-overflow-scrolling: touch;
 }
 
@@ -518,11 +524,15 @@ body {
 }
 
 /*我的咨询 我的……*/
-.i-consulting .form-list .item, .i-server .form-list .item{
+.i-consulting .form-list .item, .i-server .form-list .item {
     padding: 8px 0;
     border-bottom: 1px solid #ddd;
 }
-.i-server .comment .item{ width: 96%}
+
+.i-server .comment .item {
+    width: 96%
+}
+
 .i-server .comment .item dd {
     margin-left: 16%;
     border-bottom: 0;
@@ -538,7 +548,10 @@ body {
 .i-server .comment .item:hover {
     background: none;
 }
-.i-server .comment dd h3{ padding-top: 0;}
+
+.i-server .comment dd h3 {
+    padding-top: 0;
+}
 
 /*律师信息*/
 .lawyer-info .head {
@@ -729,6 +742,7 @@ body {
 
 .set-list li img {
     vertical-align: middle;
+    width: 25px;
     height: 25px;
 }
 
@@ -1518,4 +1532,73 @@ body {
     background: none;
 }
 
-.quick-consulting .comment dd h3{ padding-top: 0;}
+.quick-consulting .comment dd h3 {
+    padding-top: 0;
+}
+
+/*弹出提示*/
+#pop-allbg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    z-index: 1000;
+    opacity: .3;
+    filter: alpha(opacity=30);
+}
+
+#pop-box {
+    position: fixed;
+    left: 20%;
+    top: 30%;
+    width: 50%;
+    padding: 30px 4% 10px;
+    border: 4px solid #E8E9F7;
+    background: #fff;
+    z-index: 1001;
+    overflow: auto;
+    text-align: center;
+}
+
+#pop-box .close {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    font: 14px Arial;
+    cursor: pointer;
+}
+
+#pop-box .btn {
+    display: inline-block;
+    margin: 10px auto 0;
+    padding: 0 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+     background: #f6f6f6;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

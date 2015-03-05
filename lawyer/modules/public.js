@@ -26,7 +26,7 @@ $(function () {
         });
     });
 
-	//问答 切换
+    //问答 切换
     $(".msn-list .tab > div").each(function (index) {
         $(this).tap(function () {
             $(this).addClass("selected").siblings().removeClass("selected");
@@ -41,5 +41,19 @@ $(function () {
             $(this).parents(".tab-title").siblings(".form-list").hide().eq(index).show();
         });
     });
+
+
+    //弹出提示
+
+    $("#pop-box .btn").tap(function () {
+        hideMe();
+    });
+    $("#pop-box .close").tap(function () {
+        hideMe();
+    });
+    function hideMe() {
+        $("#pop-allbg").hide();
+        $("#pop-box").hide();
+    }
 
 });
