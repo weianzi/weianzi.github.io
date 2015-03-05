@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a784e3cb-fc65-40e5-ac81-5c096cdd1c7e" name="!changes.default.changelist.name!" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/libs/Validate.js" afterPath="$PROJECT_DIR$/lawyer/libs/Validate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/forgotpwd.html" afterPath="$PROJECT_DIR$/lawyer/forgotpwd.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/i.html" afterPath="$PROJECT_DIR$/lawyer/i.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/set.html" afterPath="$PROJECT_DIR$/lawyer/set.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/css/main.css" afterPath="$PROJECT_DIR$/lawyer/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/msn-show.html" afterPath="$PROJECT_DIR$/lawyer/msn-show.html" />
     </list>
     <ignored path="weianzi.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,11 +26,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="set.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="set.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lawyer/set.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6751208" vertical-offset="131" max-vertical-offset="989">
+            <state vertical-scroll-proportion="-18.633333" vertical-offset="131" max-vertical-offset="989">
               <caret line="30" column="83" selection-start-line="30" selection-start-column="83" selection-end-line="30" selection-end-column="83" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="msn-show.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lawyer/msn-show.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5277778" vertical-offset="69" max-vertical-offset="1909">
+              <caret line="22" column="69" selection-start-line="22" selection-start-column="69" selection-end-line="22" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lawyer/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-18.44" vertical-offset="13201" max-vertical-offset="37145">
+              <caret line="594" column="17" selection-start-line="594" selection-start-column="17" selection-end-line="594" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -64,7 +81,6 @@
         <option value="$PROJECT_DIR$/lawyer/family-record.html" />
         <option value="$PROJECT_DIR$/lawyer/modules/forgotpwd.js" />
         <option value="$PROJECT_DIR$/lawyer/i-head-pic.html" />
-        <option value="$PROJECT_DIR$/lawyer/css/main.css" />
         <option value="$PROJECT_DIR$/lawyer/modules/public.js" />
         <option value="$PROJECT_DIR$/lawyer/login.html" />
         <option value="$PROJECT_DIR$/lawyer/i.html" />
@@ -75,6 +91,8 @@
         <option value="$PROJECT_DIR$/lawyer/bind-mobile-phone.html" />
         <option value="$PROJECT_DIR$/lawyer/bind-mobile-email.html" />
         <option value="$PROJECT_DIR$/lawyer/set.html" />
+        <option value="$PROJECT_DIR$/lawyer/css/main.css" />
+        <option value="$PROJECT_DIR$/lawyer/msn-show.html" />
       </list>
     </option>
   </component>
@@ -349,13 +367,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lawyer/reg02.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1449">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lawyer/search.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1771">
@@ -593,14 +604,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lawyer/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="35333" max-vertical-offset="37030">
-          <caret line="1544" column="16" selection-start-line="1544" selection-start-column="16" selection-end-line="1544" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lawyer/modules/public.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="603" max-vertical-offset="1472">
@@ -715,8 +718,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lawyer/set.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6751208" vertical-offset="131" max-vertical-offset="989">
+        <state vertical-scroll-proportion="-18.633333" vertical-offset="131" max-vertical-offset="989">
           <caret line="30" column="83" selection-start-line="30" selection-start-column="83" selection-end-line="30" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lawyer/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.44" vertical-offset="13201" max-vertical-offset="37145">
+          <caret line="594" column="17" selection-start-line="594" selection-start-column="17" selection-end-line="594" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lawyer/msn-show.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5277778" vertical-offset="69" max-vertical-offset="1909">
+          <caret line="22" column="69" selection-start-line="22" selection-start-column="69" selection-end-line="22" selection-end-column="69" />
           <folding />
         </state>
       </provider>

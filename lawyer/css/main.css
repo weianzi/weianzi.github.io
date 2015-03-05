@@ -586,8 +586,13 @@ body {
 
 .lawyer-info .pic s.good {
     left: 120px;
-    background: #00b2cb url(../images/icon.png) -16px -132px no-repeat;
+    background: #00b2cb url(../images/icon.png) -16px -136px no-repeat;
     background-size: 65px 160px;
+    text-decoration: none;
+    font-size: .8em;
+    text-align: center;
+    padding-top: 22px;
+    height: 18px;
 }
 
 .lawyer-info h2 {
