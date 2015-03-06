@@ -1,21 +1,15 @@
 $(function () {
 
     //苹果手机 CSS无hover
-    fnHover($(".myLinks"));
-    function fnHover(myLinks) {
-			myLinks.bind("touchstart", function(){
-				$(this).addClass("hover");
-			});
-//            .bind("touchend", function(){
-//				$(this).removeClass("hover");
-//			});
-/*            myLinks.on("tap", function () {
-                $(this).addClass("hover");
-            });
-            $(document).on("tap", function () {
-                myLinks.removeClass("hover");
-            });*/
-    }
+    $(".myLinks").on("tap", function () {
+        $(this).addClass("hover");
+    });
+    $(document).on("tap", function (ev) {
+        if (!$(ev.target).hasClass("myLinks")) {
+            $(".myLinks").removeClass("hover");
+        }
+    });
+
 
     //回复详情 切换
     $(".lawyer-info .tab li").each(function (index) {
