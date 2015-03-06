@@ -1490,13 +1490,31 @@ body {
     margin: 0 auto;
 }
 
-.quick-consulting .con02 li > a.myLinks i {
+.quick-consulting .con02 li > a.ico01 i {
     background: url(../images/consulting/ico01.png) center 0 no-repeat;
     background-size: 60px 60px;
 }
 
-.quick-consulting .con02 li > a.myLinks.hover i {
+.quick-consulting .con02 li > a.ico01.hover i {
     background: url(../images/consulting/ico01-hover.png) center 0 no-repeat;
+    background-size: 60px 60px;
+}
+.quick-consulting .con02 li > a.ico02 i {
+     background: url(../images/consulting/ico02.png) center 0 no-repeat;
+     background-size: 60px 60px;
+ }
+
+.quick-consulting .con02 li > a.ico02.hover i {
+    background: url(../images/consulting/ico02-hover.png) center 0 no-repeat;
+    background-size: 60px 60px;
+}
+.quick-consulting .con02 li > a.ico03 i {
+     background: url(../images/consulting/ico03.png) center 0 no-repeat;
+     background-size: 60px 60px;
+ }
+
+.quick-consulting .con02 li > a.ico03.hover i {
+    background: url(../images/consulting/ico03-hover.png) center 0 no-repeat;
     background-size: 60px 60px;
 }
 

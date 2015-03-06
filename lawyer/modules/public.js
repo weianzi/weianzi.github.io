@@ -3,19 +3,18 @@ $(function () {
     //苹果手机 CSS无hover
     fnHover($(".myLinks"));
     function fnHover(myLinks) {
-        for (var i = 0; i < myLinks.length; i++) {
-//            myLinks.on("touchstart", function(){
-//                $(this).addClass("hover");
-//            }).on("touchend mouseout", function(){
-//                $(this).removeClass("hover");
-//            });
-            myLinks.tap(function () {
+			myLinks.bind("touchstart", function(){
+				$(this).addClass("hover");
+			});
+//            .bind("touchend", function(){
+//				$(this).removeClass("hover");
+//			});
+/*            myLinks.on("tap", function () {
                 $(this).addClass("hover");
             });
-            $(document).tap(function () {
+            $(document).on("tap", function () {
                 myLinks.removeClass("hover");
-            });
-        }
+            });*/
     }
 
     //回复详情 切换
@@ -42,8 +41,10 @@ $(function () {
         });
     });
 
+
     //弹出提示
-    $('#pop-box .btn').tap(function () {
+
+    $("#pop-box .btn").tap(function () {
         hideMe();
     });
     $("#pop-box .close").tap(function () {
