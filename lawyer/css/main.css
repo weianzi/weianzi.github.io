@@ -1184,7 +1184,7 @@ body {
     position: relative;
 }
 
-.login-reg-btn2 .fr.btn:hover > p, .login-reg-btn2 .fr.btn.hover > p {
+/*.login-reg-btn2 .fr.btn:hover > p, */.login-reg-btn2 .fr.btn.hover > p {
     display: block;
 }
 
@@ -1478,6 +1478,10 @@ body {
 }
 
 /*快速咨询*/
+.quick-consulting .con02 li > a{ display:block; }
+.quick-consulting .con02 li > a i{ display:block; width: 60px; height: 60px; margin: 0 auto; }
+.quick-consulting .con02 li > a.myLinks i{ background: url(../images/consulting/ico01.png) center 0 no-repeat; background-size: 60px 60px; }
+.quick-consulting .con02 li > a.myLinks.hover i{background: url(../images/consulting/ico01-hover.png) center 0 no-repeat; background-size: 60px 60px;}
 
 .quick-consulting .item {
     padding: 8px 0;
