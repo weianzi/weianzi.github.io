@@ -4,17 +4,17 @@ $(function () {
     fnHover($(".myLinks"));
     function fnHover(myLinks) {
         for (var i = 0; i < myLinks.length; i++) {
-            myLinks.on("touchstart", function(){
-                $(this).addClass("hover");
-            }).on("touchend mouseout", function(){
-                $(this).removeClass("hover");
-            });
-//            myLinks.tap(function () {
+//            myLinks.on("touchstart", function(){
 //                $(this).addClass("hover");
+//            }).on("touchend mouseout", function(){
+//                $(this).removeClass("hover");
 //            });
-//            $(document).tap(function () {
-//                myLinks.removeClass("hover");
-//            });
+            myLinks.tap(function () {
+                $(this).addClass("hover");
+            });
+            $(document).tap(function () {
+                myLinks.removeClass("hover");
+            });
         }
     }
 
@@ -43,7 +43,7 @@ $(function () {
     });
 
     //弹出提示
-    $("#pop-box .btn").tap(function () {
+    $('#pop-box .btn').tap(function () {
         hideMe();
     });
     $("#pop-box .close").tap(function () {
