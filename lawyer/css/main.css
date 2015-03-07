@@ -895,7 +895,7 @@ body {
 
 .comment .item {
     width: 80%;
-    margin: 0 auto 4px;
+    margin: 10px auto 4px;
 }
 
 .comment .item dt.pic {
@@ -1558,6 +1558,7 @@ body {
 
 .quick-consulting .comment .item {
     width: 92%;
+    margin-top:0;
 }
 
 .quick-consulting .comment .item dd {
