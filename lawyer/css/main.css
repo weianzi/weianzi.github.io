@@ -427,7 +427,7 @@ body {
     background: url(../images/i/t-bg.png) 50% bottom no-repeat;
 }
 
-.i-info .head .set {
+.head .set {
     position: absolute;
     top: 12px;
     right: 20px;
@@ -491,7 +491,9 @@ body {
 .i-info .con01 li {
     float: left;
     width: 33.33%;
-	box-sizing:border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     padding: 10px 0;
     text-align: center;
     font-size: .8em;
@@ -559,10 +561,10 @@ body {
     background: url(../images/search/t-bg.png) 50% bottom no-repeat;
 }
 
-.lawyer-info .head .set {
+/*.lawyer-info .head .set {
     background: url(../images/icon.png) -25px 0 no-repeat;
     background-size: 65px 160px;
-}
+}*/
 
 .lawyer-info .pic p {
     border: 6px solid #6ac1cc;
@@ -687,12 +689,15 @@ body {
 }
 
 .tab-title {
-    padding: 10px 0 10px 2%;
+    padding: 10px 2%;
     margin: 10px 0;
 }
 
 .tab-title li {
-    width: 48%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
     border: 1px solid #00b2cb;
     padding: 4px 0;
     background: #fff;
