@@ -490,7 +490,8 @@ body {
 
 .i-info .con01 li {
     float: left;
-    width: 33%;
+    width: 33.33%;
+	box-sizing:border-box;
     padding: 10px 0;
     text-align: center;
     font-size: .8em;
@@ -500,7 +501,7 @@ body {
 .i-info .con01 li.active {
     border-left: 1px solid #eee;
     border-right: 1px solid #eee;
-    background: #00b2cb;
+    background: #00b2cb;	
 }
 
 .i-info .con01 li p {
