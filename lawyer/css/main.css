@@ -493,9 +493,9 @@ body {
     display: -webkit-box;
     display: -moz-box;
     display: box;
-    -webkit-box-pack: center;
+/*    -webkit-box-pack: center;
     -moz-box-pack: center;
-    box-pack: center;
+    box-pack: center;*/
 }
 
 .i-info .con01 li {
