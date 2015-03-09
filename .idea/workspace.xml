@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a784e3cb-fc65-40e5-ac81-5c096cdd1c7e" name="!changes.default.changelist.name!" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/css/main.css" afterPath="$PROJECT_DIR$/lawyer/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="weianzi.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="i.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="i.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lawyer/i.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.966666" vertical-offset="614" max-vertical-offset="1472">
-              <caret line="41" column="25" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.06400966" vertical-offset="614" max-vertical-offset="1472">
+              <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -56,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lawyer/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5534214" vertical-offset="11108" max-vertical-offset="38433">
-              <caret line="503" column="29" selection-start-line="503" selection-start-column="29" selection-end-line="503" selection-end-column="29" />
+            <state vertical-scroll-proportion="-20.28" vertical-offset="11246" max-vertical-offset="38433">
+              <caret line="511" column="2" selection-start-line="511" selection-start-column="0" selection-end-line="512" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -765,18 +764,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lawyer/i.html">
+    <entry file="file://$PROJECT_DIR$/lawyer/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.966666" vertical-offset="614" max-vertical-offset="1472">
-          <caret line="41" column="25" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="25" />
+        <state vertical-scroll-proportion="-20.28" vertical-offset="11246" max-vertical-offset="38433">
+          <caret line="511" column="2" selection-start-line="511" selection-start-column="0" selection-end-line="512" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lawyer/css/main.css">
+    <entry file="file://$PROJECT_DIR$/lawyer/i.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5534214" vertical-offset="11108" max-vertical-offset="38433">
-          <caret line="503" column="29" selection-start-line="503" selection-start-column="29" selection-end-line="503" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.06400966" vertical-offset="614" max-vertical-offset="1472">
+          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
           <folding />
         </state>
       </provider>
