@@ -493,7 +493,6 @@ body {
     display: -webkit-box;
     display: -moz-box;
     display: box;
-
     -webkit-box-pack: center;
     -moz-box-pack: center;
     box-pack: center;
@@ -527,9 +526,19 @@ body {
     background: #f4f4f4;
 }
 
+.i-info .con02 ul{
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;;
+}
+
 .i-info .con02 li {
-    float: left;
-    width: 33.33%;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
     text-align: center;
 }
 
