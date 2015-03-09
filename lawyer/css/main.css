@@ -637,6 +637,13 @@ body {
     height: 18px;
 }
 
+.lawyer-info .pic s.msn {
+    left: 120px;
+    background: #00b2cb url(../images/search/icon02.png)  50% 50% no-repeat;
+    background-size: 26px 26px;
+}
+
+
 .lawyer-info h2 {
     padding-bottom: 20px;
     line-height: 20px;
@@ -671,7 +678,7 @@ body {
     display: inline-block;
     width: 12px;
     height: 12px;
-    background: url(../images/icon.png) 0 -57px no-repeat;
+    background: url(../images/icon.png) -50px -38px no-repeat;
     background-size: 65px 160px;
 }
 

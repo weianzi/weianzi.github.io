@@ -2,40 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a784e3cb-fc65-40e5-ac81-5c096cdd1c7e" name="!changes.default.changelist.name!" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/bind-mobile-email.html" afterPath="$PROJECT_DIR$/lawyer/bind-mobile-email.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/bind-mobile-phone.html" afterPath="$PROJECT_DIR$/lawyer/bind-mobile-phone.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/buy.html" afterPath="$PROJECT_DIR$/lawyer/buy.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/changepwd.html" afterPath="$PROJECT_DIR$/lawyer/changepwd.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/comment-submit.html" afterPath="$PROJECT_DIR$/lawyer/comment-submit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/comment.html" afterPath="$PROJECT_DIR$/lawyer/comment.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/delegation.html" afterPath="$PROJECT_DIR$/lawyer/delegation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/family-record-consult-con.html" afterPath="$PROJECT_DIR$/lawyer/family-record-consult-con.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/family-record-consult-list.html" afterPath="$PROJECT_DIR$/lawyer/family-record-consult-list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/family-record.html" afterPath="$PROJECT_DIR$/lawyer/family-record.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/family-wind-control.html" afterPath="$PROJECT_DIR$/lawyer/family-wind-control.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/family.html" afterPath="$PROJECT_DIR$/lawyer/family.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/i-consulting.html" afterPath="$PROJECT_DIR$/lawyer/i-consulting.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/i-delegation-con.html" afterPath="$PROJECT_DIR$/lawyer/i-delegation-con.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/i-delegation.html" afterPath="$PROJECT_DIR$/lawyer/i-delegation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/i-head-pic.html" afterPath="$PROJECT_DIR$/lawyer/i-head-pic.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/i-server-con.html" afterPath="$PROJECT_DIR$/lawyer/i-server-con.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/i-server.html" afterPath="$PROJECT_DIR$/lawyer/i-server.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/i.html" afterPath="$PROJECT_DIR$/lawyer/i.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/index.html" afterPath="$PROJECT_DIR$/lawyer/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/info.html" afterPath="$PROJECT_DIR$/lawyer/info.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/css/main.css" afterPath="$PROJECT_DIR$/lawyer/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/msn-consulting.html" afterPath="$PROJECT_DIR$/lawyer/msn-consulting.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/msn-list.html" afterPath="$PROJECT_DIR$/lawyer/msn-list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/msn-show.html" afterPath="$PROJECT_DIR$/lawyer/msn-show.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/msn.html" afterPath="$PROJECT_DIR$/lawyer/msn.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/news-show.html" afterPath="$PROJECT_DIR$/lawyer/news-show.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/private-lawyer.html" afterPath="$PROJECT_DIR$/lawyer/private-lawyer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/quick-consulting-reply.html" afterPath="$PROJECT_DIR$/lawyer/quick-consulting-reply.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/quick-consulting.html" afterPath="$PROJECT_DIR$/lawyer/quick-consulting.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/room-service.html" afterPath="$PROJECT_DIR$/lawyer/room-service.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/search.html" afterPath="$PROJECT_DIR$/lawyer/search.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/self-service.html" afterPath="$PROJECT_DIR$/lawyer/self-service.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/set.html" afterPath="$PROJECT_DIR$/lawyer/set.html" />
     </list>
     <ignored path="weianzi.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,41 +27,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lawyer/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.84" vertical-offset="15271" max-vertical-offset="39307">
+              <caret line="679" column="17" selection-start-line="679" selection-start-column="17" selection-end-line="679" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="private-lawyer.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lawyer/private-lawyer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5" vertical-offset="207" max-vertical-offset="1104">
+              <caret line="27" column="82" selection-start-line="27" selection-start-column="82" selection-end-line="27" selection-end-column="82" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="i.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lawyer/i.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.4" vertical-offset="644" max-vertical-offset="1472">
-              <caret line="52" column="45" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="45" />
+            <state vertical-scroll-proportion="-10.2" vertical-offset="200" max-vertical-offset="1472">
+              <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lawyer/index.html">
+      <file leaf-file-name="msn-show.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lawyer/msn-show.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.833334" vertical-offset="1068" max-vertical-offset="1909">
-              <caret line="71" column="45" selection-start-line="71" selection-start-column="45" selection-end-line="71" selection-end-column="45" />
+            <state vertical-scroll-proportion="-25.3" vertical-offset="69" max-vertical-offset="1909">
+              <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bind-mobile-email.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lawyer/bind-mobile-email.html">
+      <file leaf-file-name="info.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lawyer/info.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.966666" vertical-offset="430" max-vertical-offset="1173">
-              <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lawyer/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7785548" vertical-offset="7428" max-vertical-offset="39146">
-              <caret line="352" column="30" selection-start-line="352" selection-start-column="30" selection-end-line="352" selection-end-column="30" />
+            <state vertical-scroll-proportion="-9.2" vertical-offset="414" max-vertical-offset="1472">
+              <caret line="30" column="62" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -138,6 +117,8 @@
         <option value="$PROJECT_DIR$/lawyer/i.html" />
         <option value="$PROJECT_DIR$/lawyer/index.html" />
         <option value="$PROJECT_DIR$/lawyer/css/main.css" />
+        <option value="$PROJECT_DIR$/lawyer/info.html" />
+        <option value="$PROJECT_DIR$/lawyer/private-lawyer.html" />
       </list>
     </option>
   </component>
@@ -412,13 +393,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lawyer/set.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="92" max-vertical-offset="1104">
-          <caret line="4" column="92" selection-start-line="4" selection-start-column="92" selection-end-line="4" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lawyer/i.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="92" max-vertical-offset="1288">
@@ -476,13 +450,6 @@
     <entry file="file://$PROJECT_DIR$/lawyer/comment-submit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="856">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lawyer/info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1265">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
@@ -739,26 +706,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lawyer/msn-show.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="805" max-vertical-offset="1909">
-          <caret line="35" column="11" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lawyer/bind-mobile-email.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.966666" vertical-offset="430" max-vertical-offset="1173">
           <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lawyer/i.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.4" vertical-offset="644" max-vertical-offset="1472">
-          <caret line="52" column="45" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="45" />
           <folding />
         </state>
       </provider>
@@ -773,8 +724,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lawyer/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7785548" vertical-offset="7428" max-vertical-offset="39146">
-          <caret line="352" column="30" selection-start-line="352" selection-start-column="30" selection-end-line="352" selection-end-column="30" />
+        <state vertical-scroll-proportion="-13.84" vertical-offset="15271" max-vertical-offset="39307">
+          <caret line="679" column="17" selection-start-line="679" selection-start-column="17" selection-end-line="679" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lawyer/i.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.2" vertical-offset="200" max-vertical-offset="1472">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lawyer/msn-show.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-25.3" vertical-offset="69" max-vertical-offset="1909">
+          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lawyer/info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.2" vertical-offset="414" max-vertical-offset="1472">
+          <caret line="30" column="62" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lawyer/private-lawyer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5" vertical-offset="207" max-vertical-offset="1104">
+          <caret line="27" column="82" selection-start-line="27" selection-start-column="82" selection-end-line="27" selection-end-column="82" />
           <folding />
         </state>
       </provider>
