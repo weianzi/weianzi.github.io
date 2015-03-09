@@ -193,10 +193,17 @@ body {
 .touchBox .picTab {
     position: absolute;
     bottom: 4px;
+     width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
 }
 
+
 .touchBox .picTab li {
-    float: left;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
     height: 5px;
     font: 1px/0.1 "";
 }
