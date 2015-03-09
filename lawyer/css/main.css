@@ -493,6 +493,10 @@ body {
     display: -webkit-box;
     display: -moz-box;
     display: box;
+
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
 }
 
 .i-info .con01 li {
@@ -509,8 +513,8 @@ body {
 }
 
 .i-info .con01 li.active {
-/*    border-left: 1px solid #eee;
-    border-right: 1px solid #eee;*/
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
     background: #00b2cb;
 }
 
