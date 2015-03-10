@@ -1335,6 +1335,24 @@ body {
     z-index: 999;
 }
 
+
+.reg-success{
+	width:80%;
+	margin:10% auto;
+	padding:20px 0;
+	border-radius:2px;
+	box-shadow:0 0 10px #ddd;
+	text-align:center;
+	background:#fff;
+}
+.reg-success > i{ display:block; width:60px; height:60px; margin:10px auto; border-radius:50%; background:#00b2cb url(../images/reg/icon12.png) 50% 50% no-repeat; background-size:36px 36px; }
+
+.reg-success > h2{
+	margin-bottom:10px;
+	font-size:1.2em;
+	font-weight:700;
+	}
+
 /*消息*/
 .msn-views section {
     width: 94%;
