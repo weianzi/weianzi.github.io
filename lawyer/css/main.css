@@ -453,19 +453,24 @@ body {
     height: 13px;
     background: url(../images/icon.png) -25px 0 no-repeat;
     background-size: 65px 160px;
-
 }
 
 .head .top-tip{
-
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 30px;
+    height: 26px;
+    background: url(../images/icon.png) -18px 5px no-repeat;
+    background-size: 65px 160px;
     z-index: 802;
 }
 
 .head .top-tip > s {
     display: none;
     position: absolute;
-    top: 8px;
-    right: 0;
+    top: 12px;
+    right: 7px;
     width: 0;
     height: 0;
     overflow: hidden;
@@ -477,8 +482,8 @@ body {
 .head .top-tip > ul {
     display: none;
     position: absolute;
-    right: -10px;
-    top: 24px;
+    right: -2px;
+    top: 27px;
     width: 60px;
     padding: 4px;
     border-radius: 4px;
