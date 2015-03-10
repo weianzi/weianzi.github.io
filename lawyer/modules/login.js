@@ -7,7 +7,6 @@ $(function () {
 
         var flag = validateFunction.FORM_validate();
         if (flag) {
-            //$(this).attr({"disabled": "disabled"}).attr({"value": "提交中,请稍等"});
             $.ajax({
                 type: "POST",
                 url: "#",
