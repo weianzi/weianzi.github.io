@@ -172,7 +172,7 @@ $(function () {
     $("#lawyerId").jdValidate(validatePrompt.lawyerId, validateFunction.lawyerId);
 //密码验证
     $("#pwd").bind("keyup", function () {
-        validateFunction.pwdstrength();
+        //validateFunction.pwdstrength();
     }).jdValidate(validatePrompt.pwd, validateFunction.pwd);
 //二次密码验证
     $("#pwd2").jdValidate(validatePrompt.pwd2, validateFunction.pwd2);

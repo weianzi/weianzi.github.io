@@ -12,7 +12,6 @@
     <script src="libs/zepto.min.js"></script>
     <script src="libs/lazyload.js"></script>
     <script src="libs/Validate.js"></script>
-    <script src="modules/Validate.form.js"></script>
     <script src="modules/reg01.js"></script>
     <script src="modules/public.js"></script>
 </head>
@@ -47,11 +46,23 @@
                     <div id="pwd2_error"></div>
                 </div>
 
+                <li class="hide"><i class="name"></i>
+                    <input id="code" name="code" placeholder="验证码" type="text">
+                </li>
             </ul>
         </section>
-        <section class="login-reg-btn clearfix">
-            <a class="fl btn white" href="reg-success.html" id="btnReg01">下一步</a></section>
+        <section class="login-reg-btn clearfix"><a class="fl btn white" id="nextBtnReg01">下一步</a><a class="fl btn white" style="display: none" id="btnReg01">确定</a></section>
     </form>
+
 </div>
+
+<!--弹出提示 strat-->
+<div id="pop-allbg" class="hide"></div>
+<div id="pop-box" class="hide">
+    <p class="msn-text"></p>
+    <a class="btn black">确认</a>
+    <span class="close">&times;</span>
+</div>
+<!--弹出提示 end-->
 </body>
 </html>

@@ -12,7 +12,6 @@
     <script src="libs/zepto.min.js"></script>
     <script src="libs/lazyload.js"></script>
     <script src="libs/Validate.js"></script>
-    <script src="modules/Validate.form.js"></script>
     <script src="modules/reg02.js"></script>
     <script src="modules/public.js"></script>
 </head>
@@ -67,21 +66,21 @@
                     <div id="realname_error"></div>
                 </div>
                 <li><i class="ico06"></i>
-                    <select rel="select">
+                    <select id="province">
                         <option value="-1">- 所属省 -</option>
                         <option value="1">广东</option>
                         <option value="2">山东</option>
                     </select>
                 </li>
                 <li><i class="ico07"></i>
-                    <select>
+                    <select id="city">
                         <option>- 所属市 -</option>
                         <option>广州</option>
                         <option>深圳</option>
                     </select>
                 </li>
                 <li><i class="ico08"></i>
-                    <select>
+                    <select id="area">
                         <option>- 所属区 -</option>
                         <option>天河</option>
                         <option>白云</option>
@@ -108,10 +107,21 @@
                     <div id="tel_succeed"></div>
                     <div id="tel_error"></div>
                 </div>
+                <li class="hide"><i class="name"></i>
+                    <input id="code" name="code" placeholder="验证码" type="text">
+                </li>
             </ul>
         </section>
-        <section class="login-reg-btn clearfix"><a class="fl btn white" id="btnReg02">下一步</a></section>
+        <section class="login-reg-btn clearfix"><a class="fl btn white" id="nextBtnReg02">下一步</a><a class="fl btn white" style="display: none" id="btnReg02">确定</a></section>
     </form>
 </div>
+<!--弹出提示 strat-->
+<div id="pop-allbg" class="hide"></div>
+<div id="pop-box" class="hide">
+    <p class="msn-text"></p>
+    <a class="btn black">确认</a>
+    <span class="close">&times;</span>
+</div>
+<!--弹出提示 end-->
 </body>
 </html>

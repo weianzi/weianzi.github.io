@@ -39,7 +39,6 @@ var validateRegExp = {
     realname:"^[A-Za-z\\u4e00-\\u9fa5]+$", // 真实姓名
     companyname:"^[A-Za-z0-9_()（）\\-\\u4e00-\\u9fa5]+$",
     companyaddr:"^[A-Za-z0-9_()（）\\#\\-\\u4e00-\\u9fa5]+$",
-    companysite:"^http[s]?:\\/\\/([\\w-]+\\.)+[\\w-]+([\\w-./?%&#=]*)?$"
 };
 
 //主函数
@@ -264,9 +263,6 @@ var validateRules = {
     },
     isCompanyaddr:function (str) {
         return new RegExp(validateRegExp.companyaddr).test(str);
-    },
-    isCompanysite:function (str) {
-        return new RegExp(validateRegExp.companysite).test(str);
     }
 };
 //验证文本
@@ -371,7 +367,7 @@ var validateFunction = {
         }
         else {
             validateSettings.succeed.run(option);
-            validateFunction.pwdstrength();
+            //validateFunction.pwdstrength();
         }
         if (str2 == str1) {
             $("#pwd2").focus();
@@ -407,144 +403,9 @@ var validateFunction = {
             if (!format2) {
                 validateSettings.error.run(option, option.prompts.error.badLength);
             } else {
-/*                if (!emailstate || emailold != option.value) {
-                    if (emailold != option.value) {
-                        emailold = option.value;
-                        option.errorEle.html("<span style='color:#999'>检验中……</span>");
-                        $.getJSON("#?action=CheckUemail&str=" + escape(option.value) + "&r=" + Math.random(), function (date) {
-                            if (date.success == 0) {
-                                validateSettings.succeed.run(option);
-                                emailstate = true;
-                            } else {
-                                validateSettings.error.run(option, option.prompts.error.beUsed);
-                                emailstate = false;
-                            }
-                        })
-                    }
-                    else {
-                        validateSettings.error.run(option, option.prompts.error.beUsed);
-                        emailstate = false;
-                    }
-                }*/
                     validateSettings.succeed.run(option);
             }
         }
-    },
-    authcode:function (option) {
-//        if (!authcodestate || authcodeold != option.value) {
-//            if (authcodeold != option.value) {
-////                authcodeold = option.value;
-////                option.errorEle.html("<span style='color:#999'>检验中……</span>");
-////                var uuid = $("#JD_Verification1").attr("src").split("&uid=")[1].split("&")[0];
-////                $.getJSON("AjaxService.aspx?action=CheckAuthcode&str=" + escape(option.value) + "&r=" + Math.random() + "&uuid=" + uuid, function(date) {
-////                    if (date.success == 0) {
-////                        validateSettings.succeed.run(option);
-////                        authcodestate = true;
-////                    } else {
-////                        validateSettings.error.run(option, option.prompts.error);
-////                        authcodestate = false;
-////                    }
-////                })
-//            }
-//            else {
-//                validateSettings.error.run(option, option.prompts.error);
-//                authcodestate = false;
-//            }
-//        }
-//        else {
-//            validateSettings.succeed.run(option);
-//        }
-
-        validateSettings.succeed.run(option);
-        authcodestate = true;
-    },
-    protocol:function (option) {
-        if (option.element.attr("checked") == true) {
-            option.element.attr("sta", validateSettings.succeed.state);
-            option.errorEle.html("");
-        } else {
-            option.element.attr("sta", validateSettings.isNull.state);
-            option.succeedEle.removeClass(validateSettings.succeed.style);
-        }
-    },
-    pwdstrength:function () {
-
-        var element = $("#pwdstrength");
-        var value = $("#pwd").val();
-        if (value.length >= 6 && validateRules.isPwd(value)) {
-            $("#pwd_error").empty();
-            element.show();
-
-            var pattern_1 = /^.*([\W_])+.*$/i;
-            var pattern_2 = /^.*([a-zA-Z])+.*$/i;
-            var pattern_3 = /^.*([0-9])+.*$/i;
-            var level = 0;
-
-            if (value.length > 10) {
-                level++;
-            }
-
-            if (pattern_1.test(value)) {
-                level++;
-            }
-
-            if (pattern_2.test(value)) {
-                level++;
-            }
-
-            if (pattern_3.test(value)) {
-                level++;
-            }
-
-            if (level > 3) {
-                level = 3;
-            }
-
-            switch (level) {
-                case 1:
-                    element.removeClass().addClass("strengthA");
-                    break;
-                case 2:
-                    element.removeClass().addClass("strengthB");
-                    break;
-                case 3:
-                    element.removeClass().addClass("strengthC");
-                    break;
-                default:
-                    break;
-            }
-        } else {
-            element.hide();
-        }
-    },
-    checkGroup:function (elements) {
-        for (var i = 0; i < elements.length; i++) {
-            if (elements[i].checked) {
-                return true;
-            }
-        }
-        return false;
-    },
-    checkSelectGroup:function (elements) {
-        for (var i = 0; i < elements.length; i++) {
-            if (elements[i].value == -1) {
-                return false;
-            }
-        }
-        return true;
-    },
-    showPassword:function (type) {
-        var v1 = $("#pwd").val(), s1 = $("#pwd").attr("sta"), c1 = document.getElementById("pwd").className, t1 = $("#pwd").attr("tabindex");
-        var v2 = $("#pwd2").val(), s2 = $("#pwd2").attr("sta"), c2 = document.getElementById("pwd2").className, t2 = $("#pwd2").attr("tabindex");
-        var P1 = $("<input type='" + type + "' value='" + v1 + "' sta='" + s1 + "' class='" + c1 + "' id='pwd' name='pwd' tabindex='" + t1 + "'/>");
-        $("#pwd").after(P1).remove();
-        $("#pwd").bind("keyup",
-            function () {
-                validateFunction.pwdstrength();
-            }).jdValidate(validatePrompt.pwd, validateFunction.pwd)
-        var P2 = $("<input type='" + type + "' value='" + v2 + "' sta='" + s2 + "' class='" + c2 + "' id='pwd2' name='pwd2' tabindex='" + t2 + "'/>");
-        $("#pwd2").after(P2).remove();
-        $("#pwd2").jdValidate(validatePrompt.pwd2, validateFunction.pwd2);
     },
     FORM_submit:function (elements) {
         var bool = true;
