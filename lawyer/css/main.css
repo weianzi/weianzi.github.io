@@ -302,7 +302,9 @@ body {
 	color: #00b2cb;
 }
 /*家庭*/
-.family-box {
+.family-link{}
+.family-link img{ display:block; width:300px; margin:10% auto 0; }
+/*.family-box {
 	height: 220px;
 }
 .family-box dl {
@@ -349,7 +351,7 @@ body {
 .family-box dd a {
 	display: block;
 	color: #333;
-}
+}*/
 /*风控中心*/
 .wind-control {
 	background: #fff;
@@ -370,7 +372,7 @@ body {
 /*我*/
 .i-info .head {
 	height: auto;
-	background: url(../images/i/t-bg.png) 50% bottom no-repeat;
+	background: url(../images/i/t-bg.png) 50% -28px no-repeat;
 }
 .head .set {
 	position: absolute;
@@ -450,7 +452,7 @@ body {
 .i-info .pic span {
 	display: block;
 	font-size: .9em;
-	color: #f7f7f7;
+	color: #8793a0;
 	text-align: center;
 }
 .i-info .pic s {
