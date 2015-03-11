@@ -1347,6 +1347,7 @@ body {
 	font-weight: 700;
 }
 /*快速咨询*/
+.quick-consulting .head{ background:#00b2cb; }
 .quick-consulting .con02 li > a {
 	display: block;
 }
