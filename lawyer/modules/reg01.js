@@ -37,18 +37,18 @@ $(function () {
                             "pwd": pwd
                         };
 
-                        $("#pop-box > .msn-text").html("验证码已发送！");
+                        $(".pop-box > .msn-text").html("验证码已发送！");
                         $("#formReg01 li").hide();
                         $("#formReg01 li.hide").show();
                         $("#nextBtnReg01").hide();
                         $("#btnReg01").show();
 
                     } else {
-                        $("#pop-box > .msn-text").html("验证码发送失败，请重新发送！");
+                        $(".pop-box > .msn-text").html("验证码发送失败，请重新发送！");
                     }
 
-                    $("#pop-allbg").css("display", "block");
-                    $("#pop-box").css("display", "block");
+                    $(".pop-allbg").css("display", "block");
+                    $(".pop-box").css("display", "block");
                 }
             });
         }
@@ -70,9 +70,9 @@ $(function () {
                         location.href = "reg-success.html";
                         storedData = {};//清空数据
                     } else {
-                        $("#pop-allbg").css("display", "block");
-                        $("#pop-box").css("display", "block");
-                        $("#pop-box > .msn-text").html(result.msg);
+                        $(".pop-allbg").css("display", "block");
+                        $(".pop-box").css("display", "block");
+                        $(".pop-box > .msn-text").html(result.msg);
                     }
                 }
             });

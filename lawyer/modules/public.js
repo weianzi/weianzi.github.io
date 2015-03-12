@@ -38,15 +38,21 @@ $(function () {
 
     //弹出提示
 
-    $("#pop-box .btn").tap(function () {
+    $(".pop-box .btn").tap(function () {
         hideMe();
     });
-    $("#pop-box .close").tap(function () {
+    $(".pop-box .close").tap(function () {
         hideMe();
     });
     function hideMe() {
-        $("#pop-allbg").hide();
-        $("#pop-box").hide();
+        $(".pop-allbg").hide();
+        $(".pop-box").hide();
     }
+
+
+    $(".specification-pop .btn").tap(function () {
+        $(".specification-pop").hide();
+        $(".pop-allbg").hide();
+    });
 
 });

@@ -39,9 +39,9 @@ $(function () {
                         }
                     }else{
 
-                        $("#pop-allbg").removeClass("hide");
-                        $("#pop-box").removeClass("hide");
-                        $("#pop-box > .msn-text").html("用户名或密码错误，请重新输入！");
+                        $(".pop-allbg").removeClass("hide");
+                        $(".pop-box").removeClass("hide");
+                        $(".pop-box > .msn-text").html("用户名或密码错误，请重新输入！");
                     }
                 }
             });

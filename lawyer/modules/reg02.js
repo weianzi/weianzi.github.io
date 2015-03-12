@@ -162,18 +162,18 @@ $(function () {
                             'phone': tel
                         };
 
-                        $("#pop-box > .msn-text").html("验证码已发送！");
+                        $(".pop-box > .msn-text").html("验证码已发送！");
                         $("#formReg02 li").hide();
                         $("#formReg02 li.hide").show();
                         $("#nextBtnReg02").hide();
                         $("#btnReg02").show();
 
                     } else {
-                        $("#pop-box > .msn-text").html("验证码发送失败，请重新发送！");
+                        $(".pop-box > .msn-text").html("验证码发送失败，请重新发送！");
                     }
 
-                    $("#pop-allbg").css("display", "block");
-                    $("#pop-box").css("display", "block");
+                    $(".pop-allbg").css("display", "block");
+                    $(".pop-box").css("display", "block");
                 }
             });
         }
@@ -195,9 +195,9 @@ $(function () {
                             location.href = "reg-success.html";
                             storedData = {};//清空数据
                         } else {
-                            $("#pop-allbg").css("display", "block");
-                            $("#pop-box").css("display", "block");
-                            $("#pop-box > .msn-text").html(result.msg);
+                            $(".pop-allbg").css("display", "block");
+                            $(".pop-box").css("display", "block");
+                            $(".pop-box > .msn-text").html(result.msg);
                         }
                     }
                 }
