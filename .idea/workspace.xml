@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a784e3cb-fc65-40e5-ac81-5c096cdd1c7e" name="!changes.default.changelist.name!" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/forgotpwd.html" afterPath="$PROJECT_DIR$/lawyer/forgotpwd.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/modules/forgotpwd.js" afterPath="$PROJECT_DIR$/lawyer/modules/forgotpwd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/forgotpwd2.html" afterPath="$PROJECT_DIR$/lawyer/forgotpwd2.html" />
-    </list>
+    <list default="true" id="a784e3cb-fc65-40e5-ac81-5c096cdd1c7e" name="!changes.default.changelist.name!" comment="" />
     <ignored path="weianzi.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,21 +33,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forgotpwd.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="forgotpwd.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lawyer/modules/forgotpwd.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="989">
-              <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.87341774" vertical-offset="0" max-vertical-offset="989">
+              <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forgotpwd.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="forgotpwd.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lawyer/forgotpwd.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33414045" vertical-offset="0" max-vertical-offset="1909">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state vertical-scroll-proportion="-13.033334" vertical-offset="0" max-vertical-offset="1909">
+              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -747,14 +743,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lawyer/modules/forgotpwd.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="989">
-          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lawyer/forgotpwd2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.2" vertical-offset="0" max-vertical-offset="1334">
@@ -765,8 +753,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lawyer/forgotpwd.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33414045" vertical-offset="0" max-vertical-offset="1909">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state vertical-scroll-proportion="-13.033334" vertical-offset="0" max-vertical-offset="1909">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lawyer/modules/forgotpwd.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.87341774" vertical-offset="0" max-vertical-offset="989">
+          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
           <folding />
         </state>
       </provider>

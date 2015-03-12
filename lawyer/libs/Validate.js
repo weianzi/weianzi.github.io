@@ -23,7 +23,8 @@ var validateRegExp = {
     letter_l:"^[a-z]+$", //小写字母
     letter_u:"^[A-Z]+$", //大写字母
     mobile:"^0?(13|15|17|18)[0-9]{9}$", //手机
-    notempty:"^\\S+$", //非空
+    //notempty:"^\\S+$", //非空
+    notempty:"^[A-Za-z0-9_()（）\\-\\u4e00-\\u9fa5]+$",
     password:"^.*[A-Za-z0-9\\w_-]+.*$", //密码
     fullNumber:"^[0-9]+$", //数字
     picture:"(.*)\\.(jpg|bmp|gif|ico|pcx|jpeg|tif|png|raw|tga)$", //图片
@@ -228,9 +229,6 @@ var validateRules = {
     isUid:function (str) {
         return new RegExp(validateRegExp.username).test(str);
     },
-    fullNumberName:function (str) {
-        return new RegExp(validateRegExp.fullNumber).test(str);
-    },
     isPwd:function (str) {
         return /^.*([\W_a-zA-z0-9-])+.*$/i.test(str);
     },
@@ -249,20 +247,17 @@ var validateRules = {
     checkType:function (element) {
         return (element.attr("type") == "checkbox" || element.attr("type") == "radio" || element.attr("rel") == "select");
     },
-    isChinese:function (str) {
-        return new RegExp(validateRegExp.chinese).test(str);
-    },
     isRealName:function (str) {
         return new RegExp(validateRegExp.realname).test(str);
-    },
-    isDeptname:function (str) {
-        return new RegExp(validateRegExp.deptname).test(str);
     },
     isCompanyname:function (str) {
         return new RegExp(validateRegExp.companyname).test(str);
     },
     isCompanyaddr:function (str) {
         return new RegExp(validateRegExp.companyaddr).test(str);
+    },
+    isNotEmpty:function (str) {
+        return new RegExp(validateRegExp.notempty).test(str);
     }
 };
 //验证文本
@@ -317,17 +312,50 @@ var validatePrompt = {
         isNull:"请输入验证码",
         error:"验证码错误"
     },
-    protocol:{
-        onFocus:"",
-        succeed:"",
-        isNull:"请先阅读并同意《用户协议》",
-        error:""
+    realname: {
+        onFocus: "2-20位字符，可由中文或英文组成",
+        succeed: "",
+        isNull: "请输入联系人姓名",
+        error: {
+            badLength: "联系人姓名长度只能在2-20位字符之间",
+            badFormat: "联系人姓名只能由中文或英文组成"
+        }
     },
-    empty:{
+    tel: {
+        onFocus: "如：020-88809999或13866666688",
+        succeed: "",
+        isNull: "请输入常用电话",
+        error: "电话格式错误，请重新输入"
+    },
+    companyname: {
+        onFocus: "请填写工商局注册的全称",
+        succeed: "",
+        isNull: "请输入所属律所名称",
+        error: {
+            badLength: "律所名称长度只能在4-40位字符之间",
+            badFormat: "只能由中英文、数字及“_”、“-”、()、（）组成"
+        }
+    },
+    companyaddr: {
+        onFocus: "请详细填写律所地址",
+        succeed: "",
+        isNull: "请输入律所地址",
+        error: {
+            badLength: "律所地址长度只能在4-50位字符之间",
+            badFormat: "只能由中英文、数字及“_”、“-”、()、（）、#组成"
+        }
+    },
+    selected:{
         onFocus:"",
         succeed:"",
-        isNull:"",
-        error:""
+        isNull:"&times;",
+        error:"&times;"
+    },
+    notEmpty:{
+        onFocus:"",
+        succeed:"",
+        isNull:"&times;",
+        error:"&times;"
     }
 };
 
@@ -337,14 +365,6 @@ var namestate = false, emailstate = false, authcodestate = false;
 var validateFunction = {
     username:function (option) {
         var format = validateRules.isUid(option.value);
-        if (!format) {
-            validateSettings.error.run(option, option.prompts.error.badFormat);
-        } else {
-            validateSettings.succeed.run(option);
-        }
-    },
-	lawyerId:function (option) {
-        var format = validateRules.isLawyerId(option.value);
         if (!format) {
             validateSettings.error.run(option, option.prompts.error.badFormat);
         } else {
@@ -394,6 +414,14 @@ var validateFunction = {
             }
         }
     },
+    lawyerId:function (option) {
+        var format = validateRules.isLawyerId(option.value);
+        if (!format) {
+            validateSettings.error.run(option, option.prompts.error.badFormat);
+        } else {
+            validateSettings.succeed.run(option);
+        }
+    },
     mail:function (option) {
         var format = validateRules.isEmail(option.value);
         var format2 = validateRules.betweenLength(option.value, 0, 50);
@@ -405,6 +433,76 @@ var validateFunction = {
             } else {
                     validateSettings.succeed.run(option);
             }
+        }
+    },
+
+    realname: function (option) {
+        var length = validateRules.betweenLength(option.value.replace(/[^\x00-\xff]/g, "**"), 2, 20);
+        var format = validateRules.isRealName(option.value);
+        if (!length) {
+            validateSettings.error.run(option, option.prompts.error.badLength);
+        } else {
+            if (!format) {
+                validateSettings.error.run(option, option.prompts.error.badFormat);
+            }
+            else {
+                validateSettings.succeed.run(option);
+            }
+        }
+    },
+    tel: function (option) {
+        var format = validateRules.isTel(option.value);
+        if (!format) {
+            validateSettings.error.run(option, option.prompts.error);
+        }
+        else {
+            validateSettings.succeed.run(option);
+        }
+    },
+    companyname: function (option) {
+        var length = validateRules.betweenLength(option.value.replace(/[^\x00-\xff]/g, "**"), 4, 40);
+        var format = validateRules.isCompanyname(option.value);
+        if (!length) {
+            validateSettings.error.run(option, option.prompts.error.badLength);
+        }
+        else {
+            if (!format) {
+                validateSettings.error.run(option, option.prompts.error.badFormat);
+            } else {
+                validateSettings.succeed.run(option);
+            }
+        }
+    },
+    companyaddr: function (option) {
+        var length = validateRules.betweenLength(option.value.replace(/[^\x00-\xff]/g, "**"), 4, 50);
+        var format = validateRules.isCompanyaddr(option.value);
+        if (!length) {
+            validateSettings.error.run(option, option.prompts.error.badLength);
+        } else {
+            if (!format) {
+                validateSettings.error.run(option, option.prompts.error.badFormat);
+            }
+            else {
+                validateSettings.succeed.run(option);
+            }
+        }
+    },
+    selected:function(option) {
+        var bool = (option.value == -1);
+        if (bool) {
+            validateSettings.isNull.run(option, "");
+        }
+        else {
+            validateSettings.succeed.run(option);
+        }
+    },
+    notEmpty:function (option) {
+        var format = validateRules.isNotEmpty(option.value);
+        if (!format) {
+            validateSettings.error.run(option, option.prompts.error);
+        }
+        else {
+            validateSettings.succeed.run(option);
         }
     },
     FORM_submit:function (elements) {

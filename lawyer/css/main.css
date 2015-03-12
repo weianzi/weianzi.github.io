@@ -738,6 +738,7 @@ body {
 }
 
 .form-list li {
+    position: relative;
     border-bottom: 1px solid #ddd;
     padding: 6px 2% 2px 0;
 }
@@ -777,6 +778,15 @@ body {
     display: block;
     width: 60%;
     margin: 20px auto;
+}
+.form-list li .error-tips{
+    position: absolute;
+    right: 0;
+    top:0;
+    width: 10%;
+    line-height: .8;
+    font-weight: 700;
+    font-size: 1.2em;
 }
 
 .tab-title {

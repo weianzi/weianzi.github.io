@@ -10,6 +10,8 @@
     <title>上门服务</title>
     <link href="css/main.css" rel="stylesheet"/>
     <script src="libs/zepto.min.js"></script>
+    <script src="libs/Validate.js"></script>
+    <script src="modules/roomService.js"></script>
     <script src="modules/public.js"></script>
 </head>
 <body>
@@ -28,64 +30,128 @@
             </ul>
         </div>
         <div class="form-list">
-            <ul>
-                <li class="clearfix"><span class="fl">服务城市</span><span class="fr">        <select>
+            <from method="post" onsubmit="return false;">
+                <ul>
+                    <li class="clearfix"><span class="fl">服务城市</span><span class="fr">
+                    <select id="first_commonuser_city">
+                        <option value="-1">请选择</option>
+                        <option value="0">广州</option>
+                        <option value="1">深圳</option>
+                        <option value="2">中山</option>
+                    </select></span>
 
-                    <option>服务城市</option>
-                    <option>服务城市</option>
-                    <option>服务城市</option>
-                </select></span></li>
-                <li class="clearfix"><span class="fl">服务区域</span><span class="fr">        <select>
+                    <div class="error-tips">
+                        <div id="first_commonuser_city_succeed"></div>
+                        <div id="first_commonuser_city_error"></div>
+                    </div></li>
 
-                    <option>服务区域</option>
-                    <option>服务区域</option>
-                    <option>服务区域</option>
-                </select></span></li>
-                <li class="clearfix"><span class="fl">上门时间</span><span class="fr"><input type="date" name=""
-                                                                                         value="2015/02/25"></span></li>
-                <li class="clearfix"><span class="fl">面谈地点</span><span class="fr"><input type="text" name=""
-                                                                                         value=""></span></li>
-                <li class="clearfix"><span class="fl">需要专长</span><span class="fr"><select>
-                    <option>需要专长</option>
-                    <option>需要专长</option>
-                    <option>需要专长</option>
-                </select></span></li>
-                <li class="clearfix"><span class="fl">费用</span><span class="fr"><input type="text" name="" value="100元"></span>
-                </li>
-                <li class="clearfix"><span class="fl">事宜描述</span><span class="fr"><textarea
-                        placeholder="输入事宜描述"></textarea></span></li>
-            </ul>
-            <a class="btn white" href="#">确认</a>
+                    <li class="clearfix"><span class="fl">服务区域</span><span class="fr">
+                    <select id="first_commonuser_area">
+                        <option value="-1">请选择</option>
+                        <option value="0">天河</option>
+                        <option value="1">增城</option>
+                        <option value="2">白云</option>
+                    </select></span>
+                    <div class="error-tips">
+                        <div id="first_commonuser_area_succeed"></div>
+                        <div id="first_commonuser_area_error"></div>
+                    </div></li>
+                    <li class="clearfix"><span class="fl">上门时间</span>
+                        <span class="fr"><input type="date" id="first_commonuser_time" value="2015/02/25"></span>
+                    <div class="error-tips">
+                        <div id="first_commonuser_time_succeed"></div>
+                        <div id="first_commonuser_time_error"></div>
+                    </div></li>
+                    <li class="clearfix"><span class="fl">面谈地点</span><span class="fr">
+                    <input type="text" id="first_commonuser_address" value=""></span>
+                    <div class="error-tips">
+                        <div id="first_commonuser_address_succeed"></div>
+                        <div id="first_commonuser_address_error"></div>
+                    </div></li>
+                    <li class="clearfix"><span class="fl">需要专长</span><span class="fr"><select
+                            id="first_commonuser_special">
+                        <option value="-1">请选择</option>
+                        <option value="0">需要专长</option>
+                        <option value="1">需要专长</option>
+                        <option value="2">需要专长</option>
+                    </select></span>
+                    <div class="error-tips">
+                        <div id="first_commonuser_special_succeed"></div>
+                        <div id="first_commonuser_special_error"></div>
+                    </div></li>
+                    <li class="clearfix"><span class="fl">费用</span><span class="fr text">100元</span>
+                    </li>
+                    <li class="clearfix"><span class="fl">事宜描述</span><span class="fr"><textarea
+                            id="first_commonuser_content" placeholder="输入事宜描述"></textarea></span>
+                    <div class="error-tips">
+                        <div id="first_commonuser_content_succeed"></div>
+                        <div id="first_commonuser_content_error"></div>
+                    </div></li>
+                </ul>
+                <a class="btn white" id="btnCommonuser">确认</a>
         </div>
+        </from>
         <div class="form-list hide">
-            <ul>
-                <li class="clearfix"><span class="fl">服务城市</span><span class="fr">        <select>
+            <from method="post" onsubmit="return false;">
+                <ul>
 
-                    <option>服务城市</option>
-                    <option>服务城市</option>
-                    <option>服务城市</option>
-                </select></span></li>
-                <li class="clearfix"><span class="fl">服务区域</span><span class="fr">        <select>
-
-                    <option>服务区域</option>
-                    <option>服务区域</option>
-                    <option>服务区域</option>
-                </select></span></li>
-                <li class="clearfix"><span class="fl">上门时间</span><span class="fr"><input type="date" name=""
-                                                                                         value="2015/02/25"></span></li>
-                <li class="clearfix"><span class="fl">公司地址</span><span class="fr"><input type="text" name=""
-                                                                                         value=""></span></li>
-                <li class="clearfix"><span class="fl">需要专长</span><span class="fr"><select>
-                    <option>需要专长</option>
-                    <option>需要专长</option>
-                    <option>需要专长</option>
-                </select></span></li>
-                <li class="clearfix"><span class="fl">费用</span><span class="fr"><input type="text" name="" value="100元"></span>
-                </li>
-                <li class="clearfix"><span class="fl">事宜描述</span><span class="fr"><textarea
-                        placeholder="输入事宜描述"></textarea></span></li>
-            </ul>
-            <a class="btn white" href="#">确认</a>
+                    <li class="clearfix"><span class="fl">服务城市</span><span class="fr">
+                    <select id="first_company_city">
+                        <option value="-1">请选择</option>
+                        <option value="0">广州</option>
+                        <option value="1">深圳</option>
+                        <option value="2">中山</option>
+                    </select></span>
+                    <div class="error-tips">
+                        <div id="first_company_city_succeed"></div>
+                        <div id="first_company_city_error"></div>
+                    </div></li>
+                    <li class="clearfix"><span class="fl">服务区域</span><span class="fr">
+                    <select id="first_company_area">
+                        <option value="-1">请选择</option>
+                        <option value="0">天河</option>
+                        <option value="1">增城</option>
+                        <option value="2">白云</option>
+                    </select></span>
+                    <div class="error-tips">
+                        <div id="first_company_area_succeed"></div>
+                        <div id="first_company_area_error"></div>
+                    </div></li>
+                    <li class="clearfix"><span class="fl">上门时间</span>
+                        <span class="fr"><input type="date" id="first_company_time" value="2015/02/25"></span>
+                    <div class="error-tips">
+                        <div id="first_company_time_succeed"></div>
+                        <div id="first_company_time_error"></div>
+                    </div></li>
+                    <li class="clearfix"><span class="fl">公司地址</span><span class="fr">
+                    <input type="text" id="first_company_address" value=""></span>
+                    <div class="error-tips">
+                        <div id="first_company_address_succeed"></div>
+                        <div id="first_company_address_error"></div>
+                    </div></li>
+                    <li class="clearfix"><span class="fl">需要专长</span><span class="fr"><select
+                            id="first_company_special">
+                        <option value="-1">请选择</option>
+                        <option value="0">需要专长</option>
+                        <option value="1">需要专长</option>
+                        <option value="2">需要专长</option>
+                    </select></span>
+                    <div class="error-tips">
+                        <div id="first_company_special_succeed"></div>
+                        <div id="first_company_special_error"></div>
+                    </div></li>
+                    <li class="clearfix"><span class="fl">费用</span><span class="fr text">100元</span>
+                    </li>
+                    <li class="clearfix"><span class="fl">事宜描述</span><span class="fr"><textarea
+                            id="first_company_content" placeholder="输入事宜描述"></textarea></span>
+                    <div class="error-tips">
+                        <div id="first_company_content_succeed"></div>
+                        <div id="first_company_content_error"></div>
+                    </div>
+                    </li>
+                </ul>
+                <a class="btn white" id="btnCompany">确认</a>
+            </from>
         </div>
     </section>
 
@@ -102,11 +168,17 @@
 <div class="pop-allbg"></div>
 <div class="specification-pop">
     <h4>服务说明</h4>
+
     <div><p>交易过程中请勿随意接收卖家发送的可疑文件，来源的链接，付款前请务必详细核对支付信息。</p>
+
         <p>其真实性、布人负责。天猫不提供任何保证，并不承担任何法律责任。</p></div>
     <a class="btn">我要预约</a>
 </div>
 <!--服务说明弹窗 end-->
-
+<div class="pop-box hide">
+    <p class="msn-text"></p>
+    <a class="btn black">确认</a>
+    <span class="close">&times;</span>
+</div>
 </body>
 </html>
