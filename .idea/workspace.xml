@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a784e3cb-fc65-40e5-ac81-5c096cdd1c7e" name="!changes.default.changelist.name!" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/msn-consulting.html" afterPath="$PROJECT_DIR$/lawyer/msn-consulting.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/self-service.html" afterPath="$PROJECT_DIR$/lawyer/self-service.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/forgotpwd.html" afterPath="$PROJECT_DIR$/lawyer/forgotpwd.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/login.html" afterPath="$PROJECT_DIR$/lawyer/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/modules/login.js" afterPath="$PROJECT_DIR$/lawyer/modules/login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/reg01.html" afterPath="$PROJECT_DIR$/lawyer/reg01.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/reg02.html" afterPath="$PROJECT_DIR$/lawyer/reg02.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="weianzi.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,6 +40,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="login.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lawyer/modules/login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="622" max-vertical-offset="1495">
+              <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="self-service.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lawyer/self-service.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -56,11 +70,71 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="msn-consulting.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="forgotpwd.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lawyer/forgotpwd.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6455224" vertical-offset="447" max-vertical-offset="1288">
+              <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="msn-consulting.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lawyer/msn-consulting.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.94430995" vertical-offset="554" max-vertical-offset="1518">
+            <state vertical-scroll-proportion="-26.0" vertical-offset="554" max-vertical-offset="1518">
               <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lawyer/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.545455" vertical-offset="832" max-vertical-offset="1633">
+              <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reg01.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lawyer/reg01.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-17.8" vertical-offset="823" max-vertical-offset="1679">
+              <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="60" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reg02.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lawyer/reg02.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-18.566668" vertical-offset="2180" max-vertical-offset="3036">
+              <caret line="119" column="26" selection-start-line="119" selection-start-column="26" selection-end-line="119" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reg-success.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lawyer/reg-success.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="644">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="public.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lawyer/modules/public.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1449">
+              <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -90,7 +164,6 @@
         <option value="$PROJECT_DIR$/lawyer/family-record.html" />
         <option value="$PROJECT_DIR$/lawyer/modules/forgotpwd.js" />
         <option value="$PROJECT_DIR$/lawyer/i-head-pic.html" />
-        <option value="$PROJECT_DIR$/lawyer/forgotpwd.html" />
         <option value="$PROJECT_DIR$/lawyer/forgotpwd2.html" />
         <option value="$PROJECT_DIR$/lawyer/changepwd.html" />
         <option value="$PROJECT_DIR$/lawyer/libs/Validate.js" />
@@ -104,17 +177,20 @@
         <option value="$PROJECT_DIR$/lawyer/index.html" />
         <option value="$PROJECT_DIR$/lawyer/info.html" />
         <option value="$PROJECT_DIR$/lawyer/delegation.html" />
-        <option value="$PROJECT_DIR$/lawyer/login.html" />
         <option value="$PROJECT_DIR$/lawyer/room-service.html" />
         <option value="$PROJECT_DIR$/lawyer/modules/public.js" />
         <option value="$PROJECT_DIR$/lawyer/delegation-con.html" />
         <option value="$PROJECT_DIR$/lawyer/modules/reg01.js" />
         <option value="$PROJECT_DIR$/lawyer/modules/reg02.js" />
-        <option value="$PROJECT_DIR$/lawyer/modules/login.js" />
         <option value="$PROJECT_DIR$/lawyer/private-lawyer.html" />
         <option value="$PROJECT_DIR$/lawyer/css/main.css" />
         <option value="$PROJECT_DIR$/lawyer/self-service.html" />
         <option value="$PROJECT_DIR$/lawyer/msn-consulting.html" />
+        <option value="$PROJECT_DIR$/lawyer/modules/login.js" />
+        <option value="$PROJECT_DIR$/lawyer/login.html" />
+        <option value="$PROJECT_DIR$/lawyer/reg01.html" />
+        <option value="$PROJECT_DIR$/lawyer/reg02.html" />
+        <option value="$PROJECT_DIR$/lawyer/forgotpwd.html" />
       </list>
     </option>
   </component>
@@ -389,13 +465,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="81" max-vertical-offset="1679">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/icon.psd">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -527,31 +596,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lawyer/forgotpwd.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.666666" vertical-offset="309" max-vertical-offset="1288">
-          <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lawyer/reg01.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.366667" vertical-offset="486" max-vertical-offset="1426">
-          <caret line="49" column="17" selection-start-line="25" selection-start-column="3" selection-end-line="49" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lawyer/changepwd.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.6666665" vertical-offset="276" max-vertical-offset="1357">
           <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lawyer/reg02.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-63.233334" vertical-offset="587" max-vertical-offset="2806">
-          <caret line="108" column="46" selection-start-line="108" selection-start-column="46" selection-end-line="108" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -663,14 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lawyer/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.8" vertical-offset="777" max-vertical-offset="1633">
-          <caret line="57" column="28" selection-start-line="57" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lawyer/modules/reg02.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2691" max-vertical-offset="4991">
@@ -683,22 +723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.52" vertical-offset="1225" max-vertical-offset="2047">
           <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lawyer/modules/public.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="602" max-vertical-offset="1449">
-          <caret line="48" column="29" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lawyer/modules/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1518">
-          <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -743,6 +767,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lawyer/msn-consulting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-26.0" vertical-offset="554" max-vertical-offset="1518">
+          <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lawyer/modules/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="622" max-vertical-offset="1495">
+          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lawyer/modules/public.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1449">
+          <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lawyer/reg01.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.8" vertical-offset="823" max-vertical-offset="1679">
+          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="60" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lawyer/reg02.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.566668" vertical-offset="2180" max-vertical-offset="3036">
+          <caret line="119" column="26" selection-start-line="119" selection-start-column="26" selection-end-line="119" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lawyer/reg-success.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="834">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lawyer/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.545455" vertical-offset="832" max-vertical-offset="1633">
+          <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lawyer/room-service.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-16.266666" vertical-offset="1835" max-vertical-offset="2691">
@@ -751,10 +831,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lawyer/msn-consulting.html">
+    <entry file="file://$PROJECT_DIR$/lawyer/forgotpwd.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.94430995" vertical-offset="554" max-vertical-offset="1518">
-          <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.6455224" vertical-offset="447" max-vertical-offset="1288">
+          <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
           <folding />
         </state>
       </provider>

@@ -38,7 +38,6 @@ $(function () {
                             location.href="/lawyer_webapp/user_index.do";
                         }
                     }else{
-
                         $(".pop-allbg").removeClass("hide");
                         $(".pop-box").removeClass("hide");
                         $(".pop-box > .msn-text").html("用户名或密码错误，请重新输入！");
