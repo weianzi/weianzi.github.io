@@ -1782,7 +1782,7 @@ body {
 
 /*弹出提示*/
 .pop-allbg {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100%;

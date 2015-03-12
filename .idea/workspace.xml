@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a784e3cb-fc65-40e5-ac81-5c096cdd1c7e" name="!changes.default.changelist.name!" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/delegation.html" afterPath="$PROJECT_DIR$/lawyer/delegation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/login.html" afterPath="$PROJECT_DIR$/lawyer/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/modules/login.js" afterPath="$PROJECT_DIR$/lawyer/modules/login.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/css/main.css" afterPath="$PROJECT_DIR$/lawyer/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/private-lawyer.html" afterPath="$PROJECT_DIR$/lawyer/private-lawyer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/modules/public.js" afterPath="$PROJECT_DIR$/lawyer/modules/public.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/modules/reg01.js" afterPath="$PROJECT_DIR$/lawyer/modules/reg01.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/modules/reg02.js" afterPath="$PROJECT_DIR$/lawyer/modules/reg02.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lawyer/room-service.html" afterPath="$PROJECT_DIR$/lawyer/room-service.html" />
-    </list>
+    <list default="true" id="a784e3cb-fc65-40e5-ac81-5c096cdd1c7e" name="!changes.default.changelist.name!" comment="" />
     <ignored path="weianzi.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lawyer/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-38.76" vertical-offset="40983" max-vertical-offset="42780">
-              <caret line="1824" column="0" selection-start-line="1824" selection-start-column="0" selection-end-line="1824" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.2039555" vertical-offset="40867" max-vertical-offset="42780">
+              <caret line="1784" column="19" selection-start-line="1784" selection-start-column="19" selection-end-line="1784" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -133,11 +123,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="private-lawyer.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="private-lawyer.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lawyer/private-lawyer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9427861" vertical-offset="737" max-vertical-offset="1702">
-              <caret line="65" column="17" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
+            <state vertical-scroll-proportion="-22.966667" vertical-offset="691" max-vertical-offset="1702">
+              <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -201,7 +191,6 @@
         <option value="$PROJECT_DIR$/lawyer/index.html" />
         <option value="$PROJECT_DIR$/lawyer/info.html" />
         <option value="$PROJECT_DIR$/lawyer/delegation.html" />
-        <option value="$PROJECT_DIR$/lawyer/css/main.css" />
         <option value="$PROJECT_DIR$/lawyer/login.html" />
         <option value="$PROJECT_DIR$/lawyer/room-service.html" />
         <option value="$PROJECT_DIR$/lawyer/modules/public.js" />
@@ -210,6 +199,7 @@
         <option value="$PROJECT_DIR$/lawyer/modules/reg02.js" />
         <option value="$PROJECT_DIR$/lawyer/modules/login.js" />
         <option value="$PROJECT_DIR$/lawyer/private-lawyer.html" />
+        <option value="$PROJECT_DIR$/lawyer/css/main.css" />
       </list>
     </option>
   </component>
@@ -772,14 +762,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lawyer/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-38.76" vertical-offset="40983" max-vertical-offset="42780">
-          <caret line="1824" column="0" selection-start-line="1824" selection-start-column="0" selection-end-line="1824" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lawyer/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-17.8" vertical-offset="777" max-vertical-offset="1633">
@@ -846,8 +828,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lawyer/private-lawyer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9427861" vertical-offset="737" max-vertical-offset="1702">
-          <caret line="65" column="17" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
+        <state vertical-scroll-proportion="-22.966667" vertical-offset="691" max-vertical-offset="1702">
+          <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lawyer/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2039555" vertical-offset="40867" max-vertical-offset="42780">
+          <caret line="1784" column="19" selection-start-line="1784" selection-start-column="19" selection-end-line="1784" selection-end-column="19" />
           <folding />
         </state>
       </provider>
