@@ -9,8 +9,10 @@
     <meta http-equiv="expires" content="0"/>
     <title>我要评论</title>
     <link href="css/main.css" rel="stylesheet"/>
-	    <script src="libs/zepto.min.js"></script>
+	<script src="libs/zepto.min.js"></script>
     <script src="libs/lazyload.js"></script>
+    <script src="libs/Validate.js"></script>
+    <script src="modules/comment.js"></script>
     <script src="modules/public.js"></script>
 </head>
 <body>
@@ -20,8 +22,15 @@
         <h1>我要评论</h1>
     </header>
     <section>
-    	<textarea placeholder="你也来评论一下吧......"></textarea>
-        <a class="btn white">提交评论</a>
+        <from method="post" onsubmit="return false;">
+            <input type="hidden" id="message_lawyer_comment_lawyerId" value="${lawyerId }"/>
+        <textarea id="message_lawyer_comment_content" placeholder="你也来评论一下吧......"></textarea>
+            <div class="error-tips">
+                <div id="message_lawyer_comment_content_succeed"></div>
+                <div id="message_lawyer_comment_content_error"></div>
+            </div>
+        <a class="btn white" id="btnMessageLawyerComment">提交评论</a>
+            </from>
     </section>
 
     <nav class="toolbar">
@@ -31,6 +40,14 @@
         <a href="family.html"><i class="icon-family"></i><span>家庭律师</span></a>
         <a href="i.html"><i class="icon-i"></i><span>我</span></a>
     </nav>
+</div>
+
+<!--弹窗 start-->
+<div class="pop-allbg hide"></div>
+<div class="pop-box hide">
+    <p class="msn-text"></p>
+    <a class="btn black">确认</a>
+    <span class="close">&times;</span>
 </div>
 </body>
 </html>

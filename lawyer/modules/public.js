@@ -36,8 +36,6 @@ $(function () {
     });
 
 
-    //弹出提示
-
     $(".pop-box .btn").tap(function () {
         hideMe();
     });
@@ -56,3 +54,10 @@ $(function () {
     });
 
 });
+
+//弹出提示
+function popShow(msg) {
+    $(".pop-allbg").css("display", "block");
+    $(".pop-box").css("display", "block");
+    $(".pop-box > .msn-text").html(msg);
+}

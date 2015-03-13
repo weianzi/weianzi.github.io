@@ -38,9 +38,10 @@ $(function () {
                             location.href="/lawyer_webapp/user_index.do";
                         }
                     }else{
-                        $(".pop-allbg").css("display", "block");
-                        $(".pop-box").css("display", "block");
-                        $(".pop-box > .msn-text").html("用户名或密码错误，请重新输入！");
+                        popShow("用户名或密码错误，请重新输入！");
+//                        $(".pop-allbg").css("display", "block");
+//                        $(".pop-box").css("display", "block");
+//                        $(".pop-box > .msn-text").html("用户名或密码错误，请重新输入！");
                     }
                 }
             });

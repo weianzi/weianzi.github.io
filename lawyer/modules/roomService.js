@@ -61,15 +61,11 @@ $(function () {
                 success: function (data) {
                     var result = JSON.parse(data);
                     if (result.code == '1') {
-                        $(".pop-allbg").css("display", "block");
-                        $(".pop-box").css("display", "block");
-                        $(".pop-box > .msn-text").html(result.msg);
+                        popShow(result.msg);
                     } else if (result.code == '2') {
-
+                        popShow("请登陆");
                     } else {
-                        $(".pop-allbg").css("display", "block");
-                        $(".pop-box").css("display", "block");
-                        $(".pop-box > .msn-text").html("服务器忙，请稍后再试");
+                        popShow("服务器忙，请稍后再试");
                     }
                 }
             });
@@ -103,15 +99,11 @@ $(function () {
                 success: function (data) {
                     var result = JSON.parse(data);
                     if (result.code == '1') {
-                        $(".pop-allbg").css("display", "block");
-                        $(".pop-box").css("display", "block");
-                        $(".pop-box > .msn-text").html(result.msg);
+                        popShow(result.msg);
                     } else if (result.code == '2') {
-
+                        //
                     } else {
-                        $(".pop-allbg").css("display", "block");
-                        $(".pop-box").css("display", "block");
-                        $(".pop-box > .msn-text").html("服务器忙，请稍后再试");
+                        popShow("服务器忙，请稍后再试");
                     }
                 }
             });
