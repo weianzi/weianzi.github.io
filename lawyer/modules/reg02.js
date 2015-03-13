@@ -60,21 +60,20 @@ $(function () {
                     if (result.code == "1") {
                         //存数据
                         storedData = {
-                            'account': account,
-                            'pwd': pwd,
-                            'worknum': lawyerId,
-                            'lawfirm': companyname,
-                            'realname': realname,
-                            'province': province,
-                            'city': city,
-                            'region': area,
-                            'address': companyaddr,
-                            'email': mail,
-                            'phone': tel
+                            "account": account,
+                            "pwd": pwd,
+                            "worknum": lawyerId,
+                            "lawfirm": companyname,
+                            "realname": realname,
+                            "province": province,
+                            "city": city,
+                            "region": area,
+                            "address": companyaddr,
+                            "email": mail,
+                            "phone": tel
                         };
 
                         popShow("验证码已发送！");
-                        //$(".pop-box > .msn-text").html("验证码已发送！");
                         $("#formReg02 li").hide();
                         $("#formReg02 li.hide").show();
                         $("#nextBtnReg02").hide();
@@ -82,11 +81,7 @@ $(function () {
 
                     } else {
                         popShow("验证码发送失败，请重新发送！");
-                        //$(".pop-box > .msn-text").html("验证码发送失败，请重新发送！");
                     }
-
-                    //$(".pop-allbg").css("display", "block");
-                    //$(".pop-box").css("display", "block");
                 }
             });
         }
@@ -104,14 +99,11 @@ $(function () {
                     data: {code: code, account: storedData.account, pwd: storedData.pwd, worknum: storedData.worknum, lawfirm: storedData.lawfirm, realname: storedData.realname, province: storedData.province, city: storedData.city, region: storedData.region, address: storedData.address, email: storedData.email, phone: storedData.phone},
                     success: function (data) {
                         var result = JSON.parse(data);
-                        if (result.code == '1') {
+                        if (result.code == "1") {
                             location.href = "reg-success.html";
                             storedData = {};//清空数据
                         } else {
                             popShow(result.msg);
-//                            $(".pop-allbg").css("display", "block");
-//                            $(".pop-box").css("display", "block");
-//                            $(".pop-box > .msn-text").html(result.msg);
                         }
                     }
                 }

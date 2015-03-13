@@ -19,7 +19,7 @@
     <header class="head clearfix">
         <h1>找回密码</h1>
     </header>
-    <form id="forgotpwd" name="forgotpwd" method="post" onsubmit="return false;">
+    <form id="forgotpwd1" name="forgotpwd1" method="post" onsubmit="return false;">
         <section class="login-reg-con">
             <ul>
                 <li><i class="name"></i>
@@ -32,14 +32,14 @@
             </ul>
         </section>
         <section class="login-reg-btn clearfix">
-            <a class="fl btn white" id="btnForgotpwd">下一步</a></section>
+            <a class="fl btn white" id="btnForgotpwd1">下一步</a></section>
     </form>
 
-    <form id="forgotpwd2" name="forgotpwd2" method="post" onsubmit="return false;">
+    <form id="forgotpwd2" name="forgotpwd2" class="hide" method="post" onsubmit="return false;">
         <section class="login-reg-con">
             <ul>
                 <li><i class="name"></i>
-                    <input type="text" id="" name="" placeholder="验证码">
+                    <input type="text" id="code" name="code" placeholder="验证码">
                 </li>
 
                 <li><i class="pw"></i>
@@ -60,16 +60,16 @@
             </ul>
         </section>
         <section class="login-reg-btn clearfix">
-            <a class="fl btn white" id="">确认</a></section>
+            <a class="fl btn white" id="btnForgotpwd2">确认</a></section>
     </form>
 
 </div>
 
 <!--弹出提示 strat-->
-<div class="pop-allbg"></div>
-<div class="pop-box">
-    你好，验证短信已经发到你的手机，请注意查收。
-    <div><a class="btn black" href="forgotpwd2.html">确认</a></div>
+<div class="pop-allbg hide"></div>
+<div class="pop-box hide">
+    <p class="msn-text"></p>
+    <a class="btn black">确认</a>
     <span class="close">&times;</span>
 </div>
 <!--弹出提示 end-->
