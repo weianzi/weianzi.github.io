@@ -500,17 +500,16 @@ var validateFunction = {
         }
     },
     notEmpty: function (option) {
-        var length = validateRules.betweenLength(option.value.replace(/[^\x00-\xff]/g, "**"), 0, 140);
+        //var length = validateRules.betweenLength(option.value.replace(/[^\x00-\xff]/g, "**"), 1, 140);
         var format = validateRules.isNotEmpty(option.value);
-        if (!length) {
-            validateSettings.error.run(option, option.prompts.error.badLength);
-        } else {
-            if (!format) {
-                validateSettings.error.run(option, option.prompts.error.badFormat);
-            }
-            else {
-                validateSettings.succeed.run(option);
-            }
+//        if (!length) {
+//            validateSettings.error.run(option, option.prompts.error.badLength);
+//        } else {
+        if (!format) {
+            validateSettings.error.run(option, option.prompts.error.badFormat);
+        }
+        else {
+            validateSettings.succeed.run(option);
         }
     },
     FORM_submit: function (elements) {
