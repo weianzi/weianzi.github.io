@@ -1746,6 +1746,10 @@ body {
     height: 24px;
 }
 
+.quick-consulting-con .form-list li .error-tips{
+    right: -20px;
+}
+
 /*委托服务*/
 .delegation-nav li {
     height: 44px;
