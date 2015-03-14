@@ -11,6 +11,7 @@
     <link href="css/main.css" rel="stylesheet"/>
     <script src="libs/zepto.min.js"></script>
     <script src="libs/lazyload.js"></script>
+    <script src="modules/quickConsulting.js"></script>
     <script src="modules/public.js"></script>
 </head>
 <body>
@@ -31,69 +32,23 @@
     <section>
         <div class="tab-title">
             <ul class="clearfix">
-                <li class="fl selected">最新留言</li>
-                <li class="fl">已解决</li>
+                <li class="fl selected" tabindex="0">最新留言</li>
+                <li class="fl" tabindex="1">已解决</li>
             </ul>
         </div>
-        <div class="form-list">
-
-            <div class="item clearfix">
-                <a class="fl" href="quick-consulting-reply.html"><p>么什么会么什么会什么什么会么什么会</p>
-                    <span class="grey">2015/01/20</span>
-
-                    <div>已解决</div>
-                </a>
-                <a class="fr" href="#">回复 ></a>
-            </div>
-            <div class="item clearfix">
-                <a class="fl" href="quick-consulting-reply.html"><p>sssssssss</p>
-                    <span class="grey">2015/01/20</span>
-
-                    <div>已解决</div>
-                </a>
-                <a class="fr" href="#">回复 ></a>
-            </div>
-            <div class="item clearfix">
-                <a class="fl" href="quick-consulting-reply.html"><p>gggggggggg</p>
-                    <span class="grey">2015/01/20</span>
-
-                    <div>已解决</div>
-                </a>
-                <a class="fr" href="#">回复 ></a>
-            </div>
-
-        </div>
-
-        <div class="form-list hide">
-            <div class="item clearfix">
-                <a class="fl" href="quick-consulting-reply.html"><p>sssssssss</p>
-                    <span class="grey">2015/01/20</span>
-
-                    <div>已解决</div>
-                </a>
-
-                <a class="fr" href="#">回复 ></a>
-            </div>
-            <div class="item clearfix">
-                <a class="fl" href="quick-consulting-reply.html">
-                    <p>gggggggggg</p>
-                    <span class="grey">2015/01/20</span>
-
-                    <div>已解决</div>
-                </a>
-                <a class="fr" href="#">回复 ></a>
-            </div>
-        </div>
+        <div class="form-list"></div>
+        <div class="form-list hide"></div>
     </section>
 
 
-    <nav class="toolbar">
-        <a href="index.html"><i class="icon-index"></i><span>首页</span></a>
-        <a href="search.html"><i class="icon-search"></i><span>找律师</span></a>
-        <a href="msn.html"><i class="icon-msn"><span>4</span></i><span>消息</span></a>
-        <a href="family.html"><i class="icon-family"></i><span>家庭律师</span></a>
-        <a href="i.html"><i class="icon-i"></i><span>我</span></a>
-    </nav>
 </div>
+<nav class="toolbar">
+    <a href="index.html"><i class="icon-index"></i><span>首页</span></a>
+    <a href="search.html"><i class="icon-search"></i><span>找律师</span></a>
+    <a href="msn.html"><i class="icon-msn"><span>4</span></i><span>消息</span></a>
+    <a href="family.html"><i class="icon-family"></i><span>家庭律师</span></a>
+    <a href="i.html"><i class="icon-i"></i><span>我</span></a>
+</nav>
+<div class="loading-data"><img src="images/loading.gif"/></div>
 </body>
 </html>

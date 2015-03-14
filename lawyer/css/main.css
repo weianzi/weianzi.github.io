@@ -779,10 +779,11 @@ body {
     width: 60%;
     margin: 20px auto;
 }
-.form-list li .error-tips{
+
+.form-list li .error-tips {
     position: absolute;
     right: 0;
-    top:0;
+    top: 0;
     width: 10%;
     line-height: .8;
     font-weight: 700;
@@ -1862,4 +1863,14 @@ body {
     padding: 4px 0;
     width: 50%;
     margin: 20px auto;
+}
+
+.loading-data {
+    position: fixed;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+    z-index: 999;
 }
