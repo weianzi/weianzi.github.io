@@ -4,11 +4,11 @@ $(function () {
     var iBtn = true; //开关
     var orderType = 0;
     var pageNum = 1;
-    var allPageNum = 0;
+    var allPageNum;
     showList(orderType);
 
     $(".tab-title li").tap(function () {
-            pageNum = 0;
+            pageNum = 1;
             orderType = $(this).attr("tabindex");
             $(".form-list").html("");
             showList(orderType);
@@ -19,7 +19,7 @@ $(function () {
     $(window).scroll(function () {
         if ($(document).height() <= $(this).scrollTop() + $(this).height()) {
             pageNum++;
-            if(pageNum > allPageNum){
+            if (pageNum > allPageNum) {
                 return;
             }
             showList(orderType);
@@ -51,7 +51,7 @@ $(function () {
                 if (result.code == "1") {
                     allPageNum = 2;//暂时写死
                     //allPageNum = result.allPageNum; 后台要返回一个总页数
-                     var html = "";
+                    var html = "";
                     for (var i in result.data) {
 
                         html += '<div class="item clearfix"><a class="fl" href="quick-consulting-reply.html"><p>'
