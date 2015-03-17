@@ -12,36 +12,59 @@
     <link href="css/main.css" rel="stylesheet"/>
     <script src="libs/zepto.min.js"></script>
     <script src="libs/lazyload.js"></script>
+    <script src="modules/iConsulting.js"></script>
     <script src="modules/public.js"></script>
 </head>
 <body>
-<div class="views i-consulting">
+
+<div class="views i-consulting" id="iConsultingList">
     <header class="head clearfix">
         <a class="back white" href="i.html"><span></span></a>
 
         <h1>我的咨询</h1>
     </header>
     <section>
-        <div class="form-list">
-            <div class="item clearfix">
-                <a href="quick-consulting-reply.html"><p class="fl">配料表：一茶一叶\一芽二叶初展茶树鲜叶</p>
-                <span class="fr">2015/01/20 &gt;</span></a>
-            </div>
-            <div class="item clearfix">
-                <a href="quick-consulting-reply.html"><p class="fl">君山黄茶 特级君山银针黄金饼 岳阳君山春茶 礼盒装茶叶375克包邮</p>
-                    <span class="fr">2015/01/20 &gt;</span></a>
-            </div>
+        <div class="form-list"></div>
+    </section>
+</div>
+
+<div class="views i-consulting hide" id="iConsultingCon">
+    <header class="head clearfix">
+        <a class="back white" href="i-consulting.html"><span></span></a>
+
+        <h1>我的咨询</h1>
+    </header>
+    <section>
+        <div class="form-list consulting-con">
+            <ul>
+                <li>标题：</li>
+                <li>时间：</li>
+                <li>类型：</li>
+                <li>内容：</li>
+            </ul>
+        </div>
+        <h2 class="h2-title">回复如下</h2>
+
+        <div class="comment">
+            <dl class="item clearfix">
+                <dt class="fl pic"><a href="info.html"><img class="lazyload" src="images/grey.png"
+                                                            data-original="images/search/man.jpg"/></a></dt>
+                <dd><h3>君君</h3>
+
+                    <p>第务</p>
+                    <span>2015/01/31</span>
+                </dd>
+            </dl>
         </div>
     </section>
-
-
-    <nav class="toolbar">
-        <a href="index.html"><i class="icon-index"></i><span>首页</span></a>
-        <a href="search.html"><i class="icon-search"></i><span>找律师</span></a>
-        <a href="msn.html"><i class="icon-msn"><span>4</span></i><span>消息</span></a>
-        <a href="family.html"><i class="icon-family"></i><span>家庭律师</span></a>
-        <a href="i.html" class="active"><i class="icon-i"></i><span>我</span></a>
-    </nav>
 </div>
+<nav class="toolbar">
+    <a href="index.html"><i class="icon-index"></i><span>首页</span></a>
+    <a href="search.html"><i class="icon-search"></i><span>找律师</span></a>
+    <a href="msn.html"><i class="icon-msn"><span>4</span></i><span>消息</span></a>
+    <a href="family.html"><i class="icon-family"></i><span>家庭律师</span></a>
+    <a href="i.html" class="active"><i class="icon-i"></i><span>我</span></a>
+</nav>
+<div class="loading-data"><img src="images/loading.gif"/></div>
 </body>
 </html>

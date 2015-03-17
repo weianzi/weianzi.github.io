@@ -614,7 +614,17 @@ body {
 }
 
 /*我的咨询 我的……*/
-.i-consulting .form-list .item, .i-server .form-list .item {
+.i-consulting .form-list .item {
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.i-consulting .form-list .item p,
+.i-consulting .form-list .item span {
+    padding: 4px 0;
+}
+
+.i-server .form-list .item {
     padding: 8px 0;
     border-bottom: 1px solid #ddd;
 }
@@ -1351,15 +1361,17 @@ body {
     background-size: 30px;
     z-index: 999;
 }
-.login-reg .welcome > i{
-    display:inline-block;
+
+.login-reg .welcome > i {
+    display: inline-block;
     width: 30px;
     height: 30px;
     margin-right: 10px;
-    vertical-align:middle;
+    vertical-align: middle;
     background: url(../images/reg/logo.png) 8% 50% no-repeat;
     background-size: 30px;
 }
+
 .reg-success {
     width: 80%;
     margin: 10% auto;
@@ -1754,7 +1766,7 @@ body {
     height: 24px;
 }
 
-.quick-consulting-con .form-list li .error-tips{
+.quick-consulting-con .form-list li .error-tips {
     right: -20px;
 }
 

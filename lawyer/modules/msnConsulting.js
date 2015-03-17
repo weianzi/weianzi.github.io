@@ -14,23 +14,20 @@ $(function () {
     $("#first_message_consult_content").jdValidate(validatePrompt.notEmpty, validateFunction.notEmpty);
     $("#first_message_consult_contact").jdValidate(validatePrompt.notEmpty, validateFunction.notEmpty);
 
-    //
+    //留言咨询
     $("#btnMessage").tap(function () {
 
         var consult_title = $("#first_message_consult_title").val();
         var consult_category = $("#first_message_consult_category").val();
         var consult_content = $("#first_message_consult_content").val();
-        var consult_contact = $("#first_message_consult_content").val();
+        var consult_contact = $("#first_message_consult_contact").val();
         var postData = {
             title: consult_title,
             category: consult_category,
             content: consult_content,
             contact: consult_contact
         };
-        var mydate = new Date();
-        mydate = mydate.getFullYear() + '-' + mydate.getMonth() + '-'
-            + mydate.getDay() + ' ' + mydate.getHours() + ':'
-            + mydate.getMinutes() + ':' + mydate.getSeconds();
+
         var flag = validateFunction.FORM_validate();
         if (flag) {
             $.ajax({

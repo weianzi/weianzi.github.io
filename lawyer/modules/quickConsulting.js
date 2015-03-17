@@ -30,9 +30,7 @@ $(function () {
     //获取数据
     function showList(orderType) {
 
-        if (!iBtn) {
-            return;
-        }
+        if (!iBtn) return;
         iBtn = false;
         var postData = {
             orderType: orderType,
