@@ -1,81 +1,81 @@
-//初始化
-var iBtn = true; //开关
-var pageNum = 2;
 var storedData = []; //缓存数据
-showList();
 
-//滚动获取新数据
-$(window).scroll(function () {
-    if ($(document).height() <= $(this).scrollTop() + $(this).height()) {
-        pageNum++;
-        showList();
-    }
-});
+$(function () {
 
-//获取数据
-function showList() {
+    var iBtn = true; //开关
+    var pageNum = 2; //读取第2页（第0、1页没数据？）
+    showList(); //初始化
 
-    if (!iBtn) return;
-    iBtn = false;
-
-    var postData = {
-        pageNum: pageNum,
-        jsp: 1
-    };
-    $.ajax({
-        type: "POST",
-        url: "/lawyer_webapp/my/myConsultForWeb.do",
-        contentType: "application/x-www-form-urlencoded; charset=utf-8",
-        data: postData,
-        success: function (data) {
-            $(".loading-data").show();
-            var result = JSON.parse(data);
-            if (result.code == "1") {
-
-                var html = "";
-                for (var i in result.data) {
-
-                    html += '<div class="item clearfix" onclick="itemTap(this, '
-                        + result.data[i].id + ')"><p class="fl">'
-                        + result.data[i].content + '</p><span class="fr">'
-                        + result.data[i].createtime + ' &gt;</span></div>';
-
-                    //存数据
-                    storedData.push({
-                        category: result.data[i].category,
-                        content: result.data[i].content,
-                        createtime: result.data[i].createtime,
-                        title: result.data[i].title,
-                        id: result.data[i].id
-                    });
-                }
-                //console.log(storedData);
-                $("#iConsultingList .form-list").append(html);
-            }
+//滚动时获取新数据
+    $(window).scroll(function () {
+        if ($(document).height() <= $(this).scrollTop() + $(this).height()) {
+            pageNum++;
+            showList();
         }
     });
 
-    setTimeout(function () {
-        $(".loading-data").hide();
-    }, 1000);
+//获取列表数据
+    function showList() {
 
-    iBtn = true;
-}
+        if (!iBtn) return;
+        iBtn = false;
 
+        var postData = {
+            pageNum: pageNum,
+            jsp: 1
+        };
+        $.ajax({
+            type: "POST",
+            url: "/lawyer_webapp/my/myConsultForWeb.do",
+            contentType: "application/x-www-form-urlencoded; charset=utf-8",
+            data: postData,
+            success: function (data) {
+                $(".loading-data").show();
+                var result = JSON.parse(data);
+                if (result.code == "1") {
+
+                    var html = "";
+                    for (var i in result.data) {
+
+                        html += '<div class="item clearfix" onclick="itemTap(this, ' +
+                        result.data[i].id + ')"><p class="fl">' +
+                        result.data[i].content + '</p><span class="fr">' +
+                        result.data[i].createtime + ' &gt;</span></div>';
+
+                        //存数据
+                        storedData.push({
+                            category: result.data[i].category,
+                            content: result.data[i].content,
+                            createtime: result.data[i].createtime,
+                            title: result.data[i].title,
+                            id: result.data[i].id
+                        });
+                    }
+                    //console.log(storedData);
+                    $("#iConsultingList .form-list").append(html);
+                }
+            }
+        });
+
+        setTimeout(function () {
+            $(".loading-data").hide();
+        }, 800);
+
+        iBtn = true;
+    }
+
+});
 
 //点击单个
 function itemTap(obj, id) {
 
     $(obj).on("tap", function () {
         console.log(storedData);
-
         $("#iConsultingList").hide();
         $("#iConsultingCon").show();
 
         for (var i in storedData) {
-
             if (storedData[i].id == id) {
-
                 $("#iConsultingCon .consulting-con li")
                     .eq(0).html("标题：" + storedData[i].title).end()
                     .eq(1).html("时间：" + storedData[i].createtime).end()
@@ -92,9 +92,18 @@ function itemTap(obj, id) {
             success: function (data) {
                 console.log(data);
                 var result = JSON.parse(data);
-
+                if (result.code == "1") {
+                    var html = "";
+                    for (var i in result.data) {
+                        html += '<dl class="item clearfix" onclick="itemTap(this, ' +
+                        result.data[i].id + ')"><dt class="fl pic"><img class="lazyload" src="images/grey.png" data-original="images/search/man.jpg"/></a></dt><dd><h3>' +
+                        result.data[i].title + '</h3><p>' +
+                        result.data[i].content + '</p><span>' +
+                        result.data[i].createtime + '</span></dd></dl>';
+                    }
+                    $("#iConsultingCon .comment").append(html);
+                }
             }
         })
-
     });
 }
