@@ -39,7 +39,7 @@ $(function () {
                     for (var i in result.data) {
                         html += '<dl class="item clearfix" onclick="itemTap(this, ' +
                             result.data[i].id + ')"><dt class="fl pic"><img class="lazyload" src="images/search/man.jpg"></dt><dd><p>' +
-                            result.data[i].createtime + '<br>' +
+                            dateFormat(result.data[i].createtime) + '<br>' +
                             result.data[i].content + '</p><span>' +
                             isDeal(result.data[i].isdeal) + ' ></span></dd></dl>';
 
@@ -48,7 +48,7 @@ $(function () {
                             account: result.data[i].account,
                             contact: result.data[i].contact,
                             servicearea: result.data[i].servicearea,
-                            time: result.data[i].time,
+                            time: dateFormat(result.data[i].time),
                             address: result.data[i].address,
                             special: result.data[i].special,
                             cost: result.data[i].cost,

@@ -40,13 +40,13 @@ $(function () {
                         html += '<div class="item clearfix" onclick="itemTap(this, ' +
                         result.data[i].id + ')"><p class="fl">' +
                         result.data[i].content + '</p><span class="fr">' +
-                        result.data[i].createtime + ' &gt;</span></div>';
+                        dateFormat(result.data[i].createtime) + ' &gt;</span></div>';
 
                         //存数据
                         storedData.push({
                             category: result.data[i].category,
                             content: result.data[i].content,
-                            createtime: result.data[i].createtime,
+                            createtime: dateFormat(result.data[i].createtime),
                             title: result.data[i].title,
                             id: result.data[i].id
                         });
@@ -99,7 +99,7 @@ function itemTap(obj, id) {
                         result.data[i].id + ')"><dt class="fl pic"><img class="lazyload" src="images/grey.png" data-original="images/search/man.jpg"/></a></dt><dd><h3>' +
                         result.data[i].title + '</h3><p>' +
                         result.data[i].content + '</p><span>' +
-                        result.data[i].createtime + '</span></dd></dl>';
+                        dateFormat(result.data[i].createtime) + '</span></dd></dl>';
                     }
                     $("#iConsultingCon .comment").append(html);
                 }

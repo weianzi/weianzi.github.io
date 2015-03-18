@@ -39,7 +39,7 @@ $(function () {
                         html += '<dl class="item clearfix" onclick="itemTap(this, ' +
                             result.data[i].id + ')"><dt class="fl pic"><img class="lazyload" src="images/search/man.jpg"></dt><dd><h3>' +
                             result.data[i].entrustname + '</h3><p>' +
-                            result.data[i].createtime + '<br>' +
+                            dateFormat(result.data[i].createtime) + '<br>' +
                             result.data[i].entrustcontent + '</p><span>' +
                             isDeal(result.data[i].isdeal) + ' ></span></dd></dl>';
 
