@@ -54,7 +54,7 @@ $(function () {
 
                         html += '<div class="item clearfix"><a class="fl" href="quick-consulting-reply.html"><p>'
                             + result.data[i].content + '</p><span class="grey">'
-                            + result.data[i].createtime + '</span><div>'
+                            + dateFormat(result.data[i].createtime) + '</span><div>'
                             + result.data[i].ctype + '</div></a><a class="fr" href="#'
                             + result.data[i].userid + '">回复 ></a></div>';
                     }

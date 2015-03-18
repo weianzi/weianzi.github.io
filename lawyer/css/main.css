@@ -1450,41 +1450,40 @@ body {
     color: #00b2cb;
 }
 
-.news-list > dl {
+.news-list dl {
     height: 60px;
     background: #fff;
     margin-bottom: 10px;
 }
 
-.news-list > dl dt img {
+.news-list dl dt img {
     width: 75px;
     height: 60px;
 }
 
-.news-list > dl dd {
+.news-list dl dd {
     position: relative;
     margin-left: 80px;
     height: 60px;
 }
 
-.news-list > dl dd h4 {
+.news-list dl dd h4 {
     padding: 4px 0;
     font-size: 1.1em;
     font-weight: 700;
 }
 
-.news-list > dl dd p {
+.news-list dl dd span{
     font-size: .8em;
 }
 
-.news-list > dl dd .good {
+.news-list dl dd .good {
     position: absolute;
     right: 4px;
-    bottom: 2px;
-    font-size: .8em;
+    /*bottom: 2px;*/
 }
 
-.news-list > dl dd .good i {
+.news-list dl dd .good i {
     display: inline-block;
     width: 12px;
     height: 12px;
