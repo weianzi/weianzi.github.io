@@ -70,7 +70,7 @@ $(function () {
 function itemTap(obj, id) {
 
     $(obj).on("tap", function () {
-        console.log(storedData);
+        //console.log(storedData);
         $("#iConsultingList").hide();
         $("#iConsultingCon").show();
 

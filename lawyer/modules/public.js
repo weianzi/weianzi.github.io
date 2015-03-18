@@ -61,3 +61,17 @@ function popShow(msg) {
     $(".pop-box").css("display", "block");
     $(".pop-box > .msn-text").html(msg);
 }
+
+//转换
+function isDeal(str) {
+    switch (str) {
+        case "1":
+            return "已处理";
+            break;
+        case "0":
+            return "未处理";
+            break;
+        default:
+            return "未处理";
+    }
+}
