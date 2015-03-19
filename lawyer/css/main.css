@@ -119,6 +119,10 @@ body {
     background: #eee;
 }
 
+p {
+    word-break: break-word;
+}
+
 /*字体图标*/
 @font-face {
     font-family: 'lawyer';
@@ -1451,7 +1455,7 @@ body {
 }
 
 .news-list dl {
-    height: 60px;
+    /*height: 60px;*/
     background: #fff;
     margin-bottom: 10px;
 }
@@ -1464,7 +1468,7 @@ body {
 .news-list dl dd {
     position: relative;
     margin-left: 80px;
-    height: 60px;
+    /*height: 60px;*/
 }
 
 .news-list dl dd h4 {
@@ -1473,7 +1477,7 @@ body {
     font-weight: 700;
 }
 
-.news-list dl dd span{
+.news-list dl dd span {
     font-size: .8em;
 }
 

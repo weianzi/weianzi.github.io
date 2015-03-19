@@ -39,7 +39,6 @@ $(function () {
                             result.data[i].data.content + '</p><span class="grey">' +
                             dateFormat(result.data[i].data.rebacktime) + '</span><span class="good" href="#"><i></i>' +
                             result.data[i].hasread + '</span></dd></dl></a>';
-
                     }
                     $(".news-list").append(html);
 
