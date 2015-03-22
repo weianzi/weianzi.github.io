@@ -114,7 +114,7 @@ $(function () {
             contentType: "application/x-www-form-urlencoded; charset=utf-8",
             data: {pageNum: 0},
             success: function (data) {
-                alert(1);
+                //alert(1);
                 var result = JSON.parse(data);
                 if (result.code == "1") {
                     var html = "";
