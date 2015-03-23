@@ -35,14 +35,14 @@ $(function () {
                     var html = "";
                     for (var i in result.data) {
                         html += '<div class="item clearfix"><p class="pic"><a href="info.html?id=' +
-                            result.data[i].id + '"><img class="lazyload" src="images/grey.png" data-original="' +
+                            result.data[i].userid + '"><img class="lazyload" src="images/grey.png" data-original="' +
                             result.data[i].avatar + '"/></a></p><h3 class="clearfix"><span class="fl black"><a href="info.html?id=' +
-                            result.data[i].id + '">' +
+                            result.data[i].userid + '">' +
                             result.data[i].realname + '</a></span> <span class="fr">¥100</span></h3><div class="tips clearfix"><span class="fl"><i></i>' +
                             result.data[i].city + '，' + result.data[i].province + '</span> <span class="fr"><a href="javascript:;"><i></i>' +
                             result.data[i].praisenum + '</a></span> <span class="fr"><a href="javascript:;">评论' +
                             result.data[i].rebacknum + '</a></span></div><a href="info.html?id=' +
-                            result.data[i].id + '"><s></s></a></div>';
+                            result.data[i].userid + '"><s></s></a></div>';
                     }
                     $("#searchResult").html(html);
                 }
@@ -63,14 +63,14 @@ $(function () {
                     var html = "";
                     for (var i in result.data) {
                         html += '<div class="item clearfix"><p class="pic"><a href="info.html?id=' +
-                            result.data[i].id + '"><img class="lazyload" src="images/grey.png" data-original="' +
+                            result.data[i].userid + '"><img class="lazyload" src="images/grey.png" data-original="' +
                             result.data[i].avatar + '"/></a></p><h3 class="clearfix"><span class="fl black"><a href="info.html?id=' +
-                            result.data[i].id + '">' +
+                            result.data[i].userid + '">' +
                             result.data[i].realname + '</a></span> <span class="fr">¥100</span></h3><div class="tips clearfix"><span class="fl"><i></i>' +
                             result.data[i].city + '，' + result.data[i].province + '</span> <span class="fr"><a href="javascript:;"><i></i>' +
                             result.data[i].praisenum + '</a></span> <span class="fr"><a href="javascript:;">评论' +
                             result.data[i].rebacknum + '</a></span></div><a href="info.html?id=' +
-                            result.data[i].id + '"><s></s></a></div>';
+                            result.data[i].userid + '"><s></s></a></div>';
                     }
                     $("#searchResult").html(html);
                 }
@@ -91,14 +91,14 @@ $(function () {
                     var html = "";
                     for (var i in result.data) {
                         html += '<div class="item clearfix"><p class="pic"><a href="info.html?id=' +
-                            result.data[i].id + '"><img class="lazyload" src="images/grey.png" data-original="' +
+                            result.data[i].userid + '"><img class="lazyload" src="images/grey.png" data-original="' +
                             result.data[i].avatar + '"/></a></p><h3 class="clearfix"><span class="fl black"><a href="info.html?id=' +
-                            result.data[i].id + '">' +
+                            result.data[i].userid + '">' +
                             result.data[i].realname + '</a></span> <span class="fr">¥100</span></h3><div class="tips clearfix"><span class="fl"><i></i>' +
                             result.data[i].city + '，' + result.data[i].province + '</span> <span class="fr"><a href="javascript:;"><i></i>' +
                             result.data[i].praisenum + '</a></span> <span class="fr"><a href="javascript:;">评论' +
                             result.data[i].rebacknum + '</a></span></div><a href="info.html?id=' +
-                            result.data[i].id + '"><s></s></a></div>';
+                            result.data[i].userid + '"><s></s></a></div>';
                     }
                     $("#searchResult").html(html);
                 }
@@ -119,8 +119,9 @@ $(function () {
                 if (result.code == "1") {
                     var html = "";
                     for (var i in result.data) {
-                        html += '<div class="item clearfix"><p class="pic"><img class="lazyload" src="images/grey.png" data-original="' +
-                            result.data[i].avatar + '"/></p><h3 class="clearfix"><span class="fl black">' +
+                        html += '<div class="item clearfix"><p class="pic"><a href="info.html?id=' +
+                            result.data[i].userid + '"><img class="lazyload" src="images/grey.png" data-original="' +
+                            result.data[i].avatar + '"/></a></p><h3 class="clearfix"><span class="fl black">' +
                             result.data[i].realname + '</span> <span class="fr">¥100</span></h3><div class="tips clearfix"><span class="fl"><i></i>' +
                             result.data[i].city + '，' + result.data[i].province + '</span> <span class="fr"><a href="javascript:;"><i></i>' +
                             result.data[i].praisenum + '</a></span> <span class="fr"><a href="javascript:;">评论' +

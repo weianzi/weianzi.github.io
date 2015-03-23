@@ -1,8 +1,8 @@
 $(function () {
 
-    var url = window.location.href;
-    var lawyerId = url.substring(url.lastIndexOf('=') + 1);
-
+//    var url = window.location.href;
+//    var lawyerId = url.substring(url.lastIndexOf('=') + 1);
+    var lawyerId = 1;
     var iBtn = true; //开关
     var pageNum = 0;
     showList(); //初始化
@@ -22,7 +22,7 @@ $(function () {
         iBtn = false;
 
         var postData = {
-            lawyerId:lawyerId,
+            lawyerId: lawyerId,
             pageNum: pageNum
         };
         $.ajax({
@@ -39,10 +39,10 @@ $(function () {
                     for (var i in result.data) {
 
                         html += '<dl class="item clearfix"><dt class="fl pic"><img class="lazyload" src="images/grey.png" data-original="' +
-                        result.data[i].img + '"/></dt><dd><h3>' +
-                        result.data[i].title + '</h3><p>' +
-                        result.data[i].content + '</p><span>' +
-                        result.data[i].date + '</span></dd></dl>';
+                            result.data[i].img + '"/></dt><dd><h3>' +
+                            result.data[i].title + '</h3><p>' +
+                            result.data[i].content + '</p><span>' +
+                            result.data[i].date + '</span></dd></dl>';
 
                     }
                     //console.log(storedData);

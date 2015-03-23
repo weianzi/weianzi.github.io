@@ -1,7 +1,6 @@
 $(function () {
 
-    var url = window.location.href;
-    var lawyerId = url.substring(url.lastIndexOf('=') + 1);
+    var lawyerId = 1;
 
     var iBtn = true; //开关
     var pageNum = 0;
@@ -34,7 +33,6 @@ $(function () {
                 $(".loading-data").show();
                 var result = JSON.parse(data);
                 if (result.code == "1") {
-
                     var html = "";
                     for (var i in result.data) {
 

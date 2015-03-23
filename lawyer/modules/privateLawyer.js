@@ -21,10 +21,9 @@ $(function () {
             var result = JSON.parse(data);
             if (result.code == '1') {
                 console.log(result);
-                $(".head .pic img").attr("data-original", result.src);
-                $(".head .h2").html('律所：' + result.lawyer + '<br>证号：' + result.lawyerId + '');
-                $(".praise-num").html(result.praise);
-
+                $(".head .pic img").attr("src", result.data.avatar);
+                $(".head h2").html('律所：' + result.data.lawfirm + '<br>证号：' + result.data.workNum);
+                $(".praise-num").html(result.data.praiseNum);
             } else {
                 popShow(result.msg);
             }
@@ -42,7 +41,7 @@ $(function () {
                 var result = JSON.parse(data);
                 if (result.code == '1') {
                     console.log(result);
-                    $(".praise-num").html(result.data);
+                    $(".praise-num").html(result.data.praiseNum);
                 } else {
                     popShow(result.msg);
                 }
