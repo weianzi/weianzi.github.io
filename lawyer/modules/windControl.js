@@ -49,10 +49,10 @@ $(function () {
             if (result.code == "1") {
                 var html = "";
                 for (var i in result.data) {
-                    html += '<li class="clearfix"><a href="javascript:itemTap(this,' +
-                    result.data[i].reportId + ')"><span class="fl">' +
-                    result.data[i].title + '</span><span class="fr">' +
-                    result.data[i].date + ' ></span></a></li>';
+                    html += '<li class="clearfix" onclick="itemTap(this,' +
+                        result.data[i].consultid + ')"><span class="fl">' +
+                        result.data[i].title + '</span><span class="fr">' +
+                        result.data[i].createtime + ' ></span></li>';
 
                 }
 
@@ -61,24 +61,31 @@ $(function () {
         }
     });
 
+    $(".back").eq(1).click(function(){
+        $(".wind-control").hide().eq(0).show();
+    });
 
-    //点击单个
-    function itemTap(obj, id) {
-        $(obj).on("tap", function () {
-            $(".list").hide();
-            $(".wind-control-con").show();
-            $.ajax({
-                type: "POST",
-                url: "/lawyer_webapp/familyLawyer/reportDetailForWeb.do",
-                contentType: "application/x-www-form-urlencoded; charset=utf-8",
-                data: {reportId: id},
-                success: function (data) {
-                    var result = JSON.parse(data);
-                    if (result.code == "1") {
-                        $(".wind-control-con").html(result.concent);
-                    }
-                }
-            });
-        });
-    }
 });
+
+
+//点击单个
+function itemTap(obj, id) {
+    $(obj).click(function () {
+        $(".wind-control").hide().eq(1).show();
+        $.ajax({
+            type: "POST",
+            url: "/lawyer_webapp/familyLawyer/reportDetailForWeb.do",
+            contentType: "application/x-www-form-urlencoded; charset=utf-8",
+            data: {reportId: id},
+            success: function (data) {
+                var result = JSON.parse(data);
+                if (result.code == "1") {
+                    $(".form-list ul").html('<li>标题：' + result.data.title + '</li><li>内容：' + result.data.content + '</li>');
+                }
+            }
+        });
+    });
+}
+
+
+

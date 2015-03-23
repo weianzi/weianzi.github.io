@@ -10,8 +10,9 @@ $.extend(validateFunction, {
 
 $(function () {
 
-    var url = window.location.href;
-    var lawyerId = url.substring(url.lastIndexOf('=') + 1);
+//    var url = window.location.href;
+//    var lawyerId = url.substring(url.lastIndexOf('=') + 1);
+    var lawyerId = 1;
     //
     $.ajax({
         type: "POST",
@@ -36,7 +37,7 @@ $(function () {
             type: "POST",
             url: "/lawyer_webapp/searchlawyer/alterPraise.do?weixin=1",
             contentType: "application/x-www-form-urlencoded; charset=utf-8",
-            data: {lawyerId: lawyerId, jsp: 1},
+            data: {lawyerId: lawyerId},
             success: function (data) {
                 var result = JSON.parse(data);
                 if (result.code == '1') {

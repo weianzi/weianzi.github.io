@@ -12,7 +12,6 @@
     <script src="libs/jquery-1.4.4.min.js"></script>
     <script src="libs/highcharts.js"></script>
     <script src="modules/windControl.js"></script>
-    <script src="modules/public.js"></script>
 </head>
 <body>
 <div class="views wind-control">
@@ -21,7 +20,6 @@
 
         <h1>风控中心</h1>
     </header>
-
     <section>
         <div id="container"></div>
         <div class="list">
@@ -30,12 +28,22 @@
                 </li>
             </ul>
         </div>
-
-
-        <div class="wind-control-con hide"></div>
     </section>
+</div>
 
-
+<div class="views wind-control hide">
+    <header class="head clearfix">
+        <a class="back white"><span></span></a>
+        <h1>风控中心</h1>
+    </header>
+    <section>
+        <div class="form-list">
+            <ul>
+                <li>标题：</li>
+                <li>内容：</li>
+            </ul>
+        </div>
+    </section>
 </div>
 <nav class="toolbar">
     <a href="index.html"><i class="icon-index"></i><span>首页</span></a>

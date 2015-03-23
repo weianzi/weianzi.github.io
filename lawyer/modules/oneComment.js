@@ -34,19 +34,16 @@ $(function () {
                 $(".loading-data").show();
                 var result = JSON.parse(data);
                 if (result.code == "1") {
-
                     var html = "";
                     for (var i in result.data) {
-
                         html += '<dl class="item clearfix"><dt class="fl pic"><img class="lazyload" src="images/grey.png" data-original="' +
                             result.data[i].img + '"/></dt><dd><h3>' +
                             result.data[i].title + '</h3><p>' +
-                            result.data[i].content + '</p><span>' +
-                            result.data[i].date + '</span></dd></dl>';
-
+                            result.data[i].content + '</p><div class="time"><i></i>' +
+                            result.data[i].date + '</div><s class="bg"></s><s></s></dd></dl>';
                     }
                     //console.log(storedData);
-                    $(".comment").append(html);
+                    $(".comment-list").append(html);
                 }
             }
         });

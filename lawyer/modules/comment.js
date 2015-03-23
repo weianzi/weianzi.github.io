@@ -22,7 +22,8 @@ $(function () {
     //12.对律师的评论提交
     $("#btnMessageLawyerComment").tap(function () {
         var content = $("#message_lawyer_comment_content").val();
-        var lawyerId = $("#message_lawyer_comment_lawyerId").val();
+        //var lawyerId = $("#message_lawyer_comment_lawyerId").val();
+        var lawyerId = 1;
         var postData = {
             comment : content,
             lawyerId : lawyerId
