@@ -11,6 +11,7 @@
     <link href="css/main.css" rel="stylesheet"/>
     <script src="libs/zepto.min.js"></script>
     <script src="libs/lazyload.js"></script>
+    <script src="libs/Validate.js"></script>
     <script src="modules/oneConsulting.js"></script>
     <script src="modules/public.js"></script>
 </head>
@@ -23,17 +24,87 @@
     </header>
 
     <section>
+        <div class="form-list">
+            <ul>
+                <li class="clearfix"><span class="fl">咨询标题</span><span class="fr">
+                        <input type="text" id="message_consult_title" placeholder="输入咨询标题"></span>
+
+                    <div class="error-tips">
+                        <div id="message_consult_title_succeed"></div>
+                        <div id="message_consult_title_error"></div>
+                    </div>
+                </li>
+                <li class="clearfix"><span class="fl">咨询类别</span><span class="fr">
+    								<select id="message_consult_category">
+                                        <option value="-1">请选择类别</option>
+                                        <option value="0">行政诉讼</option>
+                                        <option value="1">婚姻法律</option>
+                                        <option value="2">刑事法律</option>
+                                        <option value="3">房产法律</option>
+                                        <option value="4">公司法律</option>
+                                        <option value="5">合同法律</option>
+                                        <option value="6">劳动法律</option>
+                                        <option value="7">知识产权</option>
+                                        <option value="8">医疗事故</option>
+                                        <option value="9">债权债务</option>
+                                        <option value="10">消费维权</option>
+                                        <option value="11">交通事故</option>
+                                    </select></span>
+
+                    <div class="error-tips">
+                        <div id="message_consult_category_succeed"></div>
+                        <div id="message_consult_category_error"></div>
+                    </div>
+                </li>
+                <li class="clearfix"><span class="fl">咨询内容</span><span class="fr"><textarea
+                        id="message_consult_content" placeholder="输入咨询内容"></textarea></span>
+
+                    <div class="error-tips">
+                        <div id="message_consult_content_succeed"></div>
+                        <div id="message_consult_content_error"></div>
+                    </div>
+                </li>
+                <li class="clearfix"><span class="fl">联系方式</span><span class="fr"><input type="text"
+                                                                                         id="message_consult_contact"
+                                                                                         placeholder="输入联系方式"></span>
+
+                    <div class="error-tips">
+                        <div id="message_consult_contact_succeed"></div>
+                        <div id="message_consult_contact_error"></div>
+                    </div>
+                </li>
+            </ul>
+            <a class="btn white" id="btnMessage">确定</a>
+        </div>
+
 
     </section>
 
 
-
-</div>    <nav class="toolbar">
+</div>
+<nav class="toolbar">
     <a href="index.html"><i class="icon-index"></i><span>首页</span></a>
     <a href="search.html"><i class="icon-search"></i><span>找律师</span></a>
     <a href="msn.html"><i class="icon-msn"><span>4</span></i><span>消息</span></a>
     <a href="family.html"><i class="icon-family"></i><span>家庭律师</span></a>
     <a href="i.html"><i class="icon-i"></i><span>我</span></a>
 </nav>
+
+<!--服务说明弹窗 start-->
+<div class="pop-allbg"></div>
+<div class="specification-pop">
+    <h4>服务说明</h4>
+
+    <div><p>交易过程中请勿随意接收卖家发送的可疑文件，来源的链接，付款前请务必详细核对支付信息。</p>
+
+        <p>其真实性、布人负责。天猫不提供任何保证，并不承担任何法律责任。</p></div>
+    <a class="btn">确认</a>
+</div>
+<!--服务说明弹窗 end-->
+<div class="pop-box hide">
+    <p class="msn-text"></p>
+    <a class="btn black">确认</a>
+    <span class="close">&times;</span>
+</div>
 </body>
 </html>

@@ -39,8 +39,6 @@ $(function () {
                     var result = JSON.parse(data);
                     if (result.code == '1') {
                         popShow(result.msg);
-                    } else if (result.code == '2') {
-                        popShow(result.msg);
                     } else {
                         popShow(result.msg);
                     }
