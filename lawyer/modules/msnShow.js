@@ -2,13 +2,13 @@
 $(function () {
 
     var url = window.location.href;
-    var objectid = url.substring(url.lastIndexOf('=') + 1);
+    var lawyerId = url.substring(url.lastIndexOf('=') + 1);
     var consultId = 0;
     $.ajax({
         type: "POST",
         url: "/lawyer_webapp/message/lawyerRebackConsultForWeb.do",
         contentType: "application/x-www-form-urlencoded; charset=utf-8",
-        data: {id: objectid, jsp: 1},
+        data: {id: lawyerId, jsp: 1},
         success: function (data) {
             var result = JSON.parse(data);
             if (result.code == '1') {
@@ -44,7 +44,7 @@ $(function () {
             type: "POST",
             url: "/lawyer_webapp/searchlawyer/alterPraise.do?weixin=1",
             contentType: "application/x-www-form-urlencoded; charset=utf-8",
-            data: {lawyerId: objectid},
+            data: {lawyerId: lawyerId},
             success: function (data) {
                 var result = JSON.parse(data);
                 if (result.code == '1') {
@@ -86,6 +86,31 @@ $(function () {
             }
         });
     });
+
+    //点击评论
+    $.ajax({
+        type: "POST",
+        url: "/lawyer_webapp/webconsult/lawyerCommentListForWeb.do?weixin=1",
+        contentType: "application/x-www-form-urlencoded; charset=utf-8",
+        data: {lawyerId: lawyerId,pageNum: 0},
+        success: function (data) {
+            $(".loading-data").show();
+            var result = JSON.parse(data);
+            if (result.code == "1") {
+                var html = "";
+                for (var i in result.data) {
+                    html += '<dl class="item clearfix"><dt class="fl pic"><img class="lazyload" src="images/grey.png" data-original="' +
+                        result.data[i].img + '"/></dt><dd><h3>' +
+                        result.data[i].title + '</h3><p>' +
+                        result.data[i].content + '</p><div class="time"><i></i>' +
+                        result.data[i].date + '</div><s class="bg"></s><s></s></dd></dl>';
+                }
+                //console.log(storedData);
+                $(".one-comment").html(html);
+            }
+        }
+    });
+
 
     //返回
     $(".back").eq(1).tap(function () {

@@ -35,7 +35,7 @@ $(function () {
         });
     });
 
-
+    //关闭弹出提示
     $(".pop-box .btn").tap(function () {
         hideMe();
     });
@@ -47,10 +47,15 @@ $(function () {
         $(".pop-box").hide();
     }
 
-
+    //关闭弹出说明
     $(".specification-pop .btn").tap(function () {
         $(".specification-pop").hide();
         $(".pop-allbg").hide();
+    });
+
+    //底部导航
+    $(".toolbar > a").tap(function(){
+        $(this).addClass("active").sibling().removeClass("active");
     });
 
 });
