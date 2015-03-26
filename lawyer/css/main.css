@@ -146,23 +146,23 @@ p {
 }
 
 .icon-i:before {
-    content: "\e604";
+    content: "\e605";
 }
 
 .icon-family:before {
-    content: "\e606";
+    content: "\e607";
 }
 
 .icon-index:before {
-    content: "\e60a";
+    content: "\e60b";
 }
 
 .icon-msn:before {
-    content: "\e60d";
+    content: "\e60e";
 }
 
 .icon-search:before {
-    content: "\e610";
+    content: "\e611";
 }
 
 .lazyload {
@@ -1759,7 +1759,7 @@ p {
 .quick-consulting-con .form-list li select,
 .quick-consulting-con .form-list li textarea {
     width: 90%;
-    height: 100px;
+    height: 160px;
     padding: 0 4px;
     border: 1px solid #5fcad9;
 }
@@ -1798,7 +1798,7 @@ p {
 }
 
 .delegation-nav li .icon-02:before {
-    content: "\e609";
+    content: "\e60a";
 }
 
 .delegation-nav li .icon-03:before {
@@ -1806,7 +1806,7 @@ p {
 }
 
 .delegation-nav li .icon-04:before {
-    content: "\e60e";
+    content: "\e60f";
 }
 
 .delegation-nav li .icon-05:before {
@@ -1814,6 +1814,10 @@ p {
 }
 
 .delegation-nav li .icon-06:before {
+    content: "\e610";
+}
+
+.delegation-nav li .icon-07:before {
     content: "\e60f";
 }
 
