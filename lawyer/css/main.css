@@ -364,6 +364,10 @@ p {
     background: #00b2cb;
 }
 
+.toolbar a i.icon-index, .toolbar a i.icon-i{
+font-size:1.6em;
+}
+
 .toolbar a.active span {
     color: #00b2cb;
 }
