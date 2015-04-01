@@ -1,11 +1,14 @@
 $(function () {
 
-//    var url = window.location.href;
-//    var lawyerId = url.substring(url.lastIndexOf('=') + 1);
-    var lawyerId = 1;
+    var url = window.location.href;
+    var lawyerId = url.substring(url.lastIndexOf('=') + 1);
+    console.log(lawyerId);
+
     var iBtn = true; //开关
     var pageNum = 0;
     showList(); //初始化
+
+    $('.text-btn').attr('href', 'comment-submit.html?id=' + lawyerId);
 
 //滚动时获取新数据
     $(window).scroll(function () {

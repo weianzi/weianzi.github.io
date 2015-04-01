@@ -19,7 +19,6 @@
 <div class="views quick-consulting quick-consulting-con">
     <header class="head clearfix">
         <a class="back white" href ="javascript:history.go(-1);"><span></span></a>
-
         <h1>代写合同</h1>
     </header>
 
@@ -27,8 +26,11 @@
         <from method="post" onsubmit="return false;">
             <div class="form-list">
                 <ul>
-                    <li class="clearfix"><span class="fl">尊称</span><span class="fr"><input id="" type="text"></span>
-                    </li>
+                    <li class="clearfix"><span class="fl">尊称</span><span class="fr"><input id="first_entrust_name" type="text" placeholder="尊称"></span>
+                        <div class="error-tips">
+                            <div id="first_entrust_name_succeed"></div>
+                            <div id="first_entrust_name_error"></div>
+                        </div></li>
                     <li class="clearfix"><span class="fl">填写内容</span><span class="fr"><textarea
                             id="first_entrust_brief" placeholder="请输入内容"></textarea></span>
 

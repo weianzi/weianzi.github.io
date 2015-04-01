@@ -1,6 +1,7 @@
 $(function () {
 
-    var lawyerId = 1;
+    var url = window.location.href;
+    var lawyerId = url.substring(url.lastIndexOf('=') + 1);
 
     var iBtn = true; //开关
     var pageNum = 0;
@@ -40,7 +41,7 @@ $(function () {
                         result.data[i].img + '"/></dt><dd><h3>' +
                         result.data[i].title + '</h3><p>' +
                         result.data[i].content + '</p><span>' +
-                        result.data[i].date + '</span></dd></dl>';
+                        dateFormat(result.data[i].createtime) + '</span></dd></dl>';
 
                     }
                     //console.log(storedData);

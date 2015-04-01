@@ -63,7 +63,7 @@ $(function () {
                     if (result.code == '1') {
                         popShow(result.msg);
                     } else if (result.code == '2') {
-                        popShow("请登陆");
+                        popShow("请登陆", toLogin);
                     } else {
                         popShow("服务器忙，请稍后再试");
                     }
@@ -101,7 +101,7 @@ $(function () {
                     if (result.code == '1') {
                         popShow(result.msg);
                     } else if (result.code == '2') {
-                        //
+                        popShow("请登陆", toLogin);
                     } else {
                         popShow("服务器忙，请稍后再试");
                     }

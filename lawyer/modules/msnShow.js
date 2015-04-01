@@ -16,6 +16,8 @@ $(function () {
                 consultId = result.data.consultId;
                 //
                 $(".head .pic img").attr("src", result.data.avatar);
+                $(".head .pic .tel").attr("href", "tel:" + result.data.phone);
+
                 $(".head h2").html('律所：' + result.data.lawfirm + '<br>证号：' + result.data.worknum);
                 $(".praise-num").html(result.data.praisenum);
                 var html = '<h3>问题：' +
@@ -25,7 +27,7 @@ $(function () {
 
                 //点击更多回复后
                 var html2 = '<p>' +
-                    result.data.rebackContent + '</p><p>时间:' +
+                    result.data.consultTitle + '</p><p>时间:' +
                     dateFormat(result.data.consultTime) + '</p><p>类型:' +
                     result.data.consultCategory + '</p><p>浏览次数:' +
                     result.data.commentnum + '</p>';
@@ -44,7 +46,7 @@ $(function () {
             type: "POST",
             url: "/lawyer_webapp/searchlawyer/alterPraise.do?weixin=1",
             contentType: "application/x-www-form-urlencoded; charset=utf-8",
-            data: {lawyerId: lawyerId},
+            data: {lawyerid: lawyerId},
             success: function (data) {
                 var result = JSON.parse(data);
                 if (result.code == '1') {

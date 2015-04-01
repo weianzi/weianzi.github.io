@@ -38,6 +38,7 @@ $(function () {
     //关闭弹出提示
     $(".pop-box .btn").tap(function () {
         hideMe();
+
     });
     $(".pop-box .close").tap(function () {
         hideMe();
@@ -54,18 +55,30 @@ $(function () {
     });
 
     //底部导航
-    $(".toolbar > a").tap(function(){
+    $(".toolbar > a").tap(function () {
         $(this).addClass("active").sibling().removeClass("active");
     });
 
 });
 
 //弹出提示
-function popShow(msg) {
+function popShow(msg, fn) {
     $(".pop-allbg").css("display", "block");
     $(".pop-box").css("display", "block");
     $(".pop-box > .msn-text").html(msg);
+    if (fn) fn();
 }
+
+function toLogin() {
+    $(".pop-box .btn").tap(function () {
+        location.href = "login.html";
+    });
+
+    $(".pop-box .close").tap(function () {
+        location.href = "login.html";
+    });
+}
+
 
 //转换处理状态
 function isDeal(str) {

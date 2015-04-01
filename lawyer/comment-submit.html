@@ -18,12 +18,11 @@
 <body>
 <div class="views comment-submit">
     <header class="head clearfix">
-        <a class="back white" href="search.html"><span></span></a>
+        <a class="back white" href="javascript:history.go(-1);"><span></span></a>
         <h1>我要评论</h1>
     </header>
     <section>
         <from method="post" onsubmit="return false;">
-            <input type="hidden" id="message_lawyer_comment_lawyerId" value="${lawyerId}"/>
         <textarea id="message_lawyer_comment_content" placeholder="你也来评论一下吧......"></textarea>
             <div class="error-tips">
                 <div id="message_lawyer_comment_content_succeed"></div>
@@ -32,16 +31,14 @@
         <a class="btn white" id="btnMessageLawyerComment">提交评论</a>
             </from>
     </section>
-
-    <nav class="toolbar">
-        <a href="index.html"><i class="icon-index"></i><span>首页</span></a>
-        <a href="search.html" class="active"><i class="icon-search"></i><span>找律师</span></a>
-        <a href="msn.html"><i class="icon-msn"><span>4</span></i><span>消息</span></a>
-        <a href="family.html"><i class="icon-family"></i><span>家庭律师</span></a>
-        <a href="i.html"><i class="icon-i"></i><span>我</span></a>
-    </nav>
 </div>
-
+<nav class="toolbar">
+    <a href="index.html"><i class="icon-index"></i><span>首页</span></a>
+    <a href="search.html" class="active"><i class="icon-search"></i><span>找律师</span></a>
+    <a href="msn.html"><i class="icon-msn"><span>4</span></i><span>消息</span></a>
+    <a href="family.html"><i class="icon-family"></i><span>家庭律师</span></a>
+    <a href="i.html"><i class="icon-i"></i><span>我</span></a>
+</nav>
 <!--弹窗 start-->
 <div class="pop-allbg hide"></div>
 <div class="pop-box hide">

@@ -19,11 +19,14 @@ $.extend(validateFunction, {
 $(function () {
     $("#message_lawyer_comment_content").jdValidate(validatePrompt.notEmpty, validateFunction.notEmpty);
 
+    var url = window.location.href;
+    var lawyerId = url.substring(url.lastIndexOf('=') + 1);
+    console.log(lawyerId);
+
     //12.对律师的评论提交
     $("#btnMessageLawyerComment").tap(function () {
         var content = $("#message_lawyer_comment_content").val();
-        //var lawyerId = $("#message_lawyer_comment_lawyerId").val();
-        var lawyerId = 1;
+
         var postData = {
             comment : content,
             lawyerId : lawyerId
@@ -40,7 +43,7 @@ $(function () {
                     if (result.code == '1') {
                         popShow(result.msg);
                     } else if (result.code == '2') {
-                        popShow("请登陆");
+                        popShow("请登录", toLogin);
                     } else {
                         popShow("服务器忙，请稍后再试");
                     }

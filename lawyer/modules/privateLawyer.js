@@ -12,8 +12,8 @@ $(function () {
 
 //    var url = window.location.href;
 //    var lawyerId = url.substring(url.lastIndexOf('=') + 1);
-    var lawyerId = 1;
-    //
+    var lawyerId;
+
     $.ajax({
         type: "POST",
         url: "/lawyer_webapp/familyLawyer/onesLawyerForWeb.do",
@@ -22,14 +22,24 @@ $(function () {
             var result = JSON.parse(data);
             if (result.code == '1') {
                 console.log(result);
+                lawyerId = result.data.id;
                 $(".head .pic img").attr("src", result.data.avatar);
+                $(".head .pic .tel").attr("href", "tel:" + result.data.phone);
+                $(".head .pic .toMsn").attr("href", "one-consulting.html?id=" + lawyerId);
                 $(".head h2").html('律所：' + result.data.lawfirm + '<br>证号：' + result.data.workNum);
                 $(".praise-num").html(result.data.praiseNum);
+
+                $('.top-tip ul').html('<li><a href="one-consulting.html?id='+
+                    lawyerId +'">咨询</a></li><li><a href="one-msn-reply.html?id='+
+                    lawyerId +'">回复</a></li><li><a href="one-comment.html?id='+
+                    lawyerId +'">评论</a></li><li><a href="#">分享</a></li>');
             } else {
                 popShow(result.msg);
             }
         }
     });
+
+
 
     //点赞
     $("#btnPraise").tap(function () {
@@ -37,12 +47,12 @@ $(function () {
             type: "POST",
             url: "/lawyer_webapp/searchlawyer/alterPraise.do?weixin=1",
             contentType: "application/x-www-form-urlencoded; charset=utf-8",
-            data: {lawyerId: lawyerId},
+            data: {lawyerid: lawyerId},
             success: function (data) {
                 var result = JSON.parse(data);
                 if (result.code == '1') {
                     console.log(result);
-                    $(".praise-num").html(result.data.praiseNum);
+                    $(".praise-num").html(result.data);
                 } else {
                     popShow(result.msg);
                 }

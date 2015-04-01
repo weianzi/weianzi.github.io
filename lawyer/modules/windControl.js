@@ -39,6 +39,7 @@ $(function () {
         ]
     });
 
+
     //报告列表
     $.ajax({
         type: "POST",
@@ -50,18 +51,16 @@ $(function () {
                 var html = "";
                 for (var i in result.data) {
                     html += '<li class="clearfix" onclick="itemTap(this,' +
-                        result.data[i].consultid + ')"><span class="fl">' +
+                        result.data[i].id + ')"><span class="fl">' +
                         result.data[i].title + '</span><span class="fr">' +
-                        result.data[i].createtime + ' ></span></li>';
-
+                        dateFormat(result.data[i].createtime) + ' ></span></li>';
                 }
-
                 $(".list > ul").html(html);
             }
         }
     });
 
-    $(".back").eq(1).click(function(){
+    $(".back").eq(1).click(function () {
         $(".wind-control").hide().eq(0).show();
     });
 
@@ -79,8 +78,9 @@ function itemTap(obj, id) {
             data: {reportId: id},
             success: function (data) {
                 var result = JSON.parse(data);
+                console.log(result);
                 if (result.code == "1") {
-                    $(".form-list ul").html('<li>标题：' + result.data.title + '</li><li>内容：' + result.data.content + '</li>');
+                    $(".form-list ul").html('<li>标题：' + result.data.title + '</li><li>内容：<p>' + result.data.content + '</p></li><li>日期：' + dateFormat(result.data.createtime) + '</li>');
                 }
             }
         });
@@ -88,4 +88,59 @@ function itemTap(obj, id) {
 }
 
 
+
+//转换日期
+function dateFormat(str) {
+
+    var newStr = str.split(" ");
+    var year = newStr[2];
+    var month = newStr[0];
+    var date = parseInt(newStr[1]);
+
+    switch (month) {
+        case "Jan":
+            month = "1";
+            break;
+        case "Feb":
+            month = "2";
+            break;
+        case "Mar":
+            month = "3";
+            break;
+        case "Apr":
+            month = "4";
+            break;
+        case "May":
+            month = "5";
+            break;
+        case "Jun":
+            month = "6";
+            break;
+        case "Jul":
+            month = "7";
+            break;
+        case "Aug":
+            month = "8";
+            break;
+        case "Sep":
+            month = "9";
+            break;
+        case "Oct":
+            month = "10";
+            break;
+        case "Nov":
+            month = "11";
+            break;
+        case "Dec":
+            month = "12";
+            break;
+    }
+
+    function toTwo(n) {
+        return n < 10 ? "0" + n : "" + n;
+    }
+
+    return year + "-" + toTwo(month) + "-" + toTwo(date);
+
+}
 
