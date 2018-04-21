@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>配色与估价</title>
+  <!--[if lt IE 9]>
+      <script src="js/libs/html5shiv.min.js"></script>
+      <script src="js/libs/respond.min.js"></script>
+    <![endif]-->
+<link href="css/ab05294d.vendors.css" rel="stylesheet"><link href="css/ef006666.evaluate.css" rel="stylesheet"></head>
+
+<body>
+  <header class="site-header clearfix"></header>
+  <nav class="site-nav"></nav>
+  <div class="evaluate-view">
+    <div class="ball-pitch-w">
+      <div class="logo">
+        <img src="img/logo.png" />
+      </div>
+      <!--  <h1>地板配色与估价</h1> -->
+      <div class="ball-pitch">
+        <div class="ball-pitch-bg change-bg"></div>
+        <div class="halfway-line"></div>
+        <div class="center-circle change-bg"></div>
+        <div class="penalty-area-left change-bg"></div>
+        <div class="penalty-area-right change-bg"></div>
+        <div class="penalty-arc-left change-bg"></div>
+        <div class="penalty-arc-right change-bg"></div>
+        <div class="goal-area-left change-bg">
+          <!-- <div class="before"></div>
+          <div class="after"></div>
+          <div class="patch"></div> -->
+        </div>
+        <div class="goal-area-right change-bg">
+          <!-- <div class="before"></div>
+          <div class="after"></div>
+          <div class="patch"></div> -->
+        </div>
+      </div>
+      <div id="exportTable">
+        <!-- <h1>效果图</h1>
+        <h2>场地面积：100 平方米，预计价格：￥11500 ~ ￥21500</h2>
+        <div class="con">
+        <table>
+          <tbody>
+            <tr>
+              <th>价格包含</th>
+              <th></th>
+            </tr>
+            <tr>
+              <td>1) 密实（室外）材料</td>
+              <td>2) 辅助材料</td>
+            </tr>
+            <tr>
+              <td>3) 运费</td>
+              <td>4) 发票</td>
+            </tr>
+            <tr>
+              <td>5) 施工</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="con">
+        <table>
+          <tbody>
+            <tr>
+              <th>产品参数</th>
+              <th></th>
+            </tr>
+            <tr>
+              <td>类型：密实（室外）</td>
+              <td>表面纹路：透明层（雨滴纹）</td>
+            </tr>
+            <tr>
+              <td>尺寸：XXXX</td>
+              <td>厚度：4mm</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+        <div class="bottom">
+        <table>
+          <tbody>
+            <tr>
+              <td valign="top" width="50">备注：</td>
+              <td>
+                <p>1）备注备注备注备注备注备注备注备注备注备注备注备注</p>
+                <p>2）212注备注备注备注备注备注备注备注</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        </div> -->
+      </div>
+    </div>
+    <div id="exportImg"></div>
+    <div class="filter-fixed">
+      <div class="filter">
+        <div class="clearfix">
+          <div class="fl area-input">
+            <input id="area" type="text" value="100" />平方米
+            <a id="areaBtn" href="javascript:;">报价</a>
+          </div>
+          <p class="fl price-text">
+            根据当前选择预计：
+            <strong id="price"></strong>
+            <span>此价格为参考值，具体价格咨询客服，取消或更换选项可做价格对比。</span></p>
+        </div>
+        <div class="clearfix" style="padding: 20px 0">
+          <div class="fl check-price">
+            价格：
+            <label>
+              <input id="material" type="checkbox" value="5" disabled="disabled" checked="checked" />材料</label>
+            <label>
+              <input id="minMaterial" type="checkbox" value="5" disabled="disabled" checked="checked" />辅材</label>
+            <label>
+              <input id="franking" type="checkbox" value="5" disabled="disabled" checked="checked" />运费</label>
+            <label>
+              <input id="bill" type="checkbox" value="0.17" />发票</label>
+            <label>
+              <input id="build" type="checkbox" value="10" />施工</label>
+          </div>
+          <div class="fl select-color">推荐配色：
+            <label>
+              <input type="radio" name="mycolor" checked="checked" value="#802626" />红</label>
+            <label>
+              <input type="radio" name="mycolor" value="blue" />蓝</label>
+            <label>
+              <input type="radio" name="mycolor" value="green" />绿</label>
+          </div>
+        </div>
+        <div class="clearfix select-type">
+          <select id="space">
+            <option selected value="篮球场">篮球场</option>
+            <option value="羽毛球场">羽毛球场</option>
+            <option value="跑道">跑道</option>
+            <option value="幼儿园">幼儿园</option>
+          </select>
+          <select id="side">
+            <option selected value="0">密实（室外）</option>
+            <option value="1">发泡（室外）</option>
+            <option value="2">发泡（室内）</option>
+          </select>
+          <select id="stripe">
+            <option selected value="0">透明层（雨滴纹）</option>
+            <option value="1">非透明层（钻石纹）</option>
+            <option value="2">非透明层（小石子纹）</option>
+            <option value="3">宝石纹</option>
+          </select>
+          <select id="thick">
+            <option selected value="0">厚度：4mm</option>
+            <option value="1">厚度：5mm</option>
+          </select>
+          <button id="exportBtn">导出</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="modal-backdrop mark-news none"></div>
+    <div class="modal fade news-detail-pop">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <a href="javascript:;" class="close">&times;</a>
+            </div>
+        </div>
+    </div> -->
+  <script src="js/libs/jquery.min-1.9.1.js"></script>
+  <script src="js/libs/html2canvas.min.js"></script>
+  <script src="https://superal.github.io/canvas2image/canvas2image.js"></script>
+<script type="text/javascript" src="js/c2b1addd.vendors.js"></script><script type="text/javascript" src="js/c2b1addd.evaluate.js"></script></body>
+
+</html>
